@@ -1,0 +1,148 @@
+#!/usr/bin/env perl 
+
+use strict;
+use warnings;
+use utf8;
+
+use Getopt::Std;
+use LWP::UserAgent;
+use HTTP::Cookies;
+use File::Temp qw'tempfile';
+use File::Copy qw'move';
+
+my $VERSION = "1.0";
+( my $PROGNAME = $0 ) =~ s/.*\///;
+
+sub VERSION_MESSAGE
+{
+    PrintUsage();
+    exit 0;
+}
+
+sub PrintUsage
+{
+    print "$PROGNAME, version $VERSION\n";
+    print "\nUsage: $PROGNAME -i project_id -u user -p password <file.csv>\n";
+    print "\t-i - project id\n";
+    print "\t-u - user name\n";
+    print "\t-p - password\n";
+}
+
+my $DLINK_PTN = qr/<a\s+href="([^"]+)"\s*>Download Log as CSV file</i;
+
+our ( $opt_h, $opt_i, $opt_u, $opt_p );
+
+getopts 'i:u:p:';
+my $datafile = shift;
+
+if ( $opt_h || ! $opt_i || ! $opt_u || ! $opt_p || ! $datafile )
+{
+    PrintUsage;
+    exit( $opt_h ? 0 : 1 );
+}
+
+my $project_id  = $opt_i;
+my $user        = $opt_u;
+my $password    = $opt_p;
+my $statcounter = 'http://statcounter.com/';
+
+my $ua = LWP::UserAgent->new( cookie_jar            => HTTP::Cookies->new,
+                              requests_redirectable => [ 'GET', 'POST' ] );
+
+my $url = $statcounter . $project_id . '/download_log/';
+my $response = $ua->post( $url, [ form_user => $user,
+                                  form_pass => $password ] );
+
+die $response->status_line unless $response->is_success;
+
+my $content = $response->decoded_content();
+
+die 'Failed to find download link' unless $content =~ $DLINK_PTN;
+
+( $url = $1 ) =~ s/^\.\./$statcounter . $project_id/e;
+
+$response = $ua->get( $url );
+
+$content = $response->decoded_content();
+
+unless ( -e $datafile )
+{
+    open my $fh, '>', $datafile or die $!;
+    binmode $fh, utf8::is_utf8( $content ) ? ':utf8' : ':raw';
+    print $fh $content;
+    close $fh;
+    exit 0;
+}
+
+die "Data file is not writable" unless -w $datafile;
+
+my ( $fh, $tmpfile ) = tempfile( UNLINK => 1, SUFFIX => '.csv' );
+binmode $fh, utf8::is_utf8( $content ) ? ':utf8' : ':raw';
+print $fh $content;
+close $fh;
+
+open my $fh1, '<', $tmpfile or die $!;
+open my $fh2, '<', $datafile or die $!;
+( $fh, $tmpfile ) = tempfile( UNLINK => 0, SUFFIX => '.csv' );
+binmode $fh, ':raw';
+
+my $hdr = <$fh1>;
+$hdr = <$fh2>;
+print $fh $hdr;
+my ( $read1, $read2 ) = ( 1, 1 );
+my ( $l1, $l2 ) = ( 'START', 'MERGE' );
+
+do
+{
+    if ( $l1 && $l2 )
+    {
+        $l1 = <$fh1> if $read1;
+        $l2 = <$fh2> if $read2;
+        if ( defined $l1 && $l1 eq $l2 )
+        {
+            print $fh $l1;
+            $read1 = 1;
+            $read2 = 1;
+        }
+        elsif ( defined $l1 && defined $l2 )
+        {
+            ( my $d1 = $l1 ) =~ s/^"([^"]+)"/$1/;
+            ( my $d2 = $l2 ) =~ s/^"([^"]+)"/$1/;
+            die "Corrupted data" if $d1 eq '' || $d2 eq '';
+            if ( $d1 ge $d2 )
+            {
+                print $fh $l1;
+                $read1 = 1;
+                $read2 = 0;
+            }
+            else
+            {
+                print $fh $l2;
+                $read1 = 0;
+                $read2 = 1;
+            }
+        }
+        else
+        {
+            print $fh $l1 if defined $l1;
+            print $fh $l2 if defined $l2;
+        }
+    }
+    elsif ( $l1 )
+    {
+        $l1 = <$fh1>;
+        print $fh $l1 if defined $l1;
+    }
+    elsif ( $l2 )
+    {
+        $l2 = <$fh2>;
+        print $fh $l2 if defined $l2;
+    }
+} while ( defined $l1 || defined $l2 );
+
+close $fh;
+close $fh1;
+close $fh2;
+
+move $tmpfile, $datafile or die $!;
+

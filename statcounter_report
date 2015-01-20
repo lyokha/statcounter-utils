@@ -1,0 +1,27 @@
+#!/bin/bash 
+
+template='"^ "$8" ^ "$9" ^ "$10'
+# another template examples: '"^ "$8" ^ "$9" / "$10" ^ "$19'
+#                            '"^ "$6'
+
+separator='^'
+separator0='/'
+
+while getopts ':t:s:f:' opt ; do
+    case $opt in
+        t) template=$OPTARG ;;
+        s) separator=$OPTARG ;;
+        f) separator0=$OPTARG ;;
+       \?) echo "Invalid option: -$OPTARG" >&2
+           exit 1 ;;
+        :) echo "Option -$OPTARG requires an argument" >&2
+           exit 1 ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+awk -F'","' "NR < 2 {next} {print $template}" $1 | sort | uniq -c | sort -nrs |
+    column -t -s"$separator" -o'|' |
+    hl -215 -b '^\s*\d+' -155 '\|' -225 "\\$separator0"
+
