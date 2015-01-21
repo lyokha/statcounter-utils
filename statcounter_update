@@ -77,7 +77,7 @@ unless ( -e $datafile )
     exit 0;
 }
 
-die "Data file is not writable" unless -w $datafile;
+die 'Data file is not writable' unless -w $datafile;
 
 my ( $fh, $tmpfile ) = tempfile( UNLINK => 1, SUFFIX => '.csv' );
 binmode $fh, utf8::is_utf8( $content ) ? ':utf8' : ':raw';
@@ -113,7 +113,7 @@ do
             {
                 ( my $d1 = $l1 ) =~ s/^"([^"]+)"/$1/;
                 ( my $d2 = $l2 ) =~ s/^"([^"]+)"/$1/;
-                die "Corrupted data" if $d1 eq '' || $d2 eq '';
+                die 'Corrupted data' if $d1 eq '' || $d2 eq '';
                 if ( $d1 ge $d2 )
                 {
                     print $fh $l1;
@@ -154,7 +154,7 @@ if ( $opt_b )
 {
     my ( $name, $path, $suf ) = fileparse( $datafile, qr'\.[^.]+$' );
     move $datafile, $path . $name . $opt_b . $suf or
-                                        warn "Failed to create backup file";
+                                        warn 'Failed to create backup file';
 }
 
 move $tmpfile, $datafile or die $!;
