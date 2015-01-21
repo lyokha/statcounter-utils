@@ -93,36 +93,39 @@ my $hdr = <$fh1>;
 $hdr = <$fh2>;
 print $fh $hdr;
 my ( $read1, $read2 ) = ( 1, 1 );
-my ( $l1, $l2 ) = ( 'START', 'MERGE' );
+my ( $l1, $l2 ) = ( '', '' );
 
 do
 {
-    if ( $l1 && $l2 )
+    if ( defined $l1 && defined $l2 )
     {
         $l1 = <$fh1> if $read1;
         $l2 = <$fh2> if $read2;
-        if ( defined $l1 && $l1 eq $l2 )
+        if ( defined $l1 && defined $l2 )
         {
-            print $fh $l1;
-            $read1 = 1;
-            $read2 = 1;
-        }
-        elsif ( defined $l1 && defined $l2 )
-        {
-            ( my $d1 = $l1 ) =~ s/^"([^"]+)"/$1/;
-            ( my $d2 = $l2 ) =~ s/^"([^"]+)"/$1/;
-            die "Corrupted data" if $d1 eq '' || $d2 eq '';
-            if ( $d1 ge $d2 )
+            if ( $l1 eq $l2 )
             {
                 print $fh $l1;
                 $read1 = 1;
-                $read2 = 0;
+                $read2 = 1;
             }
             else
             {
-                print $fh $l2;
-                $read1 = 0;
-                $read2 = 1;
+                ( my $d1 = $l1 ) =~ s/^"([^"]+)"/$1/;
+                ( my $d2 = $l2 ) =~ s/^"([^"]+)"/$1/;
+                die "Corrupted data" if $d1 eq '' || $d2 eq '';
+                if ( $d1 ge $d2 )
+                {
+                    print $fh $l1;
+                    $read1 = 1;
+                    $read2 = 0;
+                }
+                else
+                {
+                    print $fh $l2;
+                    $read1 = 0;
+                    $read2 = 1;
+                }
             }
         }
         else
@@ -131,12 +134,12 @@ do
             print $fh $l2 if defined $l2;
         }
     }
-    elsif ( $l1 )
+    elsif ( defined $l1 )
     {
         $l1 = <$fh1>;
         print $fh $l1 if defined $l1;
     }
-    elsif ( $l2 )
+    elsif ( defined $l2 )
     {
         $l2 = <$fh2>;
         print $fh $l2 if defined $l2;
