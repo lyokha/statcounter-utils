@@ -9,6 +9,7 @@ use LWP::UserAgent;
 use HTTP::Cookies;
 use File::Temp qw'tempfile';
 use File::Copy qw'move';
+use File::Basename qw'fileparse';
 
 my $VERSION = "1.0";
 ( my $PROGNAME = $0 ) =~ s/.*\///;
@@ -22,17 +23,19 @@ sub VERSION_MESSAGE
 sub PrintUsage
 {
     print "$PROGNAME, version $VERSION\n";
-    print "\nUsage: $PROGNAME -i project_id -u user -p password <file.csv>\n";
+    print "\nUsage: $PROGNAME -i project_id -u user -p password ";
+    print                    "[-b pre-suffix] <file.csv>\n";
     print "\t-i - project id\n";
     print "\t-u - user name\n";
     print "\t-p - password\n";
+    print "\t-b - pre-suffix for backup file\n";
 }
 
-my $DLINK_PTN = qr/<a\s+href="([^"]+)"\s*>Download Log as CSV file</i;
+my $DLINK_PTN = qr'<a\s+href="([^"]+)"\s*>Download Log as CSV file<'i;
 
-our ( $opt_h, $opt_i, $opt_u, $opt_p );
+our ( $opt_h, $opt_i, $opt_u, $opt_p, $opt_b );
 
-getopts 'i:u:p:';
+getopts 'hi:u:p:b:';
 my $datafile = shift;
 
 if ( $opt_h || ! $opt_i || ! $opt_u || ! $opt_p || ! $datafile )
@@ -143,6 +146,13 @@ do
 close $fh;
 close $fh1;
 close $fh2;
+
+if ( $opt_b )
+{
+    my ( $name, $path, $suf ) = fileparse( $datafile, qr'\.[^.]+$' );
+    move $datafile, $path . $name . $opt_b . $suf or
+                                        warn "Failed to create backup file";
+}
 
 move $tmpfile, $datafile or die $!;
 
