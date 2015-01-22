@@ -91,7 +91,9 @@ binmode $fh, ':raw';
 
 my $hdr = <$fh1>;
 $hdr = <$fh2>;
+die 'Bad data format' unless $hdr =~ qr'^\s*"Date and Time"';
 print $fh $hdr;
+
 my ( $read1, $read2 ) = ( 1, 1 );
 my ( $l1, $l2 ) = ( '', '' );
 
