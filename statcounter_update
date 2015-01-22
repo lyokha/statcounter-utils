@@ -146,9 +146,7 @@ do
     }
 } while ( defined $l1 || defined $l2 );
 
-close $fh;
-close $fh1;
-close $fh2;
+close $_ for ( $fh, $fh1, $fh2 );
 
 if ( $opt_b )
 {
