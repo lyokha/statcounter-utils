@@ -1,0 +1,14 @@
+if (!exists("datafile")) quit
+
+set datafile separator ";"
+set style data histogram
+set key off
+set style fill solid
+unset border
+unset xtics
+set ytics nomirror scale 0 0
+set rmargin at screen 0.92
+
+plot datafile using 2:0:2:(0.2):ytic(1) with boxxyerrorbars, \
+                        '' using ($2*2 + 10):0:($2) with labels left
+
