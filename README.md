@@ -20,7 +20,7 @@ awk -F\| '{print $2,";",$1}' | head -20 | tac > 20cities.csv
 Now let's draw image using gnuplot.
 
 ```sh
-gnuplot -p -e "datafile='20cities.csv'" stats.gpi
+gnuplot -p -e "datafile='20cities.csv'; set lmargin 54" stats.gpi
 ```
 
 A window with an image below shall pop up.
@@ -32,6 +32,6 @@ A window with an image below shall pop up.
 The image can also be saved with
 
 ```sh
-gnuplot -e "datafile='20cities.csv'; set term pngcairo size 1200,800; set output '20cities.png'" stats.gpi
+gnuplot -e "datafile='20cities.csv'; set lmargin 54; set term pngcairo size 1200,700; set output '20cities.png'" stats.gpi
 ```
 
