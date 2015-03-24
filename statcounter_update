@@ -11,7 +11,7 @@ use File::Temp qw'tempfile';
 use File::Copy qw'move';
 use File::Basename qw'fileparse';
 
-my $VERSION = "1.0";
+my $VERSION = "1.1";
 ( my $PROGNAME = $0 ) =~ s/.*\///;
 
 sub VERSION_MESSAGE
@@ -23,19 +23,23 @@ sub VERSION_MESSAGE
 sub PrintUsage
 {
     print "$PROGNAME, version $VERSION\n";
-    print "\nUsage: $PROGNAME -i project_id -u user -p password ";
-    print                    "[-b pre-suffix] <file.csv>\n";
+    print "\nUsage: $PROGNAME -i project-id -u user -p password";
+    print "\n                     [-d date-time] [-b pre-suffix] <file.csv>\n";
     print "\t-i - project id\n";
     print "\t-u - user name\n";
     print "\t-p - password\n";
-    print "\t-b - pre-suffix for backup file\n";
+    print "\t-d - test only records newer than or equal to the given ";
+    print        "date-time\n";
+    print "\t     date-time format is 'YYYY-MM-DD HH:MM:SS'\n";
+    print "\t-b - create backup file with the given pre-suffix\n";
 }
 
 my $DLINK_PTN = qr'<a\s+href="([^"]+)"\s*>Download Log as CSV file<'i;
+my $DTIME_PTN = qr'^"([^"]+)".*';
 
-our ( $opt_h, $opt_i, $opt_u, $opt_p, $opt_b );
+our ( $opt_h, $opt_i, $opt_u, $opt_p, $opt_d, $opt_b );
 
-getopts 'hi:u:p:b:';
+getopts 'hi:u:p:b:d:';
 my $datafile = shift;
 
 if ( $opt_h || ! $opt_i || ! $opt_u || ! $opt_p || ! $datafile )
@@ -96,12 +100,22 @@ print $fh $hdr;
 
 my ( $read1, $read2 ) = ( 1, 1 );
 my ( $l1, $l2 ) = ( '', '' );
+my $dstop = 0;
 
 do
 {
+    $l1 = undef if $dstop;
     if ( defined $l1 && defined $l2 )
     {
         $l1 = <$fh1> if $read1;
+        my $d1 = '';
+        if ( defined $l1 )
+        {
+            ( $d1 = $l1 ) =~ s/$DTIME_PTN/$1/;
+            chomp $d1;
+            die 'Corrupted data' if $d1 eq '';
+            $dstop = defined $opt_d && $opt_d ge $d1;
+        }
         $l2 = <$fh2> if $read2;
         if ( defined $l1 && defined $l2 )
         {
@@ -113,12 +127,12 @@ do
             }
             else
             {
-                ( my $d1 = $l1 ) =~ s/^"([^"]+)"/$1/;
-                ( my $d2 = $l2 ) =~ s/^"([^"]+)"/$1/;
-                die 'Corrupted data' if $d1 eq '' || $d2 eq '';
+                ( my $d2 = $l2 ) =~ s/$DTIME_PTN/$1/;
+                chomp $d2;
+                die 'Corrupted data' if $d2 eq '';
                 if ( $d1 ge $d2 )
                 {
-                    print $fh $l1;
+                    print $fh ( $dstop ? $l2 : $l1 );
                     $read1 = 1;
                     $read2 = 0;
                 }
@@ -132,14 +146,21 @@ do
         }
         else
         {
-            print $fh $l1 if defined $l1;
+            print $fh $l1 if defined $l1 && ! $dstop;
             print $fh $l2 if defined $l2;
         }
     }
     elsif ( defined $l1 )
     {
         $l1 = <$fh1>;
-        print $fh $l1 if defined $l1;
+        if ( defined $l1 )
+        {
+            ( my $d1 = $l1 ) =~ s/$DTIME_PTN/$1/;
+            chomp $d1;
+            die 'Corrupted data' if $d1 eq '';
+            $dstop = defined $opt_d && $opt_d ge $d1;
+            print $fh $l1 unless $dstop;
+        }
     }
     elsif ( defined $l2 )
     {
