@@ -21,7 +21,7 @@ done
 
 shift $((OPTIND-1))
 
-awk -F'","' "NR < 2 {next} {print $template}" $1 | sort | uniq -c | sort -nrs |
-    column -t -s"$separator" -o'|' |
+awk -F'","' "NR < 2 {next} {print $template}" $1 | sort -f | uniq -ci |
+    sort -nrs | column -t -s"$separator" -o'|' |
     hl -215 -b '^\s*\d+' -155 '\|' -225 "\\$separator0"
 
