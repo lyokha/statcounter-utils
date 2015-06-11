@@ -1,5 +1,6 @@
 s/Kharkiv\b/Kharkov/
 s/Lwów\b/Lviv/
+s/Lvov\b/Lviv/
 s/Dnipropetrovsk\b/Dnepropetrovsk/
 s/Dniepropetrovsk\b/Dnepropetrovsk/
 s/Luhansk\b/Lugansk/
