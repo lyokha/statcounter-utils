@@ -9,6 +9,6 @@ unset xtics
 set ytics nomirror scale 0 0
 set rmargin 6
 
-plot datafile using 2:0:2:(0.4):ytic(1) with boxxyerrorbars, \
-                        '' using ($2*2 + 40):0:($2) with labels left
+plot datafile using 2:0:2:(0.4):ytic(1) with boxxyerrorbars lc rgb "red", \
+                                '' using ($2*2 + 40):0:($2) with labels left
 
