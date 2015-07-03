@@ -11,7 +11,7 @@ s/Cherkasy\b/Cherkassy/
 s/Chernihiv\b/Chernigov/
 s/Erevan\b/Yerevan/
 s/Kremenchuk\b/Kremenchug/
-s/Zhytomyr\b/Zhitomyr/
+s/Zhytomyr\b/Zhitomir/
 s/Chortkiv\b/Chortkov/
 s/Nizhni Tagil\b/Nizhniy Tagil/
 s/Kostanay\b/Qostanay/
