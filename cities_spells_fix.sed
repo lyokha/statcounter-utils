@@ -17,4 +17,5 @@ s/Nizhni Tagil\b/Nizhniy Tagil/
 s/Kostanay\b/Qostanay/
 s/Kyiv\b/Kiev/
 s/Saint-petersburg\b/Saint Petersburg/
+s/Mytishi/Mytishchi/
 
