@@ -18,4 +18,5 @@ s/Kostanay\b/Qostanay/
 s/Kyiv\b/Kiev/
 s/Saint-petersburg\b/Saint Petersburg/
 s/Mytishi/Mytishchi/
+s/Zaporozhye/Zaporizhzhya/
 
