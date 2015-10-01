@@ -2,11 +2,11 @@
 
 use strict;
 use warnings;
-use utf8;
 
 use Getopt::Std;
 use LWP::UserAgent;
 use HTTP::Cookies;
+use Encode::Guess;
 use File::Temp qw'tempfile';
 use File::Copy qw'move';
 use File::Basename qw'fileparse';
@@ -71,11 +71,15 @@ $response = $ua->get( $url );
 
 $content = $response->decoded_content();
 
+my $decoder = guess_encoding( $content );
+die 'Unknown data encoding' unless ref $decoder;
+my $content_utf8 = $decoder->decode( $content );
+
 unless ( -e $datafile )
 {
     open my $fh, '>', $datafile or die $!;
-    binmode $fh, utf8::is_utf8( $content ) ? ':utf8' : ':raw';
-    print $fh $content;
+    binmode $fh, ':utf8';
+    print $fh $content_utf8;
     close $fh;
     exit 0;
 }
@@ -83,8 +87,8 @@ unless ( -e $datafile )
 die 'Data file is not writable' unless -w $datafile;
 
 my ( $fh, $tmpfile ) = tempfile( UNLINK => 1, SUFFIX => '.csv' );
-binmode $fh, utf8::is_utf8( $content ) ? ':utf8' : ':raw';
-print $fh $content;
+binmode $fh, ':utf8';
+print $fh $content_utf8;
 close $fh;
 
 open my $fh1, '<', $tmpfile or die $!;
