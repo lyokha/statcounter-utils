@@ -87,7 +87,7 @@ unless ( -e $datafile )
 die 'Data file is not writable' unless -w $datafile;
 
 my ( $fh, $tmpfile ) = tempfile( UNLINK => 1, SUFFIX => '.csv' );
-binmode $fh, ':utf8';
+binmode $fh, ':raw';
 print $fh $content;
 close $fh;
 
