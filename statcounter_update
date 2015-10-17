@@ -78,7 +78,7 @@ $content = $enc->decode( $content ) unless $enc->name eq 'utf8';
 unless ( -e $datafile )
 {
     open my $fh, '>', $datafile or die $!;
-    binmode $fh, ':utf8';
+    binmode $fh, ':raw';
     print $fh $content;
     close $fh;
     exit 0;
