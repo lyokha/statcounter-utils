@@ -6,12 +6,14 @@ template='"^ "$8" ^ "$9" ^ "$10'
 
 separator='^'
 separator0='/'
+ignore_exitclicks=
 
-while getopts ':t:s:f:' opt ; do
+while getopts ':t:s:f:i' opt ; do
     case $opt in
         t) template=$OPTARG ;;
         s) separator=$OPTARG ;;
         f) separator0=$OPTARG ;;
+        i) ignore_exitclicks='|| /"exit click"/' ;;
        \?) echo "Invalid option: -$OPTARG" >&2
            exit 1 ;;
         :) echo "Option -$OPTARG requires an argument" >&2
@@ -21,7 +23,7 @@ done
 
 shift $((OPTIND-1))
 
-awk -F'","' "NR < 2 {next} {print $template}" $1 | sort -f | uniq -ci |
-    sort -nrs | column -t -s"$separator" -o'|' |
-    hl -215 -b '^\s*\d+' -155 '\|' -225 "\\$separator0"
+awk -F'","' "NR < 2 $ignore_exitclicks {next} {print $template}" $1 |
+    sort -f | uniq -ci | sort -nrs | column -t -s"$separator" -o'|' |
+    hl -215 -b '^\s*\d+' -155 '\|' -225 "\s+\\$separator0\s+"
 
