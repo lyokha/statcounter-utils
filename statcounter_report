@@ -6,14 +6,14 @@ template='"^ "$8" ^ "$9" ^ "$10'
 
 separator='^'
 separator0='/'
-ignore_notpageviews=
+or_not_pageview=
 
 while getopts ':t:s:f:p' opt ; do
     case $opt in
         t) template=$OPTARG ;;
         s) separator=$OPTARG ;;
         f) separator0=$OPTARG ;;
-        p) ignore_notpageviews='|| $14 != "page view"' ;;
+        p) or_not_pageview='|| $14 != "page view"' ;;
        \?) echo "Invalid option: -$OPTARG" >&2
            exit 1 ;;
         :) echo "Option -$OPTARG requires an argument" >&2
@@ -23,7 +23,7 @@ done
 
 shift $((OPTIND-1))
 
-awk -F'","' "NR < 2 $ignore_notpageviews {next} {print $template}" $1 |
+awk -F'","' "NR < 2 $or_not_pageview {next} {print $template}" $1 |
     sort -f | uniq -ci | sort -nrs | column -t -s"$separator" -o'|' |
     hl -215 -b '^\s*\d+' -155 '\|' -225 "\s+\\$separator0\s+"
 
