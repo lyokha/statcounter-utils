@@ -19,6 +19,7 @@ s/Kyiv\b/Kiev/
 s/Saint-petersburg\b/Saint Petersburg/
 s/Mytishi/Mytishchi/
 s/Zaporozhye/Zaporizhzhya/
-s/Zapor[^,]\+,"Lugansk/&oye/
+#s/Zapor[^,]\+,"Lugansk/&oye/
+#s/Kaluga","Sevastopol/& (Kaluga)/
 s/Muenster/Münster/
 
