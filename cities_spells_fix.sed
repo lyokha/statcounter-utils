@@ -5,6 +5,7 @@ s/Dnipropetrovsk\b/Dnepropetrovsk/
 s/Dniepropetrovsk\b/Dnepropetrovsk/
 s/Luhansk\b/Lugansk/
 s/Tolyatti\b/Togliatti/
+s/Sakha","Togliatti/Samara","Togliatti/
 s/Rostov-na-donu\b/Rostov-on-Don/i
 s/Vinnytsya\b/Vinnitsa/
 s/Cherkasy\b/Cherkassy/
@@ -19,7 +20,9 @@ s/Kyiv\b/Kiev/
 s/Saint-petersburg\b/Saint Petersburg/
 s/Mytishi/Mytishchi/
 s/Zaporozhye/Zaporizhzhya/
+s/Muenster/Münster/
+
+# They are really different
 #s/Zapor[^,]\+,"Lugansk/&oye/
 #s/Kaluga","Sevastopol/& (Kaluga)/
-s/Muenster/Münster/
 
