@@ -16,6 +16,10 @@ s/Zhytomyr\b/Zhitomir/
 s/Chortkiv\b/Chortkov/
 s/Nizhni Tagil\b/Nizhniy Tagil/
 s/Nizhnii Novgorod\b/Nizhniy Novgorod/
+s/Ramenskoe/Ramenskoye/
+s/Moscow City","Khimki/Moskva","Khimki/
+s/Moscow City","Zhukovskiy/Moskva","Zhukovskiy/
+s/"Krasnoyarskiy Kray"/"Krasnoyarsk"/
 s/Kostanay\b/Qostanay/
 s/Kyiv\b/Kiev/
 s/Saint-petersburg\b/Saint Petersburg/
