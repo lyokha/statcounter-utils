@@ -4,8 +4,8 @@ template='"^ "$8" ^ "$9" ^ "$10'
 # another template examples: '"^ "$8" ^ "$9" / "$10" ^ "$19'
 #                            '"^ "$6'
 
-separator='^'
-separator0='/'
+separator=^
+separator0=/
 filter=
 or_not_pageview=
 
@@ -24,6 +24,7 @@ while getopts ':t:s:f:g:p' opt ; do
 done
 
 shift $((OPTIND-1))
+[ -n "$1" ] && input="$1" || input=-
 
 function main
 {
@@ -34,8 +35,8 @@ function main
 }
 
 if [ -n "$filter" ] ; then
-    eval "$filter" "$1" | sed 1i. | main
+    sed 1d "$input" | eval "$filter" | sed 1i. | main -
 else
-    main "$1"
+    main "$input"
 fi
 
