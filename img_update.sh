@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 
 sed -f cities_spells_fix.sed StatCounter-Log.csv | statcounter_report -p -t'"^ "$8" / "$9" / "$10' | awk -F\| '{print $2,";",$1}' | head -20 | tac > 20cities.csv
 gnuplot -e "datafile='20cities.csv'; set term pngcairo size 1200,700; set lmargin 54; set output '20cities.png'" stats.gpi

@@ -15,6 +15,7 @@ s/Kremenchuk\b/Kremenchug/
 s/Zhytomyr\b/Zhitomir/
 s/Chortkiv\b/Chortkov/
 s/Nizhni Tagil\b/Nizhniy Tagil/
+s/Nizhnii Novgorod\b/Nizhniy Novgorod/
 s/Kostanay\b/Qostanay/
 s/Kyiv\b/Kiev/
 s/Saint-petersburg\b/Saint Petersburg/
