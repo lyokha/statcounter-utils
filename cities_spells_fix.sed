@@ -42,4 +42,5 @@ s/Muenster/Münster/
 #s/Kirov","Kazan/& (Kirov)/
 #s/Rostov","Donetsk/& (Rostov)/
 #s/Minskaya Voblasts'","Grodno/& (Minsk)/
+#s/Vitsyebskaya Voblasts'","Gomel/& (Vitebsk)/
 
