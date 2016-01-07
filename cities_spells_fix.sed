@@ -39,6 +39,7 @@ s/Muenster/Münster/
 #s/Samara","Stavropol/& (Samara)/
 #s/Orel","Samara/& (Orel)/
 #s/Stavropol'","Kirov/& (Stavropol')/
-#s/Kirov'","Kazan/& (Kirov)/
+#s/Kirov","Kazan/& (Kirov)/
+#s/Rostov","Donetsk/& (Rostov)/
 #s/Minskaya Voblasts'","Grodno/& (Minsk)/
 
