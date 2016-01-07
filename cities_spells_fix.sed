@@ -5,8 +5,11 @@ s/Dnipropetrovsk\b/Dnepropetrovsk/
 s/Dniepropetrovsk\b/Dnepropetrovsk/
 s/Luhansk\b/Lugansk/
 s/Tolyatti\b/Togliatti/
+s/Cheliabinsk\b/Chelyabinsk/
+s/Belebei\b/Belebey/
 s/Sakha","Togliatti/Samara","Togliatti/
 s/Rostov-na-donu\b/Rostov-on-Don/i
+s/"Rostov","Rostov"/"Rostov","Rostov-on-Don"/
 s/Vinnytsya\b/Vinnitsa/
 s/Cherkasy\b/Cherkassy/
 s/Chernihiv\b/Chernigov/
@@ -25,9 +28,17 @@ s/Kyiv\b/Kiev/
 s/Saint-petersburg\b/Saint Petersburg/
 s/Mytishi/Mytishchi/
 s/Zaporozhye/Zaporizhzhya/
+s/Hessen","Frankfurt"/Hessen","Frankfurt Am Main"/
 s/Muenster/Münster/
 
 # They are really different
 #s/Zapor[^,]\+,"Lugansk/&oye/
 #s/Kaluga","Sevastopol/& (Kaluga)/
+#s/Kirov","Yaroslavl/& (Kirov)/
+#s/Bryansk","Belgorod/& (Bryansk)/
+#s/Samara","Stavropol/& (Samara)/
+#s/Orel","Samara/& (Orel)/
+#s/Stavropol'","Kirov/& (Stavropol')/
+#s/Kirov'","Kazan/& (Kirov)/
+#s/Minskaya Voblasts'","Grodno/& (Minsk)/
 
