@@ -43,4 +43,5 @@ s/Muenster/Münster/
 #s/Rostov","Donetsk/& (Rostov)/
 #s/Minskaya Voblasts'","Grodno/& (Minsk)/
 #s/Vitsyebskaya Voblasts'","Gomel/& (Vitebsk)/
+#s/Almaty","Aktobe/& (Almaty)/
 

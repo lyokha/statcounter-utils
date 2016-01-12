@@ -26,12 +26,23 @@ done
 shift $((OPTIND-1))
 [ -n "$1" ] && input="$1" || input=-
 
+function try_filter
+{
+    local flt=$1
+    shift
+    if [ -x "$(which "$flt" 2>&1)" ] ; then
+        $(which "$flt") "$@"
+    else
+        cat
+    fi
+}
+
 function main
 {
     awk -F'","' "NR < 2 $or_not_pageview {next} `
             `{\$0 = substr(\$0, 2, length(\$0) - 2); print $template}" "$1" |
     sort -f | uniq -ci | sort -nrs | column -t -s"$separator" -o'|' |
-    hl -215 -b '^\s*\d+' -155 '\|' -225 "\s+(?:\\$separator0\s+)+"
+    try_filter hl -215 -b '^\s*\d+' -155 '\|' -225 "\s+(?:\\$separator0\s+)+"
 }
 
 if [ -n "$filter" ] ; then
