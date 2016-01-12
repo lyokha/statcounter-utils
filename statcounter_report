@@ -30,8 +30,8 @@ function try_filter
 {
     local flt=$1
     shift
-    if [ -x "$(which "$flt" 2>&1)" ] ; then
-        $(which "$flt") "$@"
+    if [ -x "$(env which "$flt" 2>&1)" ] ; then
+        $(env which "$flt") "$@"
     else
         cat
     fi
