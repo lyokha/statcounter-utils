@@ -3,6 +3,7 @@ if (!exists("datafile")) quit
 set datafile separator ";"
 set style data histogram
 set key off
+set yrange [] reverse
 set style fill solid
 unset border
 unset xtics
