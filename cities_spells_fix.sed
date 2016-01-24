@@ -25,7 +25,8 @@ s/Moscow City","Zhukovskiy/Moskva","Zhukovskiy/
 s/"Krasnoyarskiy Kray"/"Krasnoyarsk"/
 s/Kostanay\b/Qostanay/
 s/Kyiv\b/Kiev/
-s/Saint-petersburg\b/Saint Petersburg/
+s/"Saint-petersburg"/"Saint Petersburg"/
+s/"Sankt-peterburg"/"Saint Petersburg"/
 s/Mytishi/Mytishchi/
 s/Zaporozhye/Zaporizhzhya/
 s/Hessen","Frankfurt"/Hessen","Frankfurt Am Main"/

@@ -9,13 +9,14 @@ separator0=/
 filter=
 or_not_pageview=
 
-while getopts ':t:s:f:g:p' opt ; do
+while getopts ':t:s:f:g:pc' opt ; do
     case $opt in
         t) template=$OPTARG ;;
         s) separator=$OPTARG ;;
         f) separator0=$OPTARG ;;
         g) filter=$OPTARG ;;
         p) or_not_pageview='|| $14 != "page view"' ;;
+        c) template='"^ "$8' ;;
        \?) echo "Invalid option: -$OPTARG" >&2
            exit 1 ;;
         :) echo "Option -$OPTARG requires an argument" >&2

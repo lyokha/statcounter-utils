@@ -1,7 +1,7 @@
 #!/bin/bash
 
-width=1200
-lheight=32
+width=1024
+lheight=28
 
 cities=$(sed -f cities_spells_fix.sed StatCounter-Log.csv | statcounter_report -p -t'"^ "$8" / "$9" / "$10' | awk -F\| '{print $2,";",$1}')
 
