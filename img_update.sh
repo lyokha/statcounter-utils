@@ -3,7 +3,7 @@
 width=1024
 lheight=28
 
-cities=$(sed -f cities_spells_fix.sed StatCounter-Log.csv | statcounter_report -p -t'"^ "$8" / "$9" / "$10' | awk -F\| '{print $2,";",$1}')
+cities=$(awk -f cities_spells_fix.awk StatCounter-Log.csv | statcounter_report -p -t'"^ "$8" / "$9" / "$10' | awk -F\| '{print $2,";",$1}')
 
 for lines in 20 40 ; do
     let "height = $lines * $lheight"
