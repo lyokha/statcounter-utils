@@ -107,7 +107,7 @@ NR < 2  { print; next }
                   break
           }
           print
-      }
+        }
 
 # They are really different
 
