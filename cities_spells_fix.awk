@@ -18,13 +18,12 @@ NR < 2  { print; next }
               case "Cheliabinsk":
                   $10 = "Chelyabinsk";
                   break
-              case "Rostov-na-Donu":
               case "Rostov-na-donu":
-                  $10 = "Rostov-on-Don";
+                  $10 = "Rostov-on-don";
                   break
               case "Rostov":
                   if ($9 == "Rostov")
-                      $10 = "Rostov-on-Don";
+                      $10 = "Rostov-on-don";
                   break
               case "Nizhni Tagil":
                   $10 = "Nizhniy Tagil";
