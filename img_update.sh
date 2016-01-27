@@ -1,7 +1,8 @@
 #!/bin/bash
 
-width=1024
+width=1088
 lheight=28
+maxsize=32767     # Cairo PNG max linear size in pixels
 
 cities=$(awk -f cities_spells_fix.awk StatCounter-Log.csv | statcounter_report -p -t'"^ "$8" / "$9" / "$10' | awk -F\| '{print $2,";",$1}')
 
@@ -13,6 +14,10 @@ done
 
 lines=$(echo "$cities" | wc -l)
 let "height = $lines * $lheight"
+if (($height > $maxsize)) ; then
+    >&2 echo "Warning: Requested image height $height exceeds Cairo PNG linear size limit $maxsize!"
+    height=$maxsize
+fi
 echo "$cities" > cities.csv
 gnuplot -e "datafile='cities.csv'; set term pngcairo size $width,$height; set lmargin 54; set output 'cities.png'" stats.gpi
 
