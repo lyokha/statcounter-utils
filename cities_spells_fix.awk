@@ -91,6 +91,9 @@ NR < 2  { print; next }
               case "Zaporozhye":
                   $10 = "Zaporizhzhya";
                   break
+              case "Mogilev":                       # Belarus
+                  $10 = "Mogilëv";
+                  break
               case "Erevan":                        # Armenia
                   $10 = "Yerevan";
                   break
