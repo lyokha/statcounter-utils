@@ -53,6 +53,9 @@ NR < 2  { print; next }
               case "Belebei":
                   $10 = "Belebey";
                   break
+              case "Staryy Oskol":
+                  $10 = "Stary Oskol";
+                  break
               case "Kharkiv":                       # Ukraine
                   $10 = "Kharkov";
                   break
