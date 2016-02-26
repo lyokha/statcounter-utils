@@ -25,8 +25,16 @@ NR < 2  { print; next }
                   if ($9 == "Rostov")
                       $10 = "Rostov-on-don";
                   break
+              case "Sverdlovsk":
+                  $10 = "Yekaterinburg";
+                  break
               case "Nizhni Tagil":
                   $10 = "Nizhniy Tagil";
+                  break
+              case "Tagil":
+                  if ($9 == "Tatarstan")
+                      $9 = "Sverdlovsk";
+                      $10 = "Nizhniy Tagil";
                   break
               case "Nizhnii Novgorod":
                   $10 = "Nizhniy Novgorod";
