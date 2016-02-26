@@ -31,6 +31,10 @@ NR < 2  { print; next }
               case "Nizhnii Novgorod":
                   $10 = "Nizhniy Novgorod";
                   break
+              case "Velikiy Novgorod":
+                  if ($9 == "Novosibirsk")
+                      $9 = "Novgorod";
+                  break
               case "Ramenskoe":
                   $10 = "Ramenskoye";
                   break
