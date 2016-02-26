@@ -52,6 +52,11 @@ NR < 2  { print; next }
                   if ($9 == "Khabarovsk")
                       $10 = "Komsomolsk-na-amure";
                   break
+              case "Yugra":
+                  if ($9 == "Vologda" && $12 ~ "Yugra State University")
+                      $9 = "Khanty-Mansiy";
+                      $10 = "Khanty-Mansiysk";
+                  break
               case "Ramenskoe":
                   $10 = "Ramenskoye";
                   break
@@ -91,6 +96,10 @@ NR < 2  { print; next }
               case "Luhansk":
                   $10 = "Lugansk";
                   break
+              case "Lugansk":
+                  if ($9 == "Zaporiz'ka Oblast'")
+                      $9 = "Luhans'ka Oblast'";
+                  break
               case "Vinnytsya":
                   $10 = "Vinnitsa";
                   break
@@ -115,6 +124,11 @@ NR < 2  { print; next }
               case "Zaporozhye":
                   $10 = "Zaporizhzhya";
                   break
+              case "Sevastopol":
+                  if ($9 == "Kaluga" && $12 == "Lancom Ltd, Russia, Sevastopol")
+                      $8 = "Ukraine";
+                      $9 = "Krym";
+                  break
               case "Mogilev":                       # Belarus
                   $10 = "Mogilëv";
                   break
@@ -135,18 +149,19 @@ NR < 2  { print; next }
           print
         }
 
-# They are really different
+# They seem unlikely to be different
 
-# Lugansk(oye)   (Zaporizhzhya)
-# Sevastopol     (Kaluga)
-# Yaroslavl      (Kirov)
-# Belgorod       (Bryansk)
-# Stavropol      (Samara)
-# Samara         (Orel)
-# Kirov          (Stavropol')
-# Kazan          (Kirov)
-# Donetsk        (Rostov)
-# Grodno         (Minskaya Voblasts')
-# Gomel          (Vitsyebskaya Voblasts')
-# Aktobe         (Almaty)
+#   Yaroslavl      (Kirov)
+#   Belgorod       (Bryansk)
+#   Stavropol      (Samara)
+#   Samara         (Orel)
+#   Kirov          (Stavropol')
+#   Kazan          (Kirov)
+
+# They must be really different
+
+#   Donetsk        (Rostov)
+#   Grodno         (Minskaya Voblasts')
+#   Gomel          (Vitsyebskaya Voblasts')
+#   Aktobe         (Almaty)
 
