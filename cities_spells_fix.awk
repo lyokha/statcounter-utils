@@ -35,6 +35,14 @@ NR < 2  { print; next }
                   if ($9 == "Novosibirsk")
                       $9 = "Novgorod";
                   break
+              case "Orenburg":
+                  if ($9 == "Khabarovsk")
+                      $9 = "Orenburg";
+                  break
+              case "Komsomolsk":
+                  if ($9 == "Khabarovsk")
+                      $10 = "Komsomolsk-na-amure";
+                  break
               case "Ramenskoe":
                   $10 = "Ramenskoye";
                   break
