@@ -13,7 +13,7 @@ function suspicious_repl(t, a, r, c, nr, nc)
 
 BEGIN   { FS="\",\""; OFS = FS;
           # warn_suspicious is expected to be passed via command line
-          warn_suspicious = warn_suspicious ~ /^y(es)?$/ ? 1 : 0;
+          warn_suspicious = warn_suspicious ~ /^y(es)?$/;
           suspicious_count = 0;
           delim = "--------"
         }
