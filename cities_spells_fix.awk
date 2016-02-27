@@ -1,16 +1,22 @@
-function suspicious_repl_warn(t, a, r, c, nr, nc)
+function suspicious_repl(t, a, r, c, nr, nc)
 {
-    if (warn_suspicious == "")
-        return;
-
-    if (suspicious_count++ == 0)
-        printf "Suspicious locations replaced:\n%s\n", delim > "/dev/stderr";
-
-    printf "%s | %+15s | %s (%s)  ->  %s (%s)\n",
-            t,   a,      c,  r,       nc, nr  > "/dev/stderr"
+    if (warn_suspicious) {
+        if (suspicious_count++ == 0)
+            printf "Suspicious locations replaced:\n%s\n",
+                delim > "/dev/stderr";
+        printf "%s | %+15s | %s (%s)  ->  %s (%s)\n",
+                t,       a,  $c, $r,      nc, nr  > "/dev/stderr"
+    }
+    $r = nr;
+    $c = nc
 }
 
-BEGIN   { FS="\",\""; OFS = FS; suspicious_count = 0; delim = "--------" }
+BEGIN   { FS="\",\""; OFS = FS;
+          # warn_suspicious is expected to be passed via command line
+          warn_suspicious = warn_suspicious ~ /^y(es)?$/ ? 1 : 0;
+          suspicious_count = 0;
+          delim = "--------"
+        }
 
 NR < 2  { print; next }
 
@@ -97,52 +103,34 @@ NR < 2  { print; next }
                   $10 = "Stary Oskol";
                   break
               case "Yaroslavl":
-                  if ($9 == "Kirov") {
-                      repl = "Yaroslavl'";
-                      suspicious_repl_warn(substr($1, 2), $2,
-                                           $9, $10, repl, $10);
-                      $9 = repl
-                  }
+                  if ($9 == "Kirov")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Yaroslavl'", $10);
                   break
               case "Belgorod":
-                  if ($9 == "Bryansk") {
-                      repl = "Belgorod";
-                      suspicious_repl_warn(substr($1, 2), $2,
-                                           $9, $10, repl, $10);
-                      $9 = repl
-                  }
+                  if ($9 == "Bryansk")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Belgorod", $10);
                   break
               case "Stavropol":
-                  if ($9 == "Samara") {
-                      repl = "Stavropol'";
-                      suspicious_repl_warn(substr($1, 2), $2,
-                                           $9, $10, repl, $10);
-                      $9 = repl
-                  }
+                  if ($9 == "Samara")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Stavropol'", $10);
                   break
               case "Samara":
-                  if ($9 == "Orel") {
-                      repl = "Samara";
-                      suspicious_repl_warn(substr($1, 2), $2,
-                                           $9, $10, repl, $10);
-                      $9 = repl
-                  }
+                  if ($9 == "Orel")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Samara", $10);
                   break
               case "Kirov":
-                  if ($9 == "Stavropol'") {
-                      repl = "Kirov";
-                      suspicious_repl_warn(substr($1, 2), $2,
-                                           $9, $10, repl, $10);
-                      $9 = repl
-                  }
+                  if ($9 == "Stavropol'")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Kirov", $10);
                   break
               case "Kazan":
-                  if ($9 == "Kirov") {
-                      repl = "Tatarstan";
-                      suspicious_repl_warn(substr($1, 2), $2,
-                                           $9, $10, repl, $10);
-                      $9 = repl
-                  }
+                  if ($9 == "Kirov")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Tatarstan", $10);
                   break
               case "Kharkiv":                       # Ukraine
                   $10 = "Kharkov";
@@ -159,12 +147,9 @@ NR < 2  { print; next }
                   $10 = "Lugansk";
                   break
               case "Lugansk":
-                  if ($9 == "Zaporiz'ka Oblast'") {
-                      repl = "Luhans'ka Oblast'";
-                      suspicious_repl_warn(substr($1, 2), $2,
-                                           $9, $10, repl, $10);
-                      $9 = repl
-                  }
+                  if ($9 == "Zaporiz'ka Oblast'")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Luhans'ka Oblast'", $10);
                   break
               case "Vinnytsya":
                   $10 = "Vinnitsa";
@@ -192,31 +177,23 @@ NR < 2  { print; next }
                   break
               case "Sevastopol":
                   if ($9 == "Kaluga") {
-                      repl = "Sevastopol'"
-                      suspicious_repl_warn(substr($1, 2), $2,
-                                           $9, $10, repl, $10);
-                      $8 = "Ukraine";
-                      $9 = repl
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Sevastopol'", $10);
+                      $8 = "Ukraine"
                   }
                   break
               case "Mogilev":                       # Belarus
                   $10 = "Mogilëv";
                   break
               case "Grodno":
-                  if ($9 == "Minskaya Voblasts'") {
-                      repl = "Hrodzyenskaya Voblasts'"
-                      suspicious_repl_warn(substr($1, 2), $2,
-                                           $9, $10, repl, $10);
-                      $9 = repl
-                  }
+                  if ($9 == "Minskaya Voblasts'")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Hrodzyenskaya Voblasts'", $10);
                   break
               case "Gomel":
-                  if ($9 == "Vitsyebskaya Voblasts'") {
-                      repl = "Homyel'skaya Voblasts'"
-                      suspicious_repl_warn(substr($1, 2), $2,
-                                           $9, $10, repl, $10);
-                      $9 = repl
-                  }
+                  if ($9 == "Vitsyebskaya Voblasts'")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Homyel'skaya Voblasts'", $10);
                   break
               case "Erevan":                        # Armenia
                   $10 = "Yerevan";
@@ -225,14 +202,9 @@ NR < 2  { print; next }
                   $10 = "Kostanay";
                   break
               case "Aktobe":
-                  if ($9 == "Almaty") {
-                      repl9 = "Almaty City"
-                      repl10 = "Almaty"
-                      suspicious_repl_warn(substr($1, 2), $2,
-                                           $9, $10, repl9, repl10);
-                      $9 = repl9;
-                      $10 = repl10
-                  }
+                  if ($9 == "Almaty")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Almaty City", "Almaty");
                   break
               case "Frankfurt":                     # Germany
                   if ($9 == "Hessen")
@@ -245,7 +217,9 @@ NR < 2  { print; next }
           print
         }
 
-END     { if (suspicious_count > 0) print delim > "/dev/stderr" }
+END     { if (suspicious_count > 0)
+              printf "%s (%d repls)\n", delim, suspicious_count > "/dev/stderr"
+        }
 
 # Potentially ambiguos locations (you may want to check them with whois):
 #   Donetsk  (Rostov) -> Donetsk  (Donets'ka Oblast')
