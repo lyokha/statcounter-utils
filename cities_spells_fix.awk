@@ -77,6 +77,12 @@ NR < 2  { print; next }
                       $10 = "Khanty-Mansiysk"
                   }
                   break
+              case "Gogolya":
+                  if ($12 == "Kurgan state university") {
+                      $9 = "Kurgan";
+                      $10 = "Kurgan"
+                  }
+                  break
               case "Ramenskoe":
                   $10 = "Ramenskoye";
                   break
