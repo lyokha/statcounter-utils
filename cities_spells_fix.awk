@@ -138,6 +138,16 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Tatarstan", $10);
                   break
+              case "Sakhalin":
+                  if ($9 == "Ul'yanovsk")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Sakhalin", "Yuzhno-sakhalinsk");
+                  break
+              case "":
+                  if ($9 == "Sakha" && $12 == "CJSC AIST")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Samara", "Samara");
+                  break
               case "Kharkiv":                       # Ukraine
                   $10 = "Kharkov";
                   break
