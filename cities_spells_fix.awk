@@ -71,18 +71,6 @@ NR < 2  { print; next }
                   if ($9 == "Khabarovsk")
                       $10 = "Komsomolsk-na-amure";
                   break
-              case "Yugra":
-                  if ($9 == "Vologda" && $12 ~ "Yugra State University") {
-                      $9 = "Khanty-Mansiy";
-                      $10 = "Khanty-Mansiysk"
-                  }
-                  break
-              case "Gogolya":
-                  if ($12 == "Kurgan state university") {
-                      $9 = "Kurgan";
-                      $10 = "Kurgan"
-                  }
-                  break
               case "Ramenskoe":
                   $10 = "Ramenskoye";
                   break
@@ -142,6 +130,26 @@ NR < 2  { print; next }
                   if ($9 == "Ul'yanovsk")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Sakhalin", "Yuzhno-sakhalinsk");
+                  break
+              case "Yugra":
+                  if ($9 == "Vologda" && $12 ~ "Yugra State University")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Khanty-Mansiy", "Khanty-Mansiysk");
+                  break
+              case "Gogolya":
+                  if ($12 == "Kurgan state university")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Kurgan", "Kurgan");
+                  break
+              case "Sibir":
+                  if ($9 == "Kirov" && $12 ~ "RTComm-Sibir")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      $9, "");
+                  break
+              case "Novaya":
+                  if ($9 == "Khanty-Mansiy" && $12 ~ "Novaya Sibir Plus")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Irkutsk", "Bratsk");
                   break
               case "":
                   if ($9 == "Sakha" && $12 == "CJSC AIST")
