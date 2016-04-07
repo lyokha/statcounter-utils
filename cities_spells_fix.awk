@@ -151,6 +151,16 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Irkutsk", "Bratsk");
                   break
+              case "Zvezda":
+                  if ($9 == "Saratov" && $12 ~ "Zvezda Telecom")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Moscow City", "Moscow");
+                  break
+              case "Nauka":
+                  if ($9 == "Saratov" && $12 ~ "Nauka-Svyaz")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Moscow City", "Moscow");
+                  break
               case "":
                   if ($9 == "Sakha" && $12 == "CJSC AIST")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
@@ -206,6 +216,21 @@ NR < 2  { print; next }
                       $8 = "Ukraine"
                   }
                   break
+              case "Dmitriy":
+                  if ($12 == "Bystrov Dmitriy Sergeevich")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Luhans'ka Oblast'", "Lugansk");
+                  break
+              case "Oleg":
+                  if ($12 == "Oleg Vereshchinsky PE")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "", "");
+                  break
+              case "Zastava":
+                  if ($12 == "PP Zastava Plus")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Odes'ka Oblast'", "Odessa");
+                  break
               case "Mogilev":                       # Belarus
                   $10 = "Mogilëv";
                   break
@@ -251,8 +276,4 @@ END     { if (suspicious_count > 0)
 
 # Potentially ambiguos locations (you may want to check them with whois):
 #   Donetsk  (Rostov) -> Donetsk  (Donets'ka Oblast')
-
-# Apparently wrong locations:
-#   Dmitriy  (Odes'ka Oblast')
-#   Oleg  (Odes'ka Oblast')
 
