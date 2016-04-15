@@ -10,8 +10,9 @@ use Encode::Guess;
 use File::Temp qw'tempfile';
 use File::Copy qw'move';
 use File::Basename qw'fileparse';
+use HTML::Entities;
 
-my $VERSION = "1.1";
+my $VERSION = "1.2";
 ( my $PROGNAME = $0 ) =~ s/.*\///;
 
 sub VERSION_MESSAGE
@@ -24,21 +25,22 @@ sub PrintUsage
 {
     print "$PROGNAME, version $VERSION\n";
     print "\nUsage: $PROGNAME -i project-id -u user -p password";
-    print "\n                     [-n date-time] [-b pre-suffix] <file.csv>\n";
+    print "\n                 [-n date-time] [-b pre-suffix] [-x] <file.csv>\n";
     print "\t-i - project id\n";
     print "\t-u - user name\n";
     print "\t-p - password\n";
     print "\t-n - test only records newer than the given date-time\n";
     print "\t     date-time format is 'YYYY-MM-DD HH:MM:SS'\n";
     print "\t-b - create backup file with the given pre-suffix\n";
+    print "\t-x - read in XLSX data\n";
 }
 
 my $DLINK_PTN = qr'<a\s+href="([^"]+)"\s*>Download Log as CSV file<'i;
 my $DTIME_PTN = qr'^"([^"]+)".*';
 
-our ( $opt_h, $opt_i, $opt_u, $opt_p, $opt_n, $opt_b );
+our ( $opt_h, $opt_i, $opt_u, $opt_p, $opt_n, $opt_b, $opt_x );
 
-getopts 'hi:u:p:b:n:';
+getopts 'hi:u:p:b:n:x';
 my $datafile = shift;
 
 if ( $opt_h || ! $opt_i || ! $opt_u || ! $opt_p || ! $datafile )
@@ -46,6 +48,8 @@ if ( $opt_h || ! $opt_i || ! $opt_u || ! $opt_p || ! $datafile )
     PrintUsage;
     exit( $opt_h ? 0 : 1 );
 }
+
+$DLINK_PTN =~ s/CSV file/XLSX file for Excel/ if $opt_x;
 
 my $project_id  = $opt_i;
 my $user        = $opt_u;
@@ -71,9 +75,46 @@ $response = $ua->get( $url );
 
 $content = $response->decoded_content();
 
-my $enc = guess_encoding( $content );
-die 'Unrecognized data encoding' unless ref $enc;
-$content = $enc->decode( $content ) unless $enc->name eq 'utf8';
+if ( $opt_x )
+{
+    require Spreadsheet::XLSX;
+
+    my ( $name, $path, $suf ) = fileparse( $datafile, qr'\.[^.]+$' );
+    my $xlsx = $path . $name . '.xlsx';
+    open my $fh, '>', $xlsx or die $!;
+    binmode $fh, ':raw';
+    print $fh $content;
+    close $fh;
+
+    # FIXME: this may require a character converter (passed as the second arg)!
+    my $excel = Spreadsheet::XLSX->new( $xlsx );
+    $content = '';
+
+    foreach my $sheet ( @{ $excel->{ Worksheet } } )
+    {
+        next unless $sheet->{ Name } eq "Sheet1";
+        $sheet->{ MaxRow } ||= $sheet->{ MinRow };
+        foreach my $row ( $sheet->{ MinRow } .. $sheet->{ MaxRow } )
+        {
+            $sheet->{ MaxCol } ||= $sheet->{ MinCol };
+            my $i = 0;
+            foreach my $col ( $sheet->{ MinCol } .. $sheet->{ MaxCol } )
+            {
+                my $cell = $sheet->{ Cells }[ $row ][ $col ];
+                my $comma = $i++ == 0 ? '' : ',';
+                $content .= $comma . '"' .
+                        decode_entities( $cell ? $cell->{ Val } : '' ) . '"';
+            }
+            $content .= "\n";
+        }
+    }
+}
+else
+{
+    my $enc = guess_encoding( $content );
+    die 'Unrecognized data encoding' unless ref $enc;
+    $content = $enc->decode( $content ) unless $enc->name eq 'utf8';
+}
 
 unless ( -e $datafile )
 {
