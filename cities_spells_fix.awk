@@ -1,11 +1,11 @@
-function suspicious_repl(t, a, r, c, nr, nc)
+function suspicious_repl(t, a, r, c, nr, nc, m)
 {
     if (warn_suspicious) {
         if (suspicious_count++ == 0)
             printf "Suspicious locations replaced:\n%s\n",
                 delim > "/dev/stderr";
-        printf "%s | %+15s | %s (%s)  ->  %s (%s)\n",
-                t,       a,  $c, $r,      nc, nr  > "/dev/stderr"
+        printf "%s | %+15s | %s%s (%s)  ->  %s (%s)\n",
+                t,       a,  m,$c, $r,      nc, nr > "/dev/stderr"
     }
     $r = nr;
     $c = nc
@@ -265,6 +265,13 @@ NR < 2  { print; next }
               case "Geneve":                        # Switzerland
                   if ($9 == "Geneve")
                       $10 = "Geneva";
+                  break
+          }
+          switch ($12) {
+              case "EUNnet":
+                  if ($9 != "Sverdlovsk" || $10 != "Yekaterinburg")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                "Sverdlovsk", "Yekaterinburg", $12 "  >>  ");
                   break
           }
           print

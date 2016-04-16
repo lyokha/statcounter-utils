@@ -86,19 +86,19 @@ if ( $opt_x )
     print $fh $content;
     close $fh;
 
-    # FIXME: this may require a character converter (passed as the second arg)!
+    # FIXME: this may require a character converter (passed in the second arg)!
     my $excel = Spreadsheet::XLSX->new( $xlsx );
     $content = '';
 
-    foreach my $sheet ( @{ $excel->{ Worksheet } } )
+    for my $sheet ( @{ $excel->{ Worksheet } } )
     {
         next unless $sheet->{ Name } eq "Sheet1";
         $sheet->{ MaxRow } ||= $sheet->{ MinRow };
-        foreach my $row ( $sheet->{ MinRow } .. $sheet->{ MaxRow } )
+        for my $row ( $sheet->{ MinRow } .. $sheet->{ MaxRow } )
         {
             $sheet->{ MaxCol } ||= $sheet->{ MinCol };
             my $i = 0;
-            foreach my $col ( $sheet->{ MinCol } .. $sheet->{ MaxCol } )
+            for my $col ( $sheet->{ MinCol } .. $sheet->{ MaxCol } )
             {
                 my $cell = $sheet->{ Cells }[ $row ][ $col ];
                 my $comma = $i++ == 0 ? '' : ',';
