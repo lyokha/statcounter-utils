@@ -161,6 +161,16 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Moscow City", "Moscow");
                   break
+              case "Novy":
+                  if ($9 == "Krasnodar" && $12 ~ "OAO Novy Impulse")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      $9, "");
+                  break
+              case "Kopeysk":
+                  if ($9 == "Krasnodar")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Chelyabinsk", $10);
+                  break
               case "":
                   if ($9 == "Sakha" && $12 == "CJSC AIST")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
