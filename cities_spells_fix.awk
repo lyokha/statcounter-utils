@@ -99,6 +99,10 @@ NR < 2  { print; next }
               case "Staryy Oskol":
                   $10 = "Stary Oskol";
                   break
+              case "Tatarstan":
+                  if ($9 == "Tatarstan")
+                      $10 = "";
+                  break
               case "Yaroslavl":
                   if ($9 == "Kirov")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
@@ -128,6 +132,50 @@ NR < 2  { print; next }
                   if ($9 == "Kirov")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Tatarstan", $10);
+                  break
+              case "Ufa":
+                  if ($9 == "Chelyabinsk")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Bashkortostan", $10);
+                  break
+              case "Arkhangelsk":
+                  if ($9 == "Chelyabinsk")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Arkhangel'sk", $10);
+                  break
+              case "Birzha":
+                  if ($9 == "Arkhangel'sk")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Arkhangel'sk", "");
+                  break
+              case "Start":
+                  if ($9 == "Khabarovsk")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      $9, "");
+                  break
+              case "Petropavlovsk":
+                  if ($9 == "Volgograd")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Kamchatka", "Petropavlovsk-kamchatskiy");
+                  break
+              case "Zarechenskiy":
+                  if ($9 == "Volgograd")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      $9, "Volzhskiy");
+                  break
+              case "Mega":
+                  if ($9 == "Leningrad" && $12 ~ "Mega")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Nizhegorod", "Nizhniy Novgorod");
+                  break
+              case "Kostroma":
+                  if ($9 == "Chelyabinsk")
+                      if ($12 ~ "Kostroma Municipal")
+                          suspicious_repl(substr($1, 2), $2, 9, 10,
+                                          "Kostroma", $10);
+                      else
+                          suspicious_repl(substr($1, 2), $2, 9, 10,
+                                          "", "");
                   break
               case "Sakhalin":
                   if ($9 == "Ul'yanovsk")
