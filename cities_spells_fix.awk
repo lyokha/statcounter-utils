@@ -77,6 +77,9 @@ NR < 2  { print; next }
               case "Mytishi":
                   $10 = "Mytishchi";
                   break
+              case "Pavlovo-posad":
+                  $10 = "Pavlovskiy Posad";
+                  break
               case "Khimki":
                   if ($9 == "Moscow City")
                       $9 = "Moskva";
@@ -282,6 +285,11 @@ NR < 2  { print; next }
                   if ($9 != "Sverdlovsk" || $10 != "Yekaterinburg")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                 "Sverdlovsk", "Yekaterinburg", $12 "  >>  ");
+                  break
+              case "Intek-m LLC":
+                  if ($9 != "Moskva" || $10 != "Mytishchi")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Moskva", "Mytishchi", $12 "  >>  ");
                   break
           }
           print
