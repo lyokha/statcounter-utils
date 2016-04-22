@@ -80,6 +80,14 @@ NR < 2  { print; next }
               case "Pavlovo-posad":
                   $10 = "Pavlovskiy Posad";
                   break
+              case "Sergiyev Posad":
+                  $10 = "Sergiev Posad";
+                  break
+              case "Posad":
+                  if ($9 == "Novgorod")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Moskva", "Sergiev Posad");
+                  break
               case "Khimki":
                   if ($9 == "Moscow City")
                       $9 = "Moskva";
@@ -147,6 +155,15 @@ NR < 2  { print; next }
                   if ($9 == "Arkhangel'sk")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Arkhangel'sk", "");
+                  break
+              case "Bras":
+                  if ($9 == "Sakhalin")
+                      if ($12 == "Assignment for second BRAS")
+                          suspicious_repl(substr($1, 2), $2, 9, 10,
+                                          "Udmurt", "Izhevsk");
+                      else # if ($12 == "for BRAS ats")
+                          suspicious_repl(substr($1, 2), $2, 9, 10,
+                                          $9, "");
                   break
               case "Start":
                   if ($9 == "Khabarovsk")
