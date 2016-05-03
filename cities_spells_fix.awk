@@ -181,9 +181,13 @@ NR < 2  { print; next }
                                       $9, "Volzhskiy");
                   break
               case "Mega":
-                  if ($9 == "Leningrad" && $12 ~ "Mega")
-                      suspicious_repl(substr($1, 2), $2, 9, 10,
-                                      "Nizhegorod", "Nizhniy Novgorod");
+                  if ($9 == "Leningrad")
+                      if ($12 ~ "Mega-N")
+                          suspicious_repl(substr($1, 2), $2, 9, 10,
+                                          "Nizhegorod", "Nizhniy Novgorod");
+                      else if ($12 ~ "Mega-Telecom")
+                          suspicious_repl(substr($1, 2), $2, 9, 10,
+                                          "Ryazan'", "Ryazan");
                   break
               case "Kostroma":
                   if ($9 == "Chelyabinsk")
@@ -366,4 +370,7 @@ END     { if (suspicious_count > 0)
 
 # Potentially ambiguos locations (you may want to check them with whois):
 #   Donetsk  (Rostov) -> Donetsk  (Donets'ka Oblast')
+
+# Suspicious locations with no clue to resolve (too old to check):
+#   Niva  (Ryazan') -> Nizhniy Novgorod (Nizhegorod)  [92.255.244.51]
 
