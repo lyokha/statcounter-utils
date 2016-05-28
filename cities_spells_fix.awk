@@ -24,6 +24,22 @@ NR < 2  { print; next }
               case "Krasnoyarskiy Kray":            # Russian Federation
                   $9 = "Krasnoyarsk";
                   break
+              case "Irkutsk": 
+                  if ($12 ~ "Tele2 Russia .* \\(MSK\\)$")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                    "Moscow City", "Moscow", $12 "  >>  ");
+                  else if ($12 ~ "Tele2 Russia .* \\(SPB\\)$")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                    "Saint Petersburg City", "Saint Petersburg",
+                                    $12 "  >>  ");
+                  else if ($12 ~ "Tele2 Russia .* \\(ROS\\)$")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                    "Rostov", "Rostov-na-donu", $12 "  >>  ");
+                  else if ($12 ~ "Tele2 Russia .* \\(NIN\\)$")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                    "Nizhegorod", "Nizhniy Novgorod",
+                                    $12 "  >>  ");
+                  break
           }
           switch ($10) {
               case "Tolyatti":                      # Russian Federation
