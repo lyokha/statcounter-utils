@@ -397,4 +397,5 @@ END     { if (suspicious_count > 0)
 
 # Suspicious locations with no clue to resolve (too old to check):
 #   Niva  (Ryazan') -> Nizhniy Novgorod (Nizhegorod)  [92.255.244.51]
+#   Polska (Kujawsko-Pomorskie) -> ??? Warzachewka Polska, but it's a village
 
