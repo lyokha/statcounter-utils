@@ -72,6 +72,7 @@ NR < 2  { print; next }
                       $10 = "Nizhniy Tagil"
                   }
                   break
+              case "Nizhni Novgorod":
               case "Nizhnii Novgorod":
                   $10 = "Nizhniy Novgorod";
                   break
