@@ -265,6 +265,11 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Chelyabinsk", $10);
                   break
+              case "Sukhanova":
+                  if ($9 == "Smolensk" && $12 == "Far Eastern State University")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Primor'ye", "Vladivostok");
+                  break
               case "":
                   if ($9 == "Sakha" && $12 == "CJSC AIST")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
