@@ -105,6 +105,12 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Moskva", "Sergiev Posad");
                   break
+              case "Moscow":
+                  if ($9 == "Moskva") {
+                      $9 = "Moscow City";
+                      $10 = "Moscow"
+                  }
+                  break
               case "Khimki":
                   if ($9 == "Moscow City")
                       $9 = "Moskva";
@@ -247,6 +253,11 @@ NR < 2  { print; next }
                   break
               case "Nauka":
                   if ($9 == "Saratov" && $12 ~ "Nauka-Svyaz")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Moscow City", "Moscow");
+                  break
+              case "Keldysh":
+                  if ($9 == "Udmurt" && $12 ~ "Moscow Aviation Institute")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Moscow City", "Moscow");
                   break
