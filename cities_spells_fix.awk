@@ -285,6 +285,10 @@ NR < 2  { print; next }
                   if ($9 == "Sakha" && $12 == "CJSC AIST")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Samara", "Samara");
+                  else if ($9 == "Orel")    # up to July 2016
+                                            # they all appeared to be Samara
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Samara", "Samara");
                   break
               case "Kharkiv":                       # Ukraine
                   $10 = "Kharkov";
