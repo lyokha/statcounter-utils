@@ -346,6 +346,11 @@ NR < 2  { print; next }
                       $8 = "Ukraine"
                   }
                   break
+              case "Rosha":
+                  if ($9 == "Kaluga")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Krasnodar", "Krasnodar");
+                  break
               case "Dmitriy":
                   if ($12 == "Bystrov Dmitriy Sergeevich")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
