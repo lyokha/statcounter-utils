@@ -137,6 +137,11 @@ NR < 2  { print; next }
                   if ($9 == "Tatarstan")
                       $10 = "";
                   break
+              case "Moskovskaya":
+                  if ($9 == "Kirov")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Sverdlovsk", "Yekaterinburg");
+                  break
               case "Yaroslavl":
                   if ($9 == "Kirov")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
@@ -253,6 +258,11 @@ NR < 2  { print; next }
                   if ($9 == "Khanty-Mansiy" && $12 ~ "Novaya Sibir Plus")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Irkutsk", "Bratsk");
+                  break
+              case "Bulgakov":
+                  if ($9 == "Volgograd" && $12 ~ "Bulgakov Aleksey")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Moscow City", "Moscow");
                   break
               case "Zvezda":
                   if ($9 == "Saratov" && $12 ~ "Zvezda Telecom")
