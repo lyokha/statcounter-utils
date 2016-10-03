@@ -63,6 +63,10 @@ NR < 2  { print; next }
                   if ($9 == "Sverdlovsk")
                       $10 = "Yekaterinburg";
                   break
+              case "Kamensk":
+                  if ($9 == "Sverdlovsk")
+                      $10 = "Kamensk-uralskiy";
+                  break
               case "Nizhni Tagil":
                   $10 = "Nizhniy Tagil";
                   break
@@ -308,6 +312,9 @@ NR < 2  { print; next }
                   if ($9 == "Sakha" && $12 == "CJSC AIST")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Samara", "Samara");
+                  else if ($9 == "Novosibirsk" && $12 ~ "N\. Novgorod")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Nizhegorod", "Nizhniy Novgorod");
                   else if ($9 == "Orel")    # up to July 2016
                                             # they all appeared to be Samara
                       suspicious_repl(substr($1, 2), $2, 9, 10,
