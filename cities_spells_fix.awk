@@ -312,7 +312,7 @@ NR < 2  { print; next }
                   if ($9 == "Sakha" && $12 == "CJSC AIST")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Samara", "Samara");
-                  else if ($9 == "Novosibirsk" && $12 ~ "N\. Novgorod")
+                  else if ($9 == "Novosibirsk" && $12 ~ "N\\. Novgorod")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Nizhegorod", "Nizhniy Novgorod");
                   else if ($9 == "Orel")    # up to July 2016
