@@ -1,8 +1,10 @@
 #!/bin/bash
 
 width=1088
-lheight=28        # 1170 lines can be written without exceeding maxsize
-maxsize=32767     # Cairo PNG max linear size in pixels
+lheight=28      # 1170 not scaled lines can be written without exceeding maxsize
+maxsize=32767   # Cairo PNG max linear size in pixels
+scale=0.8       # fontscale for cities png
+fontscale=
 
 statcounter_log_csv=StatCounter-Log.csv
 cities_csv=cities.csv
@@ -32,12 +34,16 @@ done
 
 lines=$(wc -l $cities_tmp | cut -f1 -d' ')
 ((height = lines * lheight))
+if [ -n "$scale" ] ; then
+    LC_NUMERIC=C height=$(printf '%0.f\n' $(bc <<< "$height * $scale"))
+    fontscale=" fontscale $scale"
+fi
 if ((height > maxsize)) ; then
     >&2 echo "Warning: Requested image height $height exceeds Cairo PNG linear size limit $maxsize!"
     height=$maxsize
 fi
 mv $cities_tmp $cities_csv
-gnuplot -e "datafile='$cities_csv'; set term pngcairo size $width,$height; set lmargin 54; set output '$cities_png'" $stats_gpi
+gnuplot -e "datafile='$cities_csv'; set term pngcairo size $width,$height $fontscale; set lmargin 54; set output '$cities_png'" $stats_gpi
 [ "$1" != '-q' ] && echo "  $lines cities were written"
 
 statcounter_report -p -c $spells_fixed_tmp | awk -F\| '{print $2,";",$1}' > $countries_csv
