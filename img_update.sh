@@ -35,7 +35,7 @@ done
 lines=$(wc -l $cities_tmp | cut -f1 -d' ')
 ((height = lines * lheight))
 if [ -n "$scale" ] ; then
-    LC_NUMERIC=C height=$(printf '%0.f\n' $(bc <<< "$height * $scale"))
+    LC_NUMERIC=C height=$(printf %0.f "$(bc <<< "$height * $scale")")
     fontscale=" fontscale $scale"
 fi
 if ((height > maxsize)) ; then
