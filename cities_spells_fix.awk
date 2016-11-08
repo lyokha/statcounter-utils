@@ -113,10 +113,11 @@ NR < 2  { print; next }
                                       "Moskva", "Sergiev Posad");
                   break
               case "Moscow":
-                  if ($9 == "Moskva") {
+                  if ($9 == "Moskva")
                       $9 = "Moscow City";
-                      $10 = "Moscow"
-                  }
+                  if ($12 ~ "E-mordovia")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Mordovia", "Saransk", $12 "  >>  ");
                   break
               case "Khimki":
                   if ($9 == "Moscow City")
