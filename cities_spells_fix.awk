@@ -451,6 +451,11 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Moskva", "Mytishchi", $12 "  >>  ");
                   break
+              case "Tele2 Kazakhstan":
+                  if ($8 == "Sweden")
+                      suspicious_repl(substr($1, 2), $2, 8, 10,
+                                      "Kazakhstan", "", $12 "  >>  ");
+                  break
           }
           print
         }
