@@ -148,6 +148,10 @@ NR < 2  { print; next }
                   if ($9 == "Tatarstan")
                       $10 = "";
                   break
+              case "Kuban":
+                  if ($9 == "Krasnodar")
+                      $10 = "";
+                  break
               case "Moskovskaya":
                   if ($9 == "Kirov")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
