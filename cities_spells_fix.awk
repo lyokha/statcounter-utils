@@ -463,6 +463,11 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 8, 10,
                                       "Kazakhstan", "", $12 "  >>  ");
                   break
+              case "Lubman UMCS sp. z o.o. network":
+                  if ($9 != "Lubelskie" || $10 != "Lublin")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Lubelskie", "Lublin", $12 "  >>  ");
+                  break
           }
           print
         }
