@@ -446,6 +446,11 @@ NR < 2  { print; next }
                   if ($9 == "Geneve")
                       $10 = "Geneva";
                   break
+              case "Arnold":                        # United Kingdom
+                  if ($9 == "Nottinghamshire" || $12 == "Andrews & Arnold Ltd")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Berkshire", "Bracknell", $12 "  >>  ");
+                  break
           }
           switch ($12) {
               case "EUNnet":
