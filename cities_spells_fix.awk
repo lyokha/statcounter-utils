@@ -330,6 +330,10 @@ NR < 2  { print; next }
                   else if ($9 == "Novosibirsk" && $12 ~ "N\\. Novgorod")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Nizhegorod", "Nizhniy Novgorod");
+                  else if ($9 == "Smolensk" &&
+                           $12 ~ "Institution of the Khanty-Mansi")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Khanty-Mansiy", "Khanty-Mansiysk");
                   else if ($9 == "Orel")    # up to July 2016
                                             # they all appeared to be Samara
                       suspicious_repl(substr($1, 2), $2, 9, 10,
