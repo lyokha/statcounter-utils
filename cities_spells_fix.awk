@@ -446,6 +446,10 @@ NR < 2  { print; next }
               case "Muenster":
                   $10 = "Münster";
                   break
+              case "Nuremberg":
+                  if ($9 == "Bayern")
+                      $10 = "Nürnberg";
+                  break
               case "Geneve":                        # Switzerland
                   if ($9 == "Geneve")
                       $10 = "Geneva";
