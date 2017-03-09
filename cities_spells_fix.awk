@@ -91,6 +91,10 @@ NR < 2  { print; next }
                   if ($9 == "Khabarovsk")
                       $9 = "Orenburg";
                   break
+              case "Troizk":
+                  if ($9 == "Chelyabinsk")
+                      $10 = "Troitsk";
+                  break
               case "Komsomolsk":
                   if ($9 == "Khabarovsk")
                       $10 = "Komsomolsk-na-amure";
@@ -470,6 +474,16 @@ NR < 2  { print; next }
                   if ($9 != "Moskva" || $10 != "Mytishchi")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Moskva", "Mytishchi", $12 "  >>  ");
+                  break
+              case "Atlas Telecom Ltd.":
+                  if ($10 != "Tambov")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                "Tambovskaya oblast", "Tambov", $12 "  >>  ");
+                  break
+              case "Jsc Pp Potok":
+                  if ($9 != "Stavropol'" || $10 != "Pyatigorsk")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Stavropol'", "Pyatigorsk", $12 "  >>  ");
                   break
               case "Tele2 Kazakhstan":
                   if ($8 == "Sweden")
