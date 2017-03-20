@@ -342,6 +342,9 @@ NR < 2  { print; next }
                                             # they all appeared to be Samara
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Samara", "Samara");
+                  else if ($9 == "Ul'yanovsk" && $12 ~ "Sakhalin Telecom")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Sakhalin", "Yuzhno-sakhalinsk");
                   break
               case "Kharkiv":                       # Ukraine
                   $10 = "Kharkov";
