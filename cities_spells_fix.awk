@@ -327,6 +327,11 @@ NR < 2  { print; next }
                   if ($12 ~ "Telecom MPK$")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Moskva", "Dubna", $12 "  >>  ");
+              case "Rosha":
+                  if ($9 == "Kaluga")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Krasnodar", "Krasnodar");
+                  break
               case "":
                   if ($9 == "Sakha" && $12 == "CJSC AIST")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
@@ -392,17 +397,15 @@ NR < 2  { print; next }
               case "Pervomaysk":
                   $10 = "Pervomaisk";
                   break
+              case "Kramators'k":
+                  $10 = "Kramatorsk";
+                  break
               case "Sevastopol":
                   if ($9 == "Kaluga") {
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Sevastopol'", $10);
                       $8 = "Ukraine"
                   }
-                  break
-              case "Rosha":
-                  if ($9 == "Kaluga")
-                      suspicious_repl(substr($1, 2), $2, 9, 10,
-                                      "Krasnodar", "Krasnodar");
                   break
               case "Dmitriy":
                   if ($12 == "Bystrov Dmitriy Sergeevich")
