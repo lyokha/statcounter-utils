@@ -282,6 +282,11 @@ NR < 2  { print; next }
                   if ($9 == "Khanty-Mansiy" && $12 ~ "Novaya Sibir Plus")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Irkutsk", "Bratsk");
+                  # Ukraine
+                  if ($9 == "Donets'ka Oblast'")
+                      # or probably "Nova Kakhovka" as IP2Location shows
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Khersons'ka Oblast'", "Kherson");
                   break
               case "Bulgakov":
                   if ($9 == "Volgograd" && $12 ~ "Bulgakov Aleksey")
