@@ -105,6 +105,9 @@ NR < 2  { print; next }
               case "Mytishi":
                   $10 = "Mytishchi";
                   break
+              case "Lubertsi":
+                  $10 = "Lyubertsy";
+                  break
               case "Korolyov":
                   $10 = "Korolëv";
                   break
