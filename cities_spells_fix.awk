@@ -335,6 +335,12 @@ NR < 2  { print; next }
                   if ($12 ~ "Telecom MPK$")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Moskva", "Dubna", $12 "  >>  ");
+                  break
+              case "Krasnoznamensk":
+                  if ($9 == "Mordovia")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Moskva", $10);
+                  break
               case "Rosha":
                   if ($9 == "Kaluga")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
