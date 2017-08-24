@@ -40,6 +40,10 @@ NR < 2  { print; next }
                                     "Nizhegorod", "Nizhniy Novgorod",
                                     $12 "  >>  ");
                   break
+              case "":                              # Singapore
+                  if ($8 == "Singapore")
+                      $10 = "Singapore";
+                  break
           }
           switch ($10) {
               case "Tolyatti":                      # Russian Federation
