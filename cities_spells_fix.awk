@@ -351,7 +351,9 @@ NR < 2  { print; next }
                                       "Krasnodar", "Krasnodar");
                   break
               case "":
-                  if ($9 == "Sakha" && $12 == "CJSC AIST")
+                  if ($9 == "Leningrad")
+                      $9 = "Saint Petersburg City";
+                  else if ($9 == "Sakha" && $12 == "CJSC AIST")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Samara", "Samara");
                   else if ($9 == "Novosibirsk" && $12 ~ "N\\. Novgorod")
