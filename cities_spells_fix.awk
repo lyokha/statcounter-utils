@@ -493,9 +493,14 @@ NR < 2  { print; next }
                       $10 = "Antwerpen";
                   break
               case "Arnold":                        # United Kingdom
-                  if ($9 == "Nottinghamshire" || $12 == "Andrews & Arnold Ltd")
+                  if ($9 == "Nottinghamshire" && $12 == "Andrews & Arnold Ltd")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Berkshire", "Bracknell", $12 "  >>  ");
+                  break
+              case "Ceska":                         # Czech Republic
+                  if ($9 == "Jihomoravsky kraj" && $12 ~ "UPC Ceska republika")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "", "", $12 "  >>  ");
                   break
           }
           switch ($12) {
