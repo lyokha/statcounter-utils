@@ -350,6 +350,13 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Krasnodar", "Krasnodar");
                   break
+              case "Cesky Tesin":
+                  if ($2 == "5.59.57.175") {
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Rostov", "Azov", $2 "  >>  ");
+                      $8 = "Russian Federation"
+                  }
+                  break
               case "":
                   if ($9 == "Leningrad")
                       $9 = "Saint Petersburg City";
