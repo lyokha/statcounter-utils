@@ -168,6 +168,13 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Sverdlovsk", "Yekaterinburg");
                   break
+              case "Moskovskiy":
+                  if ($9 == "Moskva" &&
+                      $12 == "Rosevrobank" ||
+                      $12 ~ "Moskovskiy Gosudarstvennyy")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Moscow City", "Moscow");
+                  break
               case "Ural":
                   if ($9 == "Krasnoyarsk")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
@@ -255,6 +262,12 @@ NR < 2  { print; next }
                       else if ($12 ~ "Mega-Telecom")
                           suspicious_repl(substr($1, 2), $2, 9, 10,
                                           "Ryazan'", "Ryazan");
+                  break
+              case "Vega":
+                  if ($9 == "Tatarstan")
+                      if ($12 ~ "Vega Service")
+                          suspicious_repl(substr($1, 2), $2, 9, 10,
+                                          "Chelyabinsk", "Snezhinsk");
                   break
               case "Kostroma":
                   if ($9 == "Chelyabinsk")
