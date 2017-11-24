@@ -40,6 +40,10 @@ NR < 2  { print; next }
                                     "Nizhegorod", "Nizhniy Novgorod",
                                     $12 "  >>  ");
                   break
+              case "Kyyiv":                         # Ukraine
+                  if ($10 == "")
+                      $10 = "Kiev";     # or "Kyyiv" -> "Kyyivs'ka Oblast'"?
+                  break
               case "":                              # Singapore
                   if ($8 == "Singapore")
                       $10 = "Singapore";
