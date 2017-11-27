@@ -159,6 +159,9 @@ NR < 2  { print; next }
               case "Staryy Oskol":
                   $10 = "Stary Oskol";
                   break
+              case "Alexandrov":
+                  $10 = "Aleksandrov";
+                  break
               case "Tatarstan":
                   if ($9 == "Tatarstan")
                       $10 = "";
