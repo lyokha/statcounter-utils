@@ -67,6 +67,9 @@ NR < 2  { print; next }
                   if ($9 == "Rostov")
                       $10 = "Rostov-on-don";
                   break
+              case "Gelendjik":
+                  $10 = "Gelendzhik";
+                  break
               case "Ekaterinburg":
                   $10 = "Yekaterinburg";
                   break
