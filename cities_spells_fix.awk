@@ -450,6 +450,7 @@ NR < 2  { print; next }
                   $10 = "Kiev";
                   break
               case "Zaporozhye":
+              case "Zaporozhe":
                   $10 = "Zaporizhzhya";
                   break
               case "Pervomaysk":
