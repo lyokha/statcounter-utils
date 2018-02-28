@@ -401,6 +401,9 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Sverdlovsk", "Yekaterinburg",
                                       $12 "  >>  ");
+                  else if ($9 == "Tula" && $12 == "Electronniy gorod, Ltd.")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Irkutsk", "Irkutsk", $12 "  >>  ");
                   else if ($9 == "Orel")    # up to July 2016
                                             # they all appeared to be Samara
                       suspicious_repl(substr($1, 2), $2, 9, 10,
