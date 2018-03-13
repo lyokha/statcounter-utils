@@ -11,6 +11,20 @@ function suspicious_repl(t, a, r, c, nr, nc, m)
     $c = nc
 }
 
+function suspicious_repl2(t, a, s, r, c, ns, nr, nc, m)
+{
+    if (warn_suspicious) {
+        if (suspicious_count++ == 0)
+            printf "Suspicious locations replaced:\n%s\n",
+                delim > "/dev/stderr";
+        printf "%s | %+15s | %s%s (%s / %s)  ->  %s (%s / %s)\n",
+                t,       a,  m,$c, $r,  $s,      nc, nr,  ns > "/dev/stderr"
+    }
+    $s = ns;
+    $r = nr;
+    $c = nc
+}
+
 BEGIN   { FS="\",\""; OFS = FS;
           # warn_suspicious is expected to be passed via command line
           warn_suspicious = warn_suspicious ~ /^y(es)?$/;
@@ -564,13 +578,18 @@ NR < 2  { print; next }
                   break
               case "Tele2 Kazakhstan":
                   if ($8 == "Sweden")
-                      suspicious_repl(substr($1, 2), $2, 8, 10,
-                                      "Kazakhstan", "", $12 "  >>  ");
+                      suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
+                                       "Kazakhstan", "", "", $12 "  >>  ");
                   break
               case "Lubman UMCS sp. z o.o. network":
                   if ($9 != "Lubelskie" || $10 != "Lublin")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Lubelskie", "Lublin", $12 "  >>  ");
+                  break
+              case "SkyExchange Internet Access":
+                  if ($8 == "Canada")
+                      suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
+                                       "Hong Kong", "", "", $12 "  >>  ");
                   break
           }
           print
