@@ -243,6 +243,12 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Bashkortostan", $10);
                   break
+              case "Izhevsk":
+                  if ($12 == "Saint-Petersburg State University of Information")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Saint Petersburg City",
+                                      "Saint Petersburg", $12 "  >>  ");
+                  break
               case "Arkhangelsk":
                   if ($9 == "Chelyabinsk")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
