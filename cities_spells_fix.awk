@@ -424,9 +424,15 @@ NR < 2  { print; next }
                   else if ($9 == "Tula" && $12 == "Electronniy gorod, Ltd.")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Irkutsk", "Irkutsk", $12 "  >>  ");
-                  else if ($9 == "Chelyabinsk" && $12 == "Severo-Zapad Ltd")
-                      suspicious_repl(substr($1, 2), $2, 9, 10,
-                                      "Leningrad", "Gatchina", $12 "  >>  ");
+                  else if ($9 == "Chelyabinsk") {
+                      if ($12 == "Severo-Zapad Ltd")
+                          suspicious_repl(substr($1, 2), $2, 9, 10,
+                                    "Leningrad", "Gatchina", $12 "  >>  ");
+                      else if ($12 == "OOOEkspert-sistema")
+                          suspicious_repl(substr($1, 2), $2, 9, 10,
+                                    "Saint Petersburg City", "Saint Petersburg",
+                                    $12 "  >>  ");
+                  }
                   else if ($9 == "Orel")    # up to July 2016
                                             # they all appeared to be Samara
                       suspicious_repl(substr($1, 2), $2, 9, 10,
