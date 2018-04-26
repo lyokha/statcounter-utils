@@ -606,6 +606,18 @@ NR < 2  { print; next }
                       suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
                                        "Hong Kong", "", "", $12 "  >>  ");
                   break
+              case "Kar-Tel LLC":
+                  if ($8 == "Romania")
+                      suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
+                                       "Kazakhstan", "", "", $12 "  >>  ");
+                  break
+              case "Lux-ua-kiev":
+              case "Lux-ua-ny-r":
+              case "Lux-ua-dnepr":
+                  if ($8 == "Romania")
+                      suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
+                                       "Ukraine", "", "", $12 "  >>  ");
+                  break
           }
           print
         }
