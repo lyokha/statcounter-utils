@@ -565,7 +565,7 @@ NR < 2  { print; next }
                                       "Berkshire", "Bracknell", $12 "  >>  ");
                   break
               case "Southend":
-                  if ($12 == "Scaleway" && $15 ~ "\.fr/")
+                  if ($12 == "Scaleway" && $15 ~ "\\.fr/")
                       suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
                                        "France", "", "", $12 "  >>  ");
                   break
