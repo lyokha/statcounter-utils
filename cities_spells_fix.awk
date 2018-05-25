@@ -440,6 +440,11 @@ NR < 2  { print; next }
                   else if ($9 == "Ul'yanovsk" && $12 ~ "Sakhalin Telecom")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Sakhalin", "Yuzhno-sakhalinsk");
+                  else if ($8 == "Czech Republic" && $12 == "CENTEL s.r.o." &&
+                           $15 ~ "\\.ru/")
+                      suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
+                                       "Russian Federation", "Rostov", "Aksay",
+                                       $12 "  >>  ");
                   break
               case "Kharkiv":                       # Ukraine
                   $10 = "Kharkov";
