@@ -12,7 +12,7 @@ use File::Copy qw'move';
 use File::Basename qw'fileparse';
 use HTML::Entities;
 
-my $VERSION = "1.2";
+my $VERSION = "1.3";
 ( my $PROGNAME = $0 ) =~ s/.*\///;
 
 sub VERSION_MESSAGE
@@ -25,10 +25,11 @@ sub PrintUsage
 {
     print "$PROGNAME, version $VERSION\n";
     print "\nUsage: $PROGNAME -i project-id -u user -p password";
-    print "\n                 [-n date-time] [-b pre-suffix] [-x] <file.csv>\n";
+    print "\n            [-s] [-n date-time] [-b pre-suffix] [-x] <file.csv>\n";
     print "\t-i - project id\n";
     print "\t-u - user name\n";
     print "\t-p - password\n";
+    print "\t-s - connect securely via https\n";
     print "\t-n - test only records newer than the given date-time\n";
     print "\t     date-time format is 'YYYY-MM-DD HH:MM:SS'\n";
     print "\t-b - create backup file with the given pre-suffix\n";
@@ -38,9 +39,9 @@ sub PrintUsage
 my $DLINK_PTN = qr'<a\s+href="([^"]+)"\s*>Download Log as CSV file<'i;
 my $DTIME_PTN = qr'^"([^"]+)".*';
 
-our ( $opt_h, $opt_i, $opt_u, $opt_p, $opt_n, $opt_b, $opt_x );
+our ( $opt_h, $opt_i, $opt_u, $opt_p, $opt_s, $opt_n, $opt_b, $opt_x );
 
-getopts 'hi:u:p:b:n:x';
+getopts 'hi:u:p:sb:n:x';
 my $datafile = shift;
 
 if ( $opt_h || ! $opt_i || ! $opt_u || ! $opt_p || ! $datafile )
@@ -54,7 +55,8 @@ $DLINK_PTN =~ s/CSV file/XLSX file for Excel/ if $opt_x;
 my $project_id  = $opt_i;
 my $user        = $opt_u;
 my $password    = $opt_p;
-my $statcounter = 'http://statcounter.com/';
+my $http_proto  = $opt_s ? 'https' : 'http';
+my $statcounter = $http_proto . '://statcounter.com/';
 
 my $ua = LWP::UserAgent->new( cookie_jar            => HTTP::Cookies->new,
                               requests_redirectable => [ 'GET', 'POST' ] );
