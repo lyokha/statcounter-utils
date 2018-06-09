@@ -299,7 +299,7 @@ NR < 2  { print; next }
                   break
               case "Vega":
                   if ($9 == "Tatarstan")
-                      if ($12 ~ "Vega Service")
+                      if ($12 ~ "Vega[- ]Service")
                           suspicious_repl(substr($1, 2), $2, 9, 10,
                                           "Chelyabinsk", "Snezhinsk");
                   break
