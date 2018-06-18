@@ -622,8 +622,8 @@ NR < 2  { print; next }
                                        "Kazakhstan", "", "", $12 "  >>  ");
                   break
               case "Lux-ua-kiev":
-              case "Lux-ua-ny-r":
               case "Lux-ua-dnepr":
+              case "Lux-usa-ny-r":
                   if ($8 == "Romania")
                       suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
                                        "Ukraine", "", "", $12 "  >>  ");
