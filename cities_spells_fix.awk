@@ -157,6 +157,10 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Moskva", "Sergiev Posad");
                   break
+              case "Moskva":
+                  if ($8 == "Russian Federation")
+                      $10 = "Moscow";
+                  break
               case "Moscow":
                   if ($9 == "Moskva")
                       $9 = "Moscow City";
