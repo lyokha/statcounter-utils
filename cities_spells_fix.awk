@@ -84,6 +84,9 @@ NR < 2  { print; next }
               case "Gelendjik":
                   $10 = "Gelendzhik";
                   break
+              case "Nal'chik":
+                  $10 = "Nalchik";
+                  break
               case "Ekaterinburg":
                   $10 = "Yekaterinburg";
                   break
