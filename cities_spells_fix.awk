@@ -144,6 +144,7 @@ NR < 2  { print; next }
                   $10 = "Lyubertsy";
                   break
               case "Korolyov":
+              case "Korolev":
                   $10 = "Korolëv";
                   break
               case "Zheleznodorozhnyy":
