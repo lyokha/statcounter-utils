@@ -601,6 +601,11 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "", "", $12 "  >>  ");
                   break
+              case "Ho Chi Minh City":              # Vietnam
+                  if ($9 != "Ho Chi Minh")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Ho Chi Minh", $10);
+                  break
               case "Dushanbe":                      # Tajikistan
                   if ($8 == "Tajikistan")
                       $9 = "Dushanbe";
