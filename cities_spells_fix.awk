@@ -412,6 +412,16 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Krasnodar", "Krasnodar");
                   break
+              case "Volga":
+                  if ($9 == "Yaroslavl'") {
+                      if ($12 == "Nizhegorodskaya Cellular Communications")
+                          suspicious_repl(substr($1, 2), $2, 9, 10,
+                                          "Nizhegorod", "Nizhniy Novgorod");
+                      else if ($12 == "samtel")
+                          suspicious_repl(substr($1, 2), $2, 9, 10,
+                                          "Samara", "Samara");
+                  }
+                  break
               case "Cesky Tesin":
                   if ($2 == "5.59.57.175") {
                       suspicious_repl(substr($1, 2), $2, 9, 10,
@@ -670,7 +680,8 @@ END     { if (suspicious_count > 0)
 # Potentially ambiguos locations (you may want to check them with whois):
 #   Donetsk  (Rostov) -> Donetsk  (Donets'ka Oblast')
 
-# Suspicious locations with no clue to resolve (too old to check):
+# Suspicious locations with no clue to resolve (or too old to check):
 #   Niva  (Ryazan') -> Nizhniy Novgorod (Nizhegorod)  [92.255.244.51]
 #   Polska (Kujawsko-Pomorskie) -> ??? Warzachewka Polska, but it's a village
+#   Volga (Yaroslavl') -> ???, for those of them with OJSC/PJSC Megafon
 
