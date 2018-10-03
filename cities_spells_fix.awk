@@ -264,6 +264,12 @@ NR < 2  { print; next }
                                       "Saint Petersburg City",
                                       "Saint Petersburg", $12 "  >>  ");
                   break
+              case "Krasnoarmeyskaya":
+                  if ($12 ~ "Petersburg State University of Architecture")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Saint Petersburg City",
+                                      "Saint Petersburg", $12 "  >>  ");
+                  break
               case "Arkhangelsk":
                   if ($9 == "Chelyabinsk")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
