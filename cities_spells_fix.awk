@@ -119,6 +119,9 @@ NR < 2  { print; next }
                   if ($9 == "Novosibirsk")
                       $9 = "Novgorod";
                   break
+              case "Orel":
+                  $10 = "Orël";
+                  break
               case "Orenburg":
                   if ($9 == "Khabarovsk")
                       $9 = "Orenburg";
