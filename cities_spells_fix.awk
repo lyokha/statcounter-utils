@@ -204,6 +204,10 @@ NR < 2  { print; next }
                   if ($9 == "Stavropol'")
                       $10 = "Mineralnyye Vody";
                   break
+              case "Naberezhnyye Chelny":
+                  if ($9 == "Tatarstan")
+                      $10 = "Chelny";
+                  break
               case "Tatarstan":
                   if ($9 == "Tatarstan")
                       $10 = "";
