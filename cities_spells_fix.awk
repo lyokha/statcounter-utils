@@ -314,10 +314,13 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       $9, "Volzhskiy");
                   break
+              case "Zarechnyy":
+                  $10 = "Zarechny";
+                  break
               case "Zarechny":
                   if ($9 == "Lipetsk" && $12 ~ "Penzenskie Telecom")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
-                                      "Penza", "Penza");
+                                      "Penza", $10);
                   break
               case "Mega":
                   if ($9 == "Leningrad")
