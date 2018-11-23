@@ -208,6 +208,10 @@ NR < 2  { print; next }
                   if ($9 == "Tatarstan")
                       $10 = "Chelny";
                   break
+              case "Elabuga":
+                  if ($9 == "Tatarstan")
+                      $10 = "Yelabuga";
+                  break
               case "Tatarstan":
                   if ($9 == "Tatarstan")
                       $10 = "";
