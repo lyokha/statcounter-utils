@@ -185,6 +185,10 @@ NR < 2  { print; next }
                   if ($9 == "Moscow City")
                       $9 = "Moskva";
                   break
+              case "Shchelkovo":
+                  if ($9 == "Moskva")
+                      $10 = "Shchëlkovo";
+                  break
               case "Saint-petersburg":
               case "Sankt-peterburg":
               case "Leningrad":
