@@ -509,6 +509,9 @@ NR < 2  { print; next }
               case "Dniepropetrovsk":
                   $10 = "Dnepropetrovsk";
                   break
+              case "Mykolaiv":
+                  $10 = "Mykolayiv";
+                  break
               case "Luhansk":
                   $10 = "Lugansk";
                   break
