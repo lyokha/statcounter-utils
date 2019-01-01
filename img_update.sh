@@ -3,16 +3,16 @@
 width=1088
 lheight=28      # 1170 not scaled lines can be written without exceeding maxsize
 maxsize=32767   # Cairo PNG max linear size in pixels
-lheightc=25     # 1747 scaled lines (with scale=0.75) can be written without exceeding maxsize
-scale=0.75      # fontscale for cities png
+lheightc=25     # 1872 scaled lines (with scale=0.7) can be written without exceeding maxsize
+scale=0.7       # fontscale for cities png
 lheights=$lheight
+bg="background rgb 'white'"
 
 #svg=
 if [ -n "$svg" ] ; then
     ext=svg
     term=svg
     scale=0.6
-    bg="background rgb 'white'"
     lheightc=$lheight
     lheights=22
     lmarginc=46
@@ -21,10 +21,9 @@ if [ -n "$svg" ] ; then
 else
     ext=png
     term=pngcairo
-    bg=
-    lmarginc=54
-    lmarginc1=54
-    lmargincn=24
+    lmarginc=60
+    lmarginc1=58
+    lmargincn=26
 fi
 
 statcounter_log_csv=StatCounter-Log.csv
