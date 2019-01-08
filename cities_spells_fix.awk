@@ -521,6 +521,7 @@ NR < 2  { print; next }
                                       "Luhans'ka Oblast'", $10);
                   break
               case "Vinnytsya":
+              case "Vinnytsia":
                   $10 = "Vinnitsa";
                   break
               case "Cherkasy":
@@ -618,6 +619,10 @@ NR < 2  { print; next }
               case "Nurnberg":
                   if ($9 == "Bayern")
                       $10 = "Nürnberg";
+                  break
+              case "Tubingen":
+                  if ($9 == "Baden-Wurttemberg")
+                      $10 = "Tübingen";
                   break
               case "Dusseldorf":
                   if ($9 == "Nordrhein-Westfalen")
