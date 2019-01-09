@@ -583,6 +583,9 @@ NR < 2  { print; next }
               case "Navapolatsk":
                   $10 = "Novopolotsk";
                   break
+              case "Horad Minsk":
+                  $10 = "Minsk";
+                  break
               case "Grodno":
                   if ($9 == "Minskaya Voblasts'")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
