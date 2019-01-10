@@ -1,0 +1,50 @@
+#!/bin/bash 
+
+#this script uses geocoder from https://github.com/DenisCarriere/geocoder
+
+geocode=
+provider="osm"
+back="Count"
+
+while getopts 'gp:' opt ; do
+    case $opt in
+        g) geocode=1 back="Longitude;Lattitude" ;;
+        p) #run geocode --help to see the list of all providers
+           provider="$OPTARG" ;;
+       \?) echo "Invalid option: -$OPTARG" >&2
+           exit 1 ;;
+        :) echo "Option -$OPTARG requires an argument" >&2
+           exit 1 ;;
+    esac
+done
+
+shift $((OPTIND-1))
+if [ -z "$1" ]
+then
+    echo "Input file is not specified!" >&2
+    exit 1
+else
+    input="$1"
+fi
+
+cities=$(statcounter_report -p -t'"^"$8";"$9";"$10' \
+            <(awk -f cities_spells_fix.awk "$input") |
+            awk -F\| '{gsub(/^[ \t]+|[ \t]+$/, "", $1); print $2";"$1}'
+        )
+
+echo "Country;Region;City;$back"
+IFS=$'\n'
+for c in $cities
+do
+    if [ -n "$geocode" ]
+    then
+        c0="${c%;*}"
+        ll=$(geocode -p "$provider" -o wkt \""$c0"\" |
+                sed 's/^"POINT(//; s/)"$//; s/ /;/'
+            )
+        echo "$c0;$ll"
+    else
+        echo "$c"
+    fi
+done
+

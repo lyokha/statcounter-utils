@@ -459,6 +459,8 @@ NR < 2  { print; next }
               case "":
                   if ($9 == "Leningrad")
                       $9 = "Saint Petersburg City";
+                  else if ($9 == "Moskva")
+                      $9 = "Moscow City";
                   else if ($9 == "Sakha" && $12 == "CJSC AIST")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Samara", "Samara");
@@ -630,6 +632,10 @@ NR < 2  { print; next }
               case "Dusseldorf":
                   if ($9 == "Nordrhein-Westfalen")
                       $10 = "Düsseldorf";
+                  break
+              case "Krakow":                        # Poland
+                  if ($9 == "Malopolskie")
+                      $10 = "Kraków";
                   break
               case "Geneve":                        # Switzerland
                   if ($9 == "Geneve")
