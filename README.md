@@ -35,3 +35,23 @@ The image can also be saved with
 gnuplot -e "datafile='20cities.csv'; set lmargin 54; set term pngcairo size 1200,700; set output '20cities.png'" stats.gpi
 ```
 
+### group_cities and cities.r
+
+Collected in StatCounter-Log.csv cities can be grouped by visits and geocoded.
+
+```sh
+group_cities StatCounter-Log.csv > gcities.csv
+group_cities -p yandex -g StatCounter-Log.csv > geocode.csv
+```
+
+The geocoding feature makes use of script
+[*geocoder*](https://github.com/DenisCarriere/geocoder). To open interactive map
+of the cities in a browser, run in *R* shell
+
+```r
+source("cities.r")
+m
+```
+
+This requires R package [*leaflet*](https://rstudio.github.io/leaflet/).
+
