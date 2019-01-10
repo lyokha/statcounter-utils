@@ -53,5 +53,7 @@ source("cities.r")
 m
 ```
 
-This requires R package [*leaflet*](https://rstudio.github.io/leaflet/).
+This depends on R package [*leaflet*](https://rstudio.github.io/leaflet/) and
+requires that files *gcities.csv* and *geocode.csv* were located in the current
+working directory.
 
