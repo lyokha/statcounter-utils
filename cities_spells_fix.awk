@@ -571,6 +571,11 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "", "");
                   break
+              case "Kurilov":
+                  if ($12 == "SPD Kurilov Sergiy Oleksandrovich")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Poltavs'ka Oblast'", "Kremenchug");
+                  break
               case "Zastava":
                   if ($12 == "PP Zastava Plus")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
