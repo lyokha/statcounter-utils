@@ -37,23 +37,23 @@ gnuplot -e "datafile='20cities.csv'; set lmargin 54; set term pngcairo size 1200
 
 ### group_cities and cities.r
 
-Collected in StatCounter-Log.csv cities can be grouped by visits and geocoded.
+Collected in StatCounter-Log.csv cities can be grouped and sorted by visits and
+geocoded.
 
 ```sh
 group_cities StatCounter-Log.csv > gcities.csv
 group_cities -p yandex -g StatCounter-Log.csv > geocode.csv
 ```
 
-The geocoding feature makes use of script
+The geocoding feature makes use of a Python script
 [*geocoder*](https://github.com/DenisCarriere/geocoder). To open interactive map
-of the cities in a browser, run in *R* shell
+with 1000 most visited cities in a browser, run in *R* shell
 
 ```r
 source("cities.r")
-m
+cities("gcities.csv", "geocode.csv", 1000)
 ```
 
-This depends on R package [*leaflet*](https://rstudio.github.io/leaflet/) and
-requires that files *gcities.csv* and *geocode.csv* were located in the current
-working directory.
+Script *cities.r* requires R package
+[*leaflet*](https://rstudio.github.io/leaflet/).
 
