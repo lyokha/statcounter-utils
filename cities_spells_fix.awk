@@ -526,6 +526,11 @@ NR < 2  { print; next }
               case "Vinnytsia":
                   $10 = "Vinnitsa";
                   break
+              case "Pirogov":
+                  if ($12 == "Vinnica State Medical University of M.I.Pirogov")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Vinnyts'ka Oblast'", "Vinnitsa");
+                  break
               case "Cherkasy":
                   $10 = "Cherkassy";
                   break
@@ -558,6 +563,11 @@ NR < 2  { print; next }
                   if ($9 == "Khersons'ka Oblast'")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Dnipropetrovs'ka Oblast'", $10);
+                  break
+              case "Mirgorod":
+                  if ($9 == "Kharkivs'ka Oblast'")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Poltavs'ka Oblast'", $10);
                   break
               case "Sevastopol":
                   if ($9 == "Kaluga") {
