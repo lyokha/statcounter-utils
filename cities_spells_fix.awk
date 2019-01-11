@@ -439,6 +439,11 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Krasnodar", "Krasnodar");
                   break
+              case "Kuznetskiy Rayon":
+                  if ($9 == "Kemerovo")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      $9, "Novokuznetsk");
+                  break
               case "Volga":
                   if ($9 == "Yaroslavl'") {
                       if ($12 == "Nizhegorodskaya Cellular Communications")
