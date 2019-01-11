@@ -554,6 +554,11 @@ NR < 2  { print; next }
               case "Kramators'k":
                   $10 = "Kramatorsk";
                   break
+              case "Krivoy Rog":
+                  if ($9 == "Khersons'ka Oblast'")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Dnipropetrovs'ka Oblast'", $10);
+                  break
               case "Sevastopol":
                   if ($9 == "Kaluga") {
                       suspicious_repl(substr($1, 2), $2, 9, 10,
