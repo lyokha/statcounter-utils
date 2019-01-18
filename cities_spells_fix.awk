@@ -694,6 +694,10 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Ho Chi Minh", $10);
                   break
+              case "Hanoi":
+                  if ($9 == "Dac Lac")
+                      suspicious_repl(substr($1, 2), $2, 9, 10, "", $10);
+                  break
               case "Dushanbe":                      # Tajikistan
                   if ($8 == "Tajikistan")
                       $9 = "Dushanbe";
