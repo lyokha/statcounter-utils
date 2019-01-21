@@ -1,6 +1,6 @@
 library(leaflet)
 
-cities <- function(gcities, geocode, len) {
+cities <- function(gcities, geocode, len=as.integer(.Machine$integer.max)) {
     gcities <- read.csv(file=gcities, header=TRUE, sep=";")
     geocodes <- read.csv(file=geocode, header=TRUE, sep=";")
     d <- merge(gcities, geocodes, by=c(1, 2, 3))
@@ -12,12 +12,22 @@ cities <- function(gcities, geocode, len) {
     
     dh <- head(d, len)
     for (x in 1:nrow(dh)) {
+        l <- list(c(as.character(dh[[x,3]]), "#03F")
+                 ,c(as.character(dh[[x,2]]), "#F90")
+                 ,c(as.character(dh[[x,1]]), "#F30")
+                 ,c("UNKNOWN", "#666")
+                 )
+        for (v in l) {
+            if (v[1] != "") {
+                break
+            }
+        }
         m <- addCircleMarkers(m
                     ,lng=as.numeric(as.character(dh[[x,5]]))
                     ,lat=as.numeric(as.character(dh[[x,6]]))
-                    ,color=ifelse(dh[[x,3]]=="", "#F30", "#03F")
+                    ,color=v[2]
                     ,radius=(5 * log(as.numeric(as.character(dh[[x,4]])), 10))
-                    ,popup=paste(dh[[x,3]], " ", dh[[x,4]])
+                    ,popup=paste(v[1], ", ", dh[[x,4]])
                     )
     }
     m
