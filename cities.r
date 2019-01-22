@@ -3,11 +3,12 @@ library(htmltools)
 
 cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max)) {
     gcities <- read.csv(file = gcities, header = TRUE, sep = ";", as.is = TRUE)
-    geocodes <- read.csv(file = geocode, header = TRUE, sep = ";", as.is = TRUE)
+    geocodes <- read.csv(file = geocode, header = TRUE, sep = ";", as.is = TRUE,
+                         na.strings = "null")
 
     d <- merge(gcities, geocodes, by = c(1, 2, 3))
     d <- d[order(-d$Count), ]
-    d <- subset(d, d$Longitude != "null")
+    d <- subset(d, !is.na(d$Longitude))
 
     m <- leaflet()
     m <- addTiles(m)
@@ -15,11 +16,8 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max)) {
     dh <- head(d, len)
 
     for (x in 1:nrow(dh)) {
-        l <- list(c(dh[[x, 3]], "#03F")
-                 ,c(dh[[x, 2]], "#F90")
-                 ,c(dh[[x, 1]], "#F30")
-                 ,c("<UNKNOWN LOCATION>", "#666")
-                 )
+        l <- list(c(dh[x, 3], "#03F"), c(dh[x, 2], "#F90"), c(dh[x, 1], "#F30"),
+                  c("<UNKNOWN LOCATION>", "#666"))
 
         for (v in l) {
             if (v[1] != "") {
@@ -28,13 +26,9 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max)) {
             }
         }
 
-        m <- addCircleMarkers(m
-                             ,lng = as.numeric(dh[[x, 5]])
-                             ,lat = as.numeric(dh[[x, 6]])
-                             ,color = v[2]
-                             ,radius = 5 * log(as.numeric(dh[[x, 4]]), 10)
-                             ,popup = paste(v[1], ", ", dh[[x, 4]])
-                             )
+        m <- addCircleMarkers(m, lng = dh[x, 5], lat = dh[x, 6], color = v[2],
+                              radius = 5 * log(dh[x, 4], 10),
+                              popup = paste(v[1], ", ", dh[x, 4]))
     }
 
     m
