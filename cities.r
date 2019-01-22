@@ -1,4 +1,5 @@
 library(leaflet)
+library(htmltools)
 
 cities <- function(gcities, geocode, len=as.integer(.Machine$integer.max)) {
     gcities <- read.csv(file=gcities, header=TRUE, sep=";")
@@ -15,10 +16,11 @@ cities <- function(gcities, geocode, len=as.integer(.Machine$integer.max)) {
         l <- list(c(as.character(dh[[x,3]]), "#03F")
                  ,c(as.character(dh[[x,2]]), "#F90")
                  ,c(as.character(dh[[x,1]]), "#F30")
-                 ,c("UNKNOWN", "#666")
+                 ,c("<UNKNOWN LOCATION>", "#666")
                  )
         for (v in l) {
             if (v[1] != "") {
+                v[1] <- htmlEscape(v[1])
                 break
             }
         }
