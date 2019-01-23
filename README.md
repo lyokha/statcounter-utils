@@ -41,7 +41,7 @@ Collected in StatCounter-Log.csv cities can be grouped and sorted by visits and
 geocoded.
 
 ```sh
-group_cities StatCounter-Log.csv > gcities.csv
+group_cities -f cities_spells_fix.awk StatCounter-Log.csv > gcities.csv
 group_cities -p yandex -g StatCounter-Log.csv > geocode.csv
 ```
 

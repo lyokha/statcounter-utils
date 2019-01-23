@@ -5,12 +5,14 @@
 geocode=
 provider="osm"
 back="Count"
+spell_fix_cmd="-e {print}"
 
-while getopts 'gp:' opt ; do
+while getopts 'gp:f:' opt ; do
     case $opt in
         g) geocode=1 back="Longitude;Lattitude" ;;
         p) #run geocode --help to see the list of all providers
            provider="$OPTARG" ;;
+        f) spell_fix_cmd="-f $OPTARG" ;;
        \?) echo "Invalid option: -$OPTARG" >&2
            exit 1 ;;
         :) echo "Option -$OPTARG requires an argument" >&2
@@ -19,16 +21,10 @@ while getopts 'gp:' opt ; do
 done
 
 shift $((OPTIND-1))
-if [ -z "$1" ]
-then
-    echo "Input file is not specified!" >&2
-    exit 1
-else
-    input="$1"
-fi
+[ -n "$1" ] && input="$1" || input=-
 
-cities=$(statcounter_report -p -t'"^"$8";"$9";"$10' \
-            <(awk -f cities_spells_fix.awk "$input") |
+cities=$(awk $spell_fix_cmd "$input" |
+            statcounter_report -p -t'"^"$8";"$9";"$10' |
             awk -F\| '{gsub(/^[ \t]+|[ \t]+$/, "", $1); print $2";"$1}'
         )
 
