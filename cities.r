@@ -19,6 +19,7 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
 
     nrow <- nrow(dh)
     if (nrow == 0) {
+        print("No cities to render", quote = FALSE)
         return(m)
     }
 
@@ -38,6 +39,7 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
                               popup = paste(v[1], ", ", dh[x, 4]))
     }
 
+    print(sprintf("%d cities rendered", nrow), quote = FALSE)
     return(m)
 }
 
