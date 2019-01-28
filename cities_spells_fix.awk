@@ -670,6 +670,11 @@ NR < 2  { print; next }
                   if ($8 == "Belgium")
                       $10 = "Antwerpen";
                   break
+              case "Lyngby":                        # Denmark
+                  if ($9 == "Midtjyllen")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Hovedstaden", "Kongens Lyngby");
+                  break
               case "A Coruña":                      # Spain
                   if ($9 == "Galicia")
                       $10 = "La Coruña";
