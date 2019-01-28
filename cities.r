@@ -36,10 +36,19 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
 
         m <- addCircleMarkers(m, lng = dh[x, 5], lat = dh[x, 6], color = v[2],
                               radius = 5 * log(dh[x, 4], 10),
-                              popup = paste(v[1], ", ", dh[x, 4]))
+                              popup = paste(v[1], ",", dh[x, 4]))
     }
 
     print(sprintf("%d cities rendered", nrow), quote = FALSE)
     return(m)
+}
+
+cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = "") {
+    if (cities_spells_filter_awk == "") {
+        return(read.csv(statcounter_log_csv, sep = ",", as.is = TRUE))
+    }
+
+    cmd <- paste("awk -f", cities_spells_filter_awk, statcounter_log_csv)
+    return(read.csv(pipe(cmd), sep = ",", as.is = TRUE))
 }
 
