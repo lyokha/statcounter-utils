@@ -71,6 +71,21 @@ will show top 10 cities all over the world with total visits from 10 to 20.
 Notice that *d* is a *magic* variable which refers to the data collected in
 *gcities.csv* and *geocode.csv*.
 
+Data for *gcities* can be crafted from the statcounter log directly in *R*. This
+lets smarter subsetting of the original data set. Say, to render all the
+cities with page-view visits happened in year 2018, run in an *R* shell
+
+```r
+source("cities.r")
+pv <- cities_pv("StatCounter-Log.csv", "cities_spells_fix.awk")
+pv2018 <- pv[which(grepl("^2018", pv$Date.and.Time)), c("Country", "Region", "City")]
+library(plyr)
+gcities <- count(pv2018, c(1:3))
+names(gcities) <- c("Country", "Region", "City", "Count")
+gcities <- gcities[order(-gcities$Count), ]
+cities(gcities, "geocode.csv")
+```
+
 Script *cities.r* requires *R* package
 [*leaflet*](https://rstudio.github.io/leaflet/).
 

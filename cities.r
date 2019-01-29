@@ -3,11 +3,14 @@ library(htmltools)
 
 cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
                    subset = "TRUE") {
-    gcities <- read.csv(file = gcities, header = TRUE, sep = ";", as.is = TRUE)
-    geocodes <- read.csv(file = geocode, header = TRUE, sep = ";", as.is = TRUE,
-                         na.strings = "null")
+    if (!is.data.frame(gcities)) {
+        gcities <- read.csv(file = gcities, header = TRUE, sep = ";",
+                            as.is = TRUE)
+    }
+    geocodes <- read.csv(file = geocode, header = TRUE, sep = ";",
+                         as.is = TRUE, na.strings = "null")
 
-    d <- merge(gcities, geocodes, by = c(1, 2, 3))
+    d <- merge(gcities, geocodes, by = c(1:3))
     d <- d[order(-d$Count), ]
     d <- subset(d, !is.na(d$Longitude))
     d <- subset(d, eval(parse(text = subset)))
@@ -43,12 +46,17 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
     return(m)
 }
 
-cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = "") {
+cities_pv <- function(statcounter_log_csv, cities_spells_filter_awk = "") {
     if (cities_spells_filter_awk == "") {
-        return(read.csv(statcounter_log_csv, sep = ",", as.is = TRUE))
+        pv <- read.csv(statcounter_log_csv,
+                       header = TRUE, sep = ",", quote = "\"", as.is = TRUE)
+    } else {
+        cmd <- paste("awk -f", cities_spells_filter_awk, statcounter_log_csv)
+        pv <- read.csv(pipe(cmd),
+                       header = TRUE, sep = ",", quote = "\"", as.is = TRUE)
     }
 
-    cmd <- paste("awk -f", cities_spells_filter_awk, statcounter_log_csv)
-    return(read.csv(pipe(cmd), sep = ",", as.is = TRUE))
+    pv <- pv[which(pv$Type == "page view"), ]
+    return(pv)
 }
 
