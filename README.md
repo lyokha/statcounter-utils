@@ -76,7 +76,7 @@ lets smarter subsetting of the original data set. Say, to render all the
 cities with *page-view* visits happened in the year 2018, run in an *R* shell
 
 ```r
-pv <- cities_pv("StatCounter-Log.csv", "cities_spells_fix.awk")
+pv <- cities_df("StatCounter-Log.csv", "cities_spells_fix.awk")
 pv2018 <- pv[which(grepl("^2018", pv$Date.and.Time)), ]
 cities(gcities(pv2018), "geocode.csv")
 ```

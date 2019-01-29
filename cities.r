@@ -13,8 +13,7 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
 
     d <- merge(gcities, geocodes, by = c(1:3))
     d <- d[order(-d$Count), ]
-    d <- subset(d, !is.na(d$Longitude))
-    d <- subset(d, eval(parse(text = subset)))
+    d <- d[which(!is.na(d$Lattitude) & eval(parse(text = subset))), ]
 
     m <- leaflet()
     m <- addTiles(m)
@@ -44,27 +43,32 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
     }
 
     print(sprintf("%d cities rendered", nrow), quote = FALSE)
+
     return(m)
 }
 
-cities_pv <- function(statcounter_log_csv, cities_spells_filter_awk = "") {
+cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = "",
+                      type = "page view") {
     if (cities_spells_filter_awk == "") {
-        pv <- read.csv(statcounter_log_csv,
+        df <- read.csv(statcounter_log_csv,
                        header = TRUE, sep = ",", quote = "\"", as.is = TRUE)
     } else {
         cmd <- paste("awk -f", cities_spells_filter_awk, statcounter_log_csv)
-        pv <- read.csv(pipe(cmd),
+        df <- read.csv(pipe(cmd),
                        header = TRUE, sep = ",", quote = "\"", as.is = TRUE)
     }
 
-    pv <- pv[which(pv$Type == "page view"), ]
-    return(pv)
+    if (type != "") {
+        df <- df[which(df$Type == type), ]
+    }
+
+    return(df)
 }
 
 gcities <- function(cs) {
     d <- count(cs, c("Country", "Region", "City"))
-    names(d) <- c("Country", "Region", "City", "Count")
-    d <- d[order(-d$Count), ]
-    return(d)
+    names(d)[4] <- "Count"
+
+    return(d[order(-d$Count), ])
 }
 
