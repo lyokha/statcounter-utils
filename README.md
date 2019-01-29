@@ -55,21 +55,22 @@ cities("gcities.csv", "geocode.csv", 1000)
 ```
 
 If the number of cities is not specified then all the cities from the data will
-be shown. Function *cities* accepts custom subsetting conditions. For example,
+be shown. Function *cities* accepts a custom subsetting function. For example,
 
 ```r
-cities("gcities.csv", "geocode.csv", subset="grepl(\"Russia\", d$Country)")
+cities("gcities.csv", "geocode.csv", FUN = function(x) grepl("Russia", x$Country))
 ```
 
 will show only cities located in Russian Federation, whereas
 
 ```r
-cities("gcities.csv", "geocode.csv", 10, subset="d$Count >= 10 & d$Count <= 20")
+cities("gcities.csv", "geocode.csv", 10, FUN = function(x) x$Count %in% 10:20)
 ```
 
 will show top 10 cities all over the world with total visits from 10 to 20.
-Notice that *d* is a *magic* variable which refers to the data collected in
-*gcities.csv* and *geocode.csv*.
+Argument *x* of the subsetting function refers to the data collected in
+*gcities.csv* and *geocode.csv* with columns *Country*, *Region*, *City*,
+*Longitude*, *Lattitude*, and *Count*.
 
 Data for *gcities* can be crafted from the statcounter log directly in *R*. This
 lets smarter subsetting of the original data set. Say, to render all the

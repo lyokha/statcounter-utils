@@ -3,7 +3,7 @@ library(htmltools)
 library(plyr)
 
 cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
-                   subset = "TRUE") {
+                   FUN = function(x) TRUE) {
     if (!is.data.frame(gcities)) {
         gcities <- read.csv(file = gcities, header = TRUE, sep = ";",
                             as.is = TRUE)
@@ -13,7 +13,7 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
 
     d <- merge(gcities, geocodes, by = c(1:3))
     d <- d[order(-d$Count), ]
-    d <- d[which(!is.na(d$Lattitude) & eval(parse(text = subset))), ]
+    d <- d[which(!is.na(d$Longitude) & FUN(d)), ]
 
     m <- leaflet()
     m <- addTiles(m)
