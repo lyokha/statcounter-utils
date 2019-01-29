@@ -73,17 +73,12 @@ Notice that *d* is a *magic* variable which refers to the data collected in
 
 Data for *gcities* can be crafted from the statcounter log directly in *R*. This
 lets smarter subsetting of the original data set. Say, to render all the
-cities with page-view visits happened in year 2018, run in an *R* shell
+cities with *page-view* visits happened in the year 2018, run in an *R* shell
 
 ```r
-source("cities.r")
 pv <- cities_pv("StatCounter-Log.csv", "cities_spells_fix.awk")
-pv2018 <- pv[which(grepl("^2018", pv$Date.and.Time)), c("Country", "Region", "City")]
-library(plyr)
-gcities <- count(pv2018, c(1:3))
-names(gcities) <- c("Country", "Region", "City", "Count")
-gcities <- gcities[order(-gcities$Count), ]
-cities(gcities, "geocode.csv")
+pv2018 <- pv[which(grepl("^2018", pv$Date.and.Time)), ]
+cities(gcities(pv2018), "geocode.csv")
 ```
 
 Script *cities.r* requires *R* package

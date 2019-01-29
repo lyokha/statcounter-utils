@@ -1,5 +1,6 @@
 library(leaflet)
 library(htmltools)
+library(plyr)
 
 cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
                    subset = "TRUE") {
@@ -58,5 +59,12 @@ cities_pv <- function(statcounter_log_csv, cities_spells_filter_awk = "") {
 
     pv <- pv[which(pv$Type == "page view"), ]
     return(pv)
+}
+
+gcities <- function(cs) {
+    d <- count(cs, c("Country", "Region", "City"))
+    names(d) <- c("Country", "Region", "City", "Count")
+    d <- d[order(-d$Count), ]
+    return(d)
 }
 
