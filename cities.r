@@ -5,15 +5,14 @@ library(plyr)
 cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
                    FUN = function(x) TRUE) {
     if (!is.data.frame(gcities)) {
-        gcities <- read.csv(file = gcities, header = TRUE, sep = ";",
-                            as.is = TRUE)
+        gcities <- read.csv(gcities, header = TRUE, sep = ";", as.is = TRUE)
     }
-    geocodes <- read.csv(file = geocode, header = TRUE, sep = ";",
-                         as.is = TRUE, na.strings = "null")
+    geocodes <- read.csv(geocode, header = TRUE, sep = ";", as.is = TRUE,
+                         na.strings = "null")
 
-    d <- merge(gcities, geocodes, by = c(1:3))
+    d <- merge(gcities, geocodes, 1:3)
     d <- d[order(-d$Count), ]
-    d <- d[which(!is.na(d$Longitude) & FUN(d)), ]
+    d <- d[!is.na(d$Longitude) & FUN(d), ]
 
     m <- leaflet()
     m <- addTiles(m)
@@ -42,7 +41,7 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
                               popup = paste(v[1], ",", dh[x, 4]))
     }
 
-    print(sprintf("%d cities rendered", nrow), quote = FALSE)
+    print(paste(nrow, "cities rendered"), quote = FALSE)
 
     return(m)
 }
@@ -59,7 +58,7 @@ cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = "",
     }
 
     if (type != "") {
-        df <- df[which(df$Type == type), ]
+        df <- df[df$Type == type, ]
     }
 
     return(df)
