@@ -78,7 +78,7 @@ cities with *page-view* visits happened in the year 2018, run in an *R* shell
 
 ```r
 pv <- cities_df("StatCounter-Log.csv", "cities_spells_fix.awk")
-pv2018 <- pv[which(grepl("^2018", pv$Date.and.Time)), ]
+pv2018 <- pv[grepl("^2018", pv$Date.and.Time), ]
 cities(gcities(pv2018), "geocode.csv")
 ```
 
