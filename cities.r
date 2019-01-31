@@ -48,14 +48,11 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
 
 cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = "",
                       type = "page view") {
-    if (cities_spells_filter_awk == "") {
-        df <- read.csv(statcounter_log_csv,
-                       header = TRUE, sep = ",", quote = "\"", as.is = TRUE)
-    } else {
-        cmd <- paste("awk -f", cities_spells_filter_awk, statcounter_log_csv)
-        df <- read.csv(pipe(cmd),
-                       header = TRUE, sep = ",", quote = "\"", as.is = TRUE)
-    }
+    df <- read.csv(`if`(cities_spells_filter_awk == "",
+                        statcounter_log_csv,
+                        pipe(paste("awk -f", cities_spells_filter_awk,
+                                   statcounter_log_csv))),
+                   header = TRUE, sep = ",", quote = "\"", as.is = TRUE)
 
     if (type != "") {
         df <- df[df$Type == type, ]
