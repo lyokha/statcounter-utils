@@ -25,9 +25,12 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
         return(m)
     }
 
+    color <- c("#FF3300", "#FF9900", "#0033FF", "#666666")
+    #           Country    Region     City       Unknown location
+
     for (x in 1:nrow) {
-        l <- list(c(dh[x, 3], "#03F"), c(dh[x, 2], "#F90"), c(dh[x, 1], "#F30"),
-                  c("<UNKNOWN LOCATION>", "#666"))
+        l <- list(c(dh[x, 3], color[3]), c(dh[x, 2], color[2]),
+                  c(dh[x, 1], color[1]), c("<UNKNOWN LOCATION>", color[4]))
 
         for (v in l) {
             if (v[1] != "") {
@@ -40,6 +43,13 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
                               radius = 5 * log(dh[x, 4], 10),
                               popup = paste(v[1], ",", dh[x, 4]))
     }
+
+    m <- addLegend(m, "bottomright",
+                   colors = c(circle_marker_to_legend_color(color[3]),
+                              circle_marker_to_legend_color(color[2]),
+                              circle_marker_to_legend_color(color[1])),
+                   labels = c("City", "Region", "Country"),
+                   opacity = 0.5)
 
     print(paste(nrow, "cities rendered"), quote = FALSE)
 
@@ -66,5 +76,17 @@ gcities <- function(cs) {
     names(d)[4] <- "Count"
 
     return(d[order(-d$Count), ])
+}
+
+circle_marker_to_legend_color <- function(color,
+                                          marker_opacity = 0.3,
+                                          stroke_opacity = 0.7,
+                                          stroke_width = "medium") {
+    c <- col2rgb(color)
+    cv <- paste("rgba(", c[1], ", ", c[2], ", ", c[3], ", ", sep = "")
+
+    return(paste(cv, marker_opacity, "); border-radius: 50%; border: ",
+                 stroke_width, " solid ", cv, stroke_opacity,
+                 "); box-sizing: border-box", sep = ""))
 }
 
