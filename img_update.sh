@@ -3,8 +3,8 @@
 width=1088
 lheight=28      # 1170 not scaled lines can be written without exceeding maxsize
 maxsize=32767   # Cairo PNG max linear size in pixels
-lheightc=25     # 1872 scaled lines (with scale=0.7) can be written without exceeding maxsize
-scale=0.7       # fontscale for cities png
+lheightc=25     # 2016 scaled lines (with scale=0.65) can be written without exceeding maxsize
+scale=0.65      # fontscale for cities png
 lheights=$lheight
 bg="background rgb 'white'"
 

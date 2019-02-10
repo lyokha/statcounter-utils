@@ -601,6 +601,13 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Odes'ka Oblast'", "Odessa");
                   break
+              case "Pokrovsk":
+                  if ($2 == "31.148.171.214") {
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Donets'ka Oblast'", "Rodinskoye",
+                                      $2 "  >>  ");
+                  }
+                  break
               case "Mogilev":                       # Belarus
                   $10 = "Mogilëv";
                   break
