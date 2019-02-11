@@ -707,6 +707,15 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "", "", $12 "  >>  ");
                   break
+              case "Larochette":                    # Luxembourg
+                  if ($9 == "Luxembourg")
+                      suspicious_repl(substr($1, 2), $2, 9, 10, "Mersch", $10);
+                  break
+              case "Esch-sur-alzette":
+                  if ($9 == "Luxembourg")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Esch-sur-alzette", $10);
+                  break
               case "São Paulo":                     # Brazil
                   $10 = "Sao Paulo";
                   break
