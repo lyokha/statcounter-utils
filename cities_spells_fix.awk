@@ -686,6 +686,12 @@ NR < 2  { print; next }
                   if ($9 == "Galicia")
                       $10 = "La Coruña";
                   break
+              case "Compostela":
+                  if ($12 == "Universidad de Santiago de Compostela")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Galicia", "Santiago de Compostela",
+                                      $12 "  >>  ");
+                  break
               case "Arnold":                        # United Kingdom
                   if ($9 == "Nottinghamshire" && $12 == "Andrews & Arnold Ltd")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
