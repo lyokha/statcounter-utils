@@ -224,6 +224,10 @@ NR < 2  { print; next }
                   if ($9 == "Krasnodar")
                       $10 = "";
                   break
+              case "Ryazan'":
+                  if ($9 == "Ryazan'")
+                      $10 = "Ryazan";
+                  break
               case "Moskovskaya":
                   if ($9 == "Kirov")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
@@ -661,9 +665,17 @@ NR < 2  { print; next }
                   if ($9 == "Baden-Wurttemberg")
                       $10 = "Tübingen";
                   break
+              case "Hufingen":
+                  if ($9 == "Baden-Wurttemberg")
+                      $10 = "Hüfingen";
+                  break
               case "Dusseldorf":
                   if ($9 == "Nordrhein-Westfalen")
                       $10 = "Düsseldorf";
+                  break
+              case "Koln":
+                  if ($9 == "Nordrhein-Westfalen")
+                      $10 = "Köln";
                   break
               case "Krakow":                        # Poland
                   if ($9 == "Malopolskie")
