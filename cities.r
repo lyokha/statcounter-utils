@@ -111,14 +111,17 @@ gcountries <- function(cs) {
 }
 
 cities.plot <- function(cs, title = NULL, width = NULL) {
-    wf <- if (is.null(width)) 1 else 2000 / width
-    mf <- wf * (max(cs$Count) / 8000)
+    wf <- if (is.null(width)) 1 else 1600 / width
+    mf <- wf * (max(cs$Count) / 10000)
+    cw <- 21
     p <- ggplot(cs, aes(reorder(cs[[1]], cs$Count), cs$Count)) +
         geom_bar(stat = "identity", fill = "red", alpha = 0.75) +
         coord_flip() +
-        scale_y_continuous(expand = c(0, 50 * mf, 0, 200 * mf),
+        scale_y_continuous(expand = c(0, 50 * mf, 0, 300 * mf),
                            limits = c(0, NA)) +
-        geom_text(aes(label = cs$Count, y = cs$Count + 150 * mf, alpha = 0.75),
+        geom_text(aes(label = cs$Count,
+                      y = cs$Count + (cw * nchar(cs$Count) + 175) * mf,
+                      alpha = 0.75),
                   size = 3.4) +
         theme(axis.ticks.y = element_blank(),
               axis.ticks.x = element_blank(),
@@ -130,6 +133,10 @@ cities.plot <- function(cs, title = NULL, width = NULL) {
         labs(title = title, x = NULL, y = NULL)
     # Cairo limits linear canvas sizes to 32767 pixels!
     height <- min(25 * nrow(cs), 32600)
-    ggplotly(p, height = height, width = width)
+    p <- ggplotly(p, height = height, width = width)
+
+    print(paste(nrow(cs), "cities plotted"), quote = FALSE)
+
+    return(p)
 }
 
