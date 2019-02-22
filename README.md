@@ -82,6 +82,22 @@ pv2018 <- pv[grepl("^2018", pv$Date.and.Time), ]
 cities(gcities(pv2018), "geocode.csv")
 ```
 
-Script *cities.r* requires *R* package
-[*leaflet*](https://rstudio.github.io/leaflet/).
+Cities from *pv* can also be plotted on a bar chart.
+
+```r
+cities.plot(gcities.compound(pv))
+```
+
+Countries can be plotted as well.
+
+```r
+cities.plot(gcountries(pv))
+```
+
+Function *cities.plot* accepts an optional second argument: the width of the
+plot in pixels. This is useful for conversion of the chart to a PNG image.
+
+Script *cities.r* requires *R* packages
+[*leaflet*](https://rstudio.github.io/leaflet/) and
+[*plotly*](https://plot.ly/r/).
 

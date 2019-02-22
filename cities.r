@@ -1,6 +1,8 @@
 library(leaflet)
 library(htmltools)
 library(plyr)
+library(ggplot2)
+library(plotly)
 
 cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
                    FUN = function(x) TRUE) {
@@ -88,5 +90,42 @@ circle_marker_to_legend_color <- function(color,
     return(paste(cv, marker_opacity, "); border-radius: 50%; border: ",
                  stroke_width, " solid ", cv, stroke_opacity,
                  "); box-sizing: border-box", sep = ""))
+}
+
+gcities.compound <- function(cs) {
+    d <- count(cs, c("Country", "Region", "City"))
+    d$City <- paste(d$Country, "/", d$Region, "/", d$City)
+    names(d)[4] <- "Count"
+
+    return(d[order(-d$Count), c("City", "Count")])
+}
+
+gcountries <- function(cs) {
+    d <- count(cs, c("Country"))
+    names(d)[2] <- "Count"
+
+    return(d[order(-d$Count), ])
+}
+
+cities.plot <- function(cs, w = NULL) {
+    wf <- if (is.null(w)) 1 else 2000 / w
+    mf <- max(cs$Count) / 8000
+    p <- ggplot(cs, aes(reorder(cs[[1]], cs$Count), cs$Count)) +
+        geom_bar(stat = "identity", fill = "red", alpha = 0.75) +
+        coord_flip() +
+        scale_y_continuous(expand = c(0, 50 * wf, 0, 300 * wf),
+                           limits = c(0, NA)) +
+        geom_text(aes(label = cs$Count, alpha = 0.5),
+                  size = 3.4, nudge_y = 100 * mf * wf) +
+        theme(axis.ticks.y = element_blank(),
+              axis.ticks.x = element_blank(),
+              axis.text.x = element_blank(),
+              panel.grid.major = element_blank(),
+              panel.grid.minor = element_blank(),
+              panel.background = element_blank()
+              ) +
+        labs(title = NULL, x = NULL, y = NULL)
+    h <- min(25 * nrow(cs), 32000)
+    ggplotly(p, height = h, width = w)
 }
 
