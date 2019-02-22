@@ -94,8 +94,9 @@ Countries can be plotted as well.
 cities.plot(gcountries(pv))
 ```
 
-Function *cities.plot* accepts an optional second argument: the width of the
-plot in pixels. This is useful for conversion of the chart to a PNG image.
+Function *cities.plot* accepts two optional arguments: *title* and *width*. The
+second argument corresponds to the width of the plot in pixels: setting this can
+be useful for conversion of the chart to a PNG image.
 
 Script *cities.r* requires *R* packages
 [*leaflet*](https://rstudio.github.io/leaflet/) and

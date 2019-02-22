@@ -59,10 +59,13 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
 }
 
 cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = "",
+                      warn_suspicious = FALSE,
                       type = "page view") {
     df <- read.csv(`if`(cities_spells_filter_awk == "",
                         statcounter_log_csv,
                         pipe(paste("awk -f", cities_spells_filter_awk,
+                                   if (warn_suspicious)
+                                       "-v warn_suspicious=yes" else "",
                                    statcounter_log_csv))),
                    header = TRUE, sep = ",", quote = "\"", as.is = TRUE)
 
@@ -107,16 +110,16 @@ gcountries <- function(cs) {
     return(d[order(-d$Count), ])
 }
 
-cities.plot <- function(cs, w = NULL) {
-    wf <- if (is.null(w)) 1 else 2000 / w
-    mf <- max(cs$Count) / 8000
+cities.plot <- function(cs, title = NULL, width = NULL) {
+    wf <- if (is.null(width)) 1 else 2000 / width
+    mf <- wf * (max(cs$Count) / 8000)
     p <- ggplot(cs, aes(reorder(cs[[1]], cs$Count), cs$Count)) +
         geom_bar(stat = "identity", fill = "red", alpha = 0.75) +
         coord_flip() +
-        scale_y_continuous(expand = c(0, 50 * wf, 0, 300 * wf),
+        scale_y_continuous(expand = c(0, 50 * mf, 0, 200 * mf),
                            limits = c(0, NA)) +
-        geom_text(aes(label = cs$Count, alpha = 0.5),
-                  size = 3.4, nudge_y = 100 * mf * wf) +
+        geom_text(aes(label = cs$Count, y = cs$Count + 150 * mf, alpha = 0.75),
+                  size = 3.4) +
         theme(axis.ticks.y = element_blank(),
               axis.ticks.x = element_blank(),
               axis.text.x = element_blank(),
@@ -124,8 +127,9 @@ cities.plot <- function(cs, w = NULL) {
               panel.grid.minor = element_blank(),
               panel.background = element_blank()
               ) +
-        labs(title = NULL, x = NULL, y = NULL)
-    h <- min(25 * nrow(cs), 32000)
-    ggplotly(p, height = h, width = w)
+        labs(title = title, x = NULL, y = NULL)
+    # Cairo limits linear canvas sizes to 32767 pixels!
+    height <- min(25 * nrow(cs), 32600)
+    ggplotly(p, height = height, width = width)
 }
 
