@@ -94,9 +94,15 @@ Countries can be plotted as well.
 cities.plot(gcountries(pv))
 ```
 
-Function *cities.plot* accepts two optional arguments: *title* and *width*. The
-second argument corresponds to the width of the plot in pixels: setting this can
-be useful for conversion of the chart to a PNG image.
+Function *cities.plot* accepts three optional arguments: *title*, *width*, and
+*tops*. The second argument corresponds to the width of the plot in pixels:
+setting this can be useful for conversion of the chart to a PNG image. The third
+argument is a list of numbers to emphasize sets of top cities on the plot. Below
+is a simple example of how these arguments can be used.
+
+```r
+cities.plot(gcountries(pv), paste0("Countries (", date(), ")"), 1200, c(10, 40, NA))
+```
 
 Script *cities.r* requires *R* packages
 [*leaflet*](https://rstudio.github.io/leaflet/) and
