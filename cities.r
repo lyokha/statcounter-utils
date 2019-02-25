@@ -150,8 +150,8 @@ cities.plot <- function(cs, title = NULL, width = NULL, tops = NULL) {
                               xmax = nrow - cur + 0.5,
                               ymin = 0, ymax = ym,
                               fill = alpha("green", ac),
-                              color = "firebrick1", size = 0.3,
-                              linetype = "dotted") +
+                              color = alpha("firebrick1", 0.4),
+                              size = 0.4, linetype = "solid") +
                      annotate("text",
                               x = nrow - tops[i] + 1,
                               y = ym - 200 * mf, color = "blue",
