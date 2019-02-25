@@ -110,18 +110,21 @@ gcountries <- function(cs) {
     return(d[order(-d$Count), ])
 }
 
-cities.plot <- function(cs, title = NULL, width = NULL) {
+cities.plot <- function(cs, title = NULL, width = NULL, tops = NULL) {
     wf <- if (is.null(width)) 1 else 1600 / width
     mf <- wf * (max(cs$Count) / 10000)
     cw <- 21
+    to <- (cw * nchar(cs[1, ][["Count"]]) + 175) * mf
+    ym <- cs[1, ][["Count"]] + to * 2
+    nrow <- nrow(cs)
+
     p <- ggplot(cs, aes(reorder(cs[[1]], cs$Count), cs$Count)) +
-        geom_bar(stat = "identity", fill = "red", alpha = 0.75) +
-        coord_flip() +
+        scale_x_discrete() +
         scale_y_continuous(expand = c(0, 50 * mf, 0, 300 * mf),
                            limits = c(0, NA)) +
-        geom_text(aes(label = cs$Count,
-                      y = cs$Count + (cw * nchar(cs$Count) + 175) * mf,
-                      alpha = 0.75),
+        coord_flip() +
+        geom_col(fill = "darkseagreen", alpha = 1.0) +
+        geom_text(aes(label = cs$Count, y = cs$Count + to, alpha = 0.75),
                   size = 3.4) +
         theme(axis.ticks.y = element_blank(),
               axis.ticks.x = element_blank(),
@@ -131,6 +134,29 @@ cities.plot <- function(cs, title = NULL, width = NULL) {
               panel.background = element_blank()
               ) +
         labs(title = title, x = NULL, y = NULL)
+
+    if (is.null(tops)) {
+        p <- p + annotate("rect", xmin = 0.1, xmax = 0.9, ymin = 0, ymax = ym,
+                          fill = alpha("green", 0.0))
+    } else {
+        cur <- 0
+        ac <- 0.05
+        for (i in 1:length(tops)) {
+            if (tops[i] > nrow) {
+                break
+            }
+            p <- p + annotate("rect",
+                              xmin = nrow - tops[i] + 0.5,
+                              xmax = nrow - cur + 0.5,
+                              ymin = 0, ymax = ym,
+                              fill = alpha("green", ac),
+                              color = "firebrick1", size = 0.3,
+                              linetype = "dotted")
+            cur <- tops[i]
+            ac <- ac / 2
+        }
+    }
+
     # Cairo limits linear canvas sizes to 32767 pixels!
     height <- min(25 * nrow(cs), 32600)
     p <- ggplotly(p, height = height, width = width)
