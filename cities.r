@@ -140,10 +140,10 @@ cities.plot <- function(cs, title = NULL, width = NULL, tops = NULL) {
                           fill = alpha("green", 0.0))
     } else {
         cur <- 0
-        ac <- 0.05
+        ac <- 0.1
         for (i in 1:length(tops)) {
-            if (tops[i] > nrow) {
-                break
+            if (is.na(tops[i]) | tops[i] > nrow) {
+                tops[i] <- nrow
             }
             p <- p + annotate("rect",
                               xmin = nrow - tops[i] + 0.5,
@@ -151,9 +151,16 @@ cities.plot <- function(cs, title = NULL, width = NULL, tops = NULL) {
                               ymin = 0, ymax = ym,
                               fill = alpha("green", ac),
                               color = "firebrick1", size = 0.3,
-                              linetype = "dotted")
+                              linetype = "dotted") +
+                     annotate("text",
+                              x = nrow - tops[i] + 1,
+                              y = ym - 200 * mf, color = "blue",
+                              label = tops[i], size = 3.0, alpha = 0.5)
             cur <- tops[i]
             ac <- ac / 2
+            if (tops[i] == nrow) {
+                break
+            }
         }
     }
 
