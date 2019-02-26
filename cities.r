@@ -142,7 +142,7 @@ cities.plot <- function(cs, title = NULL, width = NULL, tops = NULL) {
         cur <- 0
         ac <- 0.1
         for (i in 1:length(tops)) {
-            if (is.na(tops[i]) | tops[i] > nrow) {
+            if (is.na(tops[i]) || tops[i] > nrow) {
                 tops[i] <- nrow
             }
             p <- p + annotate("rect",
