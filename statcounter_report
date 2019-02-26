@@ -40,6 +40,8 @@ function try_filter
 
 function main
 {
+    # BEWARE: case-insensitive compare (uniq -ci), whreas the algorithm in
+    # cities.r is case-sensitive
     awk -F'","' "NR < 2 $or_not_pageview {next} `
             `{\$0 = substr(\$0, 2, length(\$0) - 2); print $template}" "$1" |
     sort -f | uniq -ci | sort -nrs | column -t -s"$separator" -o'|' |

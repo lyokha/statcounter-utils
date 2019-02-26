@@ -366,7 +366,7 @@ NR < 2  { print; next }
               case "Yugra":
                   if ($9 == "Vologda" && $12 ~ "Yugra State University")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
-                                      "Khanty-Mansiy", "Khanty-Mansiysk");
+                                      "Khanty-Mansiy", "Khanty-mansiysk");
                   break
               case "Gogolya":
                   if ($12 == "Kurgan state university")
@@ -479,7 +479,7 @@ NR < 2  { print; next }
                   else if ($9 == "Smolensk" &&
                            $12 ~ "Institution of the Khanty-Mansi")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
-                                      "Khanty-Mansiy", "Khanty-Mansiysk");
+                                      "Khanty-Mansiy", "Khanty-mansiysk");
                   else if ($9 == "Khanty-Mansiy" && $12 ~ "Ekaterinburg-2000")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Sverdlovsk", "Yekaterinburg",
@@ -701,7 +701,7 @@ NR < 2  { print; next }
               case "Compostela":
                   if ($12 == "Universidad de Santiago de Compostela")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
-                                      "Galicia", "Santiago de Compostela",
+                                      "Galicia", "Santiago De Compostela",
                                       $12 "  >>  ");
                   break
               case "Arnold":                        # United Kingdom

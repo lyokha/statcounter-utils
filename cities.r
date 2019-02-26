@@ -119,7 +119,7 @@ cities.plot <- function(cs, title = NULL, width = NULL, tops = NULL) {
     nrow <- nrow(cs)
 
     p <- ggplot(cs, aes(reorder(cs[[1]], cs$Count), cs$Count)) +
-        scale_x_discrete() +
+        scale_x_discrete(limits = rev(cs[[1]])) +
         scale_y_continuous(expand = c(0, 50 * mf, 0, 300 * mf),
                            limits = c(0, NA)) +
         coord_flip() +
