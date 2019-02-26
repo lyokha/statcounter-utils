@@ -9,8 +9,10 @@ A very simple script to print highlighted report on a terminal using utility
 [*hl*](http://sourceforge.net/projects/hlterm/).
 
 The output of the script may be used to draw various statistics histograms using
-[*gnuplot*](http://www.gnuplot.info/) and script *stats.gpi*. For example, let's
-collect top 20 cities with most visits.
+[*gnuplot*](http://www.gnuplot.info/) and script *stats.gpi* (this functionality
+was revamped in script *cities.r*, see the next section).
+
+For example, let's collect top 20 cities with most visits.
 
 ```sh
 statcounter_report -t'"^ "$8" / "$9" / "$10' StatCounter-Log.csv |
