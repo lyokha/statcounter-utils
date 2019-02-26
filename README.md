@@ -97,12 +97,35 @@ cities.plot(gcountries(pv))
 Function *cities.plot* accepts three optional arguments: *title*, *width*, and
 *tops*. The second argument corresponds to the width of the plot in pixels:
 setting this can be useful for conversion of the chart to a PNG image. The third
-argument is a list of numbers to emphasize sets of top cities on the plot. Below
-is a simple example of how these arguments can be used.
+argument is a list of numbers to emphasize sets of top cities on the plot.
+
+Below is a simple example of what images *cities.r* can render.
 
 ```r
-cities.plot(gcountries(pv), paste0("Countries (", date(), ")"), 1200, c(10, 40, NA))
+pv <- cities_df("StatCounter-Log.csv", "cities_spells_fix.awk")
+pvMosk <- pv[grepl("^(Moskva|Moscow)", pv$Region), ]
+pvMoskC <- gcities(pvMosk)
+cities(pvMoskC, "geocode.csv")
 ```
+
+shall render in a browser window the following map.
+
+<p align="center">
+  <img src="../images/images/pvMoskC-map.png?raw=true" alt="Moscow region map"/>
+</p>
+
+Then,
+
+```r
+pvMoskCc <- gcities.compound(pvMosk)
+cities.plot(pvMoskCc, paste0("Moscow region (", date(), ")"), 1200, c(10, 40, NA))
+```
+
+shall render in another browser window the following bar chart.
+
+<p align="center">
+  <img src="../images/images/pvMoskCc-chart.png?raw=true" alt="Moscow region chart"/>
+</p>
 
 Script *cities.r* requires *R* packages
 [*leaflet*](https://rstudio.github.io/leaflet/) and
