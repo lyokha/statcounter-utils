@@ -59,7 +59,7 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
 }
 
 cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = "",
-                      warn_suspicious = FALSE,
+                      warn_suspicious = TRUE,
                       type = "page view") {
     df <- read.csv(`if`(cities_spells_filter_awk == "",
                         statcounter_log_csv,

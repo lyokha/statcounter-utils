@@ -110,7 +110,7 @@ pvMoskC <- gcities(pvMosk)
 cities(pvMoskC, "geocode.csv")
 ```
 
-shall render in a browser window the following map.
+shall render in a browser window the following interactive map.
 
 <p align="center">
   <img src="../images/images/pvMoskC-map.png?raw=true" alt="Moscow region map"/>
