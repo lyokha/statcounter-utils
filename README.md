@@ -3,6 +3,22 @@
 Downloads CSV log and writes its content to a file or merge it with an existing
 CSV log file.
 
+```ShellSession
+$ statcounter_update -h
+statcounter_update, version 1.3
+
+Usage: statcounter_update -i project-id -u user -p password
+            [-s] [-n date-time] [-b pre-suffix] [-x] <file.csv>
+        -i - project id
+        -u - user name
+        -p - password
+        -s - connect securely via https
+        -n - test only records newer than the given date-time
+             date-time format is 'YYYY-MM-DD HH:MM:SS'
+        -b - create backup file with the given pre-suffix
+        -x - read in XLSX data
+```
+
 ### statcounter_report
 
 A very simple script to print highlighted report on a terminal using utility
