@@ -166,15 +166,15 @@ cities.plot <- function(cs, title = NULL, tops = NULL, width = NULL) {
     }
 
     # Cairo limits linear canvas sizes to 32767 pixels!
-    height <- min(25 * nrow(cs), 32600)
+    height <- min(25 * nrow, 32600)
     p <- ggplotly(p, height = height, width = width)
     p <- config(p, toImageButtonOptions =
                 list(filename = `if`(is.null(title), "cities",
-                                     gsub("[[:space:][:punct:]]", "_", title)),
+                                     gsub("[^[:alnum:]_\\-]", "_", title)),
                      height = height,
                      width = `if`(is.null(width), w0, width), scale = 1))
 
-    print(paste(nrow(cs), "cities plotted"), quote = FALSE)
+    print(paste(nrow, "cities plotted"), quote = FALSE)
 
     return(p)
 }
