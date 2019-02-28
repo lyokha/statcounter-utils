@@ -112,10 +112,14 @@ Countries can be plotted as well.
 cities.plot(gcountries(pv))
 ```
 
-Function *cities.plot* accepts three optional arguments: *title*, *width*, and
-*tops*. The second argument corresponds to the width of the plot in pixels:
-setting this can be useful for conversion of the chart to a PNG image. The third
-argument is a list of numbers to emphasize sets of top cities on the plot.
+Function *cities.plot* accepts three optional arguments: *title*, *tops*, and
+*width*. Argument *width* corresponds to the width of the plot in pixels:
+setting this can be useful for conversion of the chart to a PNG image when
+pressing button *toImage* on the *plotly* toolbar. If the width is not set then
+default value of *1200* pixels will be used for image conversion. Argument
+*tops* is a list of numbers to emphasize sets of top cities on the plot. Special
+value *NA* can be used to extend the last emphasize box to the bottom of the
+chart.
 
 Below is a simple example of what images *cities.r* can render.
 
@@ -136,7 +140,7 @@ Then,
 
 ```r
 pvMoskCc <- gcities.compound(pvMosk)
-cities.plot(pvMoskCc, paste0("Moscow region (", date(), ")"), 1200, c(10, 40, NA))
+cities.plot(pvMoskCc, paste0("Moscow region (", date(), ")"), c(10, 40, NA), 1200)
 ```
 
 shall render in another browser window the following bar chart.

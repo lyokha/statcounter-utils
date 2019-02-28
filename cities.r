@@ -110,12 +110,13 @@ gcountries <- function(cs) {
     return(d[order(-d$Count), ])
 }
 
-cities.plot <- function(cs, title = NULL, width = NULL, tops = NULL) {
-    wf <- if (is.null(width)) 1 else 1600 / width
+cities.plot <- function(cs, title = NULL, tops = NULL, width = NULL) {
+    w0 <- 1200
+    wf <- if (is.null(width)) 1 else w0 / width
     mf <- wf * (max(cs$Count) / 10000)
     cw <- 21
-    to <- (cw * nchar(cs[1, ][["Count"]]) + 175) * mf
-    ym <- cs[1, ][["Count"]] + to * 2
+    to <- (cw * nchar(cs$Count) + 300) * mf
+    ym <- cs[1, ][["Count"]] + to[1] * 2
     nrow <- nrow(cs)
 
     p <- ggplot(cs, aes(reorder(cs[[1]], cs$Count), cs$Count)) +
@@ -154,7 +155,7 @@ cities.plot <- function(cs, title = NULL, width = NULL, tops = NULL) {
                               size = 0.4, linetype = "solid") +
                      annotate("text",
                               x = nrow - tops[i] + 1,
-                              y = ym - 200 * mf, color = "blue",
+                              y = ym - 300 * mf, color = "blue",
                               label = tops[i], size = 3.0, alpha = 0.5)
             cur <- tops[i]
             ac <- ac / 2
@@ -167,6 +168,11 @@ cities.plot <- function(cs, title = NULL, width = NULL, tops = NULL) {
     # Cairo limits linear canvas sizes to 32767 pixels!
     height <- min(25 * nrow(cs), 32600)
     p <- ggplotly(p, height = height, width = width)
+    p <- config(p, toImageButtonOptions =
+                list(filename = `if`(is.null(title), "cities",
+                                     gsub("[[:space:][:punct:]]", "_", title)),
+                     height = height,
+                     width = `if`(is.null(width), w0, width), scale = 1))
 
     print(paste(nrow(cs), "cities plotted"), quote = FALSE)
 
