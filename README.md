@@ -140,7 +140,7 @@ Then,
 
 ```r
 pvMoskCc <- gcities.compound(pvMosk)
-cities.plot(pvMoskCc, paste0("Moscow region (", date(), ")"), c(10, 40, NA), 1200)
+cities.plot(pvMoskCc, paste("Moscow region", format(Sys.time(), "(%F %R)")), c(10, 40, NA), 1200)
 ```
 
 shall render in another browser window the following bar chart.

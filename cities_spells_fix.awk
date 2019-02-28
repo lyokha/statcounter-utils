@@ -316,6 +316,10 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       $9, "");
                   break
+              case "Petropavlovsk-kamchatsky":
+                  $9 = "Kamchatka"
+                  $10 = "Petropavlovsk-kamchatskiy";
+                  break
               case "Petropavlovsk":
                   if ($9 == "Volgograd" || $12 ~ "InterkamService")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
