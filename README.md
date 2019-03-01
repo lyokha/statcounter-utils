@@ -118,7 +118,7 @@ setting this can be useful for conversion of the chart to a PNG image when
 pressing button *toImage* on the *plotly* toolbar. If the width is not set then
 default value of *1200* pixels will be used for image conversion. Argument
 *tops* is a list of numbers to emphasize sets of top cities on the plot. Special
-value *NA* can be used to extend the last emphasize box to the bottom of the
+value *NA* can be used to extend the last emphasis box to the bottom of the
 chart.
 
 Below is a simple example of what images *cities.r* can render.
