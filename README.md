@@ -63,10 +63,11 @@ group_cities -f cities_spells_fix.awk StatCounter-Log.csv > gcities.csv
 group_cities -g -f cities_spells_fix.awk StatCounter-Log.csv > geocode.csv
 ```
 
-The geocoding feature makes use of a Python script
-[*geocoder*](https://github.com/DenisCarriere/geocoder). The geocode provider
-can be passed to *geocoder* via option *-p*, say *-p yandex*. To see all
-available providers, run *geocode --help*. The default provider is *osm*.
+The geocoding feature makes use of the [*Python
+Geocoder*](https://github.com/DenisCarriere/geocoder). The geocode provider can
+be passed to the geocoder via option *-p*, say *-p yandex*. To see all available
+providers, run *geocode --help*. The default provider is *osm*. A sample
+*geocode.csv* is shipped with this project.
 
 To open an interactive map with 1000 most visited cities in a browser, run in
 an *R* shell

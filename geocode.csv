@@ -442,7 +442,7 @@ Australia;New South Wales;Balgowlah;151.264697;-33.796187
 Brazil;Sao Paulo;Sao Paulo;-46.6333824;-23.5506507
 Bulgaria;Burgas;Nesebar;27.716332;42.660377
 Canada;Ontario;North York;-79.412481;43.781798
-China;Guangdong;Foshan;113.119247;23.099794
+China;Guangdong;Foshan;113.1146335;23.0247687
 Cyprus;Nicosia;Nicosia;33.359468;35.169998
 Finland;Oulu;Oulu;25.475781;65.011886
 France;Champagne-Ardenne;Reims;4.031594;49.261299
@@ -988,7 +988,7 @@ Canada;Quebec;Laval;-73.7344173057;45.60558895
 Canada;Quebec;Verdun;-73.5651925;45.4603893
 Canada;Quebec;Warwick;-71.98849;45.944394
 Canada;Saskatchewan;Saskatoon;-106.647074;52.151205
-China;Guangdong;Guangzhou;113.253914;23.218034
+China;Guangdong;Guangzhou;113.2592945;23.1301964
 China;Heilongjiang;Jixi;130.971467;45.295493
 China;Hunan;Nanshan;131.231089;43.959777
 China;Shanxi;Taiyuan;112.551701;37.853894
@@ -1919,3 +1919,5 @@ Japan;Osaka;Osaka;135.5014539;34.6937569
 Netherlands;Noord-Holland;Haarlem;4.6388048;52.3885317
 United Kingdom;Devon;Exeter;-3.5269108;50.725562
 Russian Federation;Sverdlovsk;Sabik;59.4293612;57.2549811
+United States;Utah;Sandy;-111.838904;40.5664878
+China;Fujian;Xiamen;118.0745391;24.4586961
