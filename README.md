@@ -60,12 +60,16 @@ geocoded.
 
 ```sh
 group_cities -f cities_spells_fix.awk StatCounter-Log.csv > gcities.csv
-group_cities -p yandex -g StatCounter-Log.csv > geocode.csv
+group_cities -g -f cities_spells_fix.awk StatCounter-Log.csv > geocode.csv
 ```
 
 The geocoding feature makes use of a Python script
-[*geocoder*](https://github.com/DenisCarriere/geocoder). To open an interactive
-map with 1000 most visited cities in a browser, run in an *R* shell
+[*geocoder*](https://github.com/DenisCarriere/geocoder). The geocode provider
+can be passed to *geocoder* via option *-p*, say *-p yandex*. To see all
+available providers, run *geocode --help*. The default provider is *osm*.
+
+To open an interactive map with 1000 most visited cities in a browser, run in
+an *R* shell
 
 ```r
 source("cities.r")
