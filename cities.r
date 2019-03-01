@@ -58,18 +58,17 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
     return(m)
 }
 
-cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = "",
-                      warn_suspicious = TRUE,
-                      type = "page view") {
-    df <- read.csv(`if`(cities_spells_filter_awk == "",
+cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = NULL,
+                      warn_suspicious = TRUE, type = "page view") {
+    df <- read.csv(`if`(is.null(cities_spells_filter_awk),
                         statcounter_log_csv,
                         pipe(paste("awk -f", cities_spells_filter_awk,
-                                   if (warn_suspicious)
-                                       "-v warn_suspicious=yes" else "",
+                                   `if`(warn_suspicious,
+                                        "-v warn_suspicious=yes", NULL),
                                    statcounter_log_csv))),
                    header = TRUE, sep = ",", quote = "\"", as.is = TRUE)
 
-    if (type != "") {
+    if (!is.null(type)) {
         df <- df[df$Type == type, ]
     }
 

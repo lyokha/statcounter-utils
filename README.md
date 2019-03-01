@@ -100,6 +100,9 @@ pv2018 <- pv[grepl("^2018", pv$Date.and.Time), ]
 cities(gcities(pv2018), "geocode.csv")
 ```
 
+Function *cities_df* accepts argument *type* which has default value *"page
+view"*: that is why only visits of this type are read in.
+
 Cities from *pv* can also be plotted on a bar chart.
 
 ```r
