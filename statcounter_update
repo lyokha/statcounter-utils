@@ -50,6 +50,9 @@ if ( $opt_h || ! $opt_i || ! $opt_u || ! $opt_p || ! $datafile )
     exit( $opt_h ? 0 : 1 );
 }
 
+die 'Insecure connection is deprecated, use option -s to connect securely'
+                                                                unless $opt_s;
+
 $DLINK_PTN =~ s/CSV file/XLSX file for Excel/ if $opt_x;
 
 my $project_id  = $opt_i;
