@@ -1,4 +1,5 @@
 library(leaflet)
+library(leaflet.extras)
 library(htmltools)
 library(plyr)
 library(dplyr)
@@ -18,7 +19,7 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
     d <- d[order(-d$Count), ]
     d <- d[!is.na(d$Longitude) & FUN(d), ]
 
-    m <- leaflet() %>% addTiles()
+    m <- leaflet() %>% addTiles() %>% addResetMapButton()
 
     dh <- head(d, len)
 
@@ -41,9 +42,21 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
 
     m <- addCircleMarkers(m, lng = dh$Longitude, lat = dh$Lattitude,
                           color = dh$Color, radius = 5 * log(dh$Count, 10),
-                          popup = paste(dh$Name, ",", dh$Count))
-
-    m <- addLegend(m, "bottomright",
+                          popup = paste(dh$Name, ",", dh$Count),
+                          label = dh$Name, group = "cities") %>%
+         # to make search work with circle markers, delete text
+         # "e instanceof t.Path ||" in ~/R/x86_64-redhat-linux-gnu-library ...
+         #  /3.5/leaflet.extras/htmlwidgets/build/lfx-search/lfx-search-prod.js
+         # (see https://github.com/bhaskarvk/leaflet.extras/issues/143 ...
+         #  #issuecomment-450461384).
+         addSearchFeatures("cities",
+                           searchFeaturesOptions(
+                                            zoom = NULL,
+                                            moveToLocation = FALSE,
+                                            openPopup = TRUE,
+                                            autoCollapse = TRUE,
+                                            hideMarkerOnCollapse = TRUE)) %>%
+         addLegend("bottomright",
                    colors = c(circle_marker_to_legend_color(color[3]),
                               circle_marker_to_legend_color(color[2]),
                               circle_marker_to_legend_color(color[1])),
@@ -163,12 +176,12 @@ cities.plot <- function(cs, title = NULL, tops = NULL, width = NULL) {
 
     # Cairo limits linear canvas sizes to 32767 pixels!
     height <- min(25 * nrow, 32600)
-    p <- ggplotly(p, height = height, width = width)
-    p <- config(p, toImageButtonOptions =
-                list(filename = `if`(is.null(title), "cities",
-                                     gsub("[^[:alnum:]_\\-]", "_", title)),
-                     height = height,
-                     width = `if`(is.null(width), w0, width), scale = 1))
+    p <- ggplotly(p, height = height, width = width) %>%
+         config(toImageButtonOptions =
+                    list(filename = `if`(is.null(title), "cities",
+                                         gsub("[^[:alnum:]_\\-]", "_", title)),
+                         height = height,
+                         width = `if`(is.null(width), w0, width), scale = 1))
 
     print(paste(nrow, "cities plotted"), quote = FALSE)
 
