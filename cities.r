@@ -43,7 +43,11 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
     m <- addCircleMarkers(m, lng = dh$Longitude, lat = dh$Lattitude,
                           color = dh$Color, radius = 5 * log(dh$Count, 10),
                           popup = paste(dh$Name, ",", dh$Count),
-                          label = dh$Name, group = "cities") %>%
+                          label = gsub("; ;", ";",
+                                       gsub("(^[; ]+|[; ]+$)", "",
+                                            paste(dh$City, dh$Region,
+                                                  dh$Country, sep = "; ")),
+                                       fixed = TRUE), group = "cities") %>%
          # to make search work with circle markers, delete text
          # "e instanceof t.Path ||" in ~/R/x86_64-redhat-linux-gnu-library ...
          #  /3.5/leaflet.extras/htmlwidgets/build/lfx-search/lfx-search-prod.js
