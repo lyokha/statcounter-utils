@@ -1,6 +1,8 @@
 library(leaflet)
 library(htmltools)
 library(plyr)
+library(dplyr)
+library(tidyr)
 library(ggplot2)
 library(plotly)
 
@@ -16,8 +18,7 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
     d <- d[order(-d$Count), ]
     d <- d[!is.na(d$Longitude) & FUN(d), ]
 
-    m <- leaflet()
-    m <- addTiles(m)
+    m <- leaflet() %>% addTiles()
 
     dh <- head(d, len)
 
@@ -30,21 +31,17 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
     color <- c("#FF3300", "#FF9900", "#0033FF", "#666666")
     #           Country    Region     City       Unknown location
 
-    for (x in 1:nrow) {
-        l <- list(c(dh[x, 3], color[3]), c(dh[x, 2], color[2]),
-                  c(dh[x, 1], color[1]), c("<UNKNOWN LOCATION>", color[4]))
+    dh$nc <- case_when(
+                 nzchar(dh$City) ~ paste0(htmlEscape(dh$City), color[3]),
+                 nzchar(dh$Region) ~ paste0(htmlEscape(dh$Region), color[2]),
+                 nzchar(dh$Country) ~ paste0(htmlEscape(dh$Country), color[1]),
+                 TRUE ~ paste0(htmlEscape("<UNKNOWN LOCATION>"), color[4]))
 
-        for (v in l) {
-            if (v[1] != "") {
-                v[1] <- htmlEscape(v[1])
-                break
-            }
-        }
+    dh <- separate(dh, "nc", c("Name", "Color"), -7)
 
-        m <- addCircleMarkers(m, lng = dh[x, 5], lat = dh[x, 6], color = v[2],
-                              radius = 5 * log(dh[x, 4], 10),
-                              popup = paste(v[1], ",", dh[x, 4]))
-    }
+    m <- addCircleMarkers(m, lng = dh$Longitude, lat = dh$Lattitude,
+                          color = dh$Color, radius = 5 * log(dh$Count, 10),
+                          popup = paste(dh$Name, ",", dh$Count))
 
     m <- addLegend(m, "bottomright",
                    colors = c(circle_marker_to_legend_color(color[3]),
@@ -76,7 +73,7 @@ cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = NULL,
 }
 
 gcities <- function(cs) {
-    d <- count(cs, c("Country", "Region", "City"))
+    d <- plyr::count(cs, c("Country", "Region", "City"))
     names(d)[4] <- "Count"
 
     return(d[order(-d$Count), ])
@@ -95,7 +92,7 @@ circle_marker_to_legend_color <- function(color,
 }
 
 gcities.compound <- function(cs) {
-    d <- count(cs, c("Country", "Region", "City"))
+    d <- plyr::count(cs, c("Country", "Region", "City"))
     d$City <- paste(d$Country, "/", d$Region, "/", d$City)
     names(d)[4] <- "Count"
 
@@ -103,7 +100,7 @@ gcities.compound <- function(cs) {
 }
 
 gcountries <- function(cs) {
-    d <- count(cs, c("Country"))
+    d <- plyr::count(cs, c("Country"))
     names(d)[2] <- "Count"
 
     return(d[order(-d$Count), ])

@@ -132,7 +132,6 @@ chart.
 Below is a simple example of how *cities.r* renders images.
 
 ```r
-pv <- cities_df("StatCounter-Log.csv", "cities_spells_fix.awk")
 pvMosk <- pv[grepl("^(Moskva|Moscow)", pv$Region), ]
 pvMoskC <- gcities(pvMosk)
 cities(pvMoskC, "geocode.csv")
