@@ -13,10 +13,10 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
         gcities <- read.csv(gcities, header = TRUE, sep = ";", as.is = TRUE)
     }
     if (!is.data.frame(geocode)) {
-        geocodes <- geocodes_df(geocode)
+        geocode <- geocode_df(geocode)
     }
 
-    d <- merge(gcities, geocodes, 1:3)
+    d <- merge(gcities, geocode, 1:3)
     d <- d[order(-d$Count), ]
     d <- d[!is.na(d$Longitude) & FUN(d), ]
 
@@ -91,7 +91,7 @@ cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = NULL,
     return(df)
 }
 
-geocodes_df <- function(geocode) {
+geocode_df <- function(geocode) {
     df <- read.csv(geocode, header = TRUE, sep = ";", as.is = TRUE,
                    na.strings = "null")
 
