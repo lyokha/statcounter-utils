@@ -224,6 +224,10 @@ NR < 2  { print; next }
                   if ($9 == "Krasnodar")
                       $10 = "";
                   break
+              case "Yeisk":
+                  if ($9 == "Krasnodar")
+                      $10 = "Yeysk";
+                  break
               case "Ryazan'":
                   if ($9 == "Ryazan'")
                       $10 = "Ryazan";
