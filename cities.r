@@ -26,8 +26,7 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
 
     nrow <- nrow(dh)
     if (nrow == 0) {
-        print("No cities to render", quote = FALSE)
-        return(m)
+        stop("No cities to render", call. = FALSE)
     }
 
     color <- c("#FF3300", "#FF9900", "#0033FF", "#666666")
@@ -119,7 +118,9 @@ circle_marker_to_legend_color <- function(color,
 
 gcities.compound <- function(cs) {
     d <- plyr::count(cs, c("Country", "Region", "City"))
-    d$City <- paste(d$Country, "/", d$Region, "/", d$City)
+    if (!empty(d)) {
+        d$City <- paste(d$Country, "/", d$Region, "/", d$City)
+    }
     names(d)[4] <- "Count"
 
     return(d[order(-d$Count), c("City", "Count")])
@@ -133,13 +134,17 @@ gcountries <- function(cs) {
 }
 
 cities.plot <- function(cs, title = NULL, tops = NULL, width = NULL) {
+    nrow <- nrow(cs)
+    if (nrow == 0) {
+        stop("No cities to plot", call. = FALSE)
+    }
+
     w0 <- 1200
     wf <- if (is.null(width)) 1 else w0 / width
     mf <- wf * (max(cs$Count) / 10000)
     cw <- 21
     to <- (cw * nchar(cs$Count) + 300) * mf
     ym <- cs[1, ][["Count"]] + to[1] * 2
-    nrow <- nrow(cs)
 
     p <- ggplot(cs, aes(reorder(cs[[1]], cs$Count), cs$Count)) +
         scale_x_discrete(limits = rev(cs[[1]])) +
@@ -188,7 +193,7 @@ cities.plot <- function(cs, title = NULL, tops = NULL, width = NULL) {
     }
 
     # Cairo limits linear canvas sizes to 32767 pixels!
-    height <- min(25 * nrow, 32600)
+    height <- min(25 * nrow + 120, 32720)
     p <- ggplotly(p, height = height, width = width) %>%
          config(toImageButtonOptions =
                     list(filename = `if`(is.null(title), "cities",
