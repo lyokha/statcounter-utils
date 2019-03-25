@@ -146,22 +146,13 @@ cities.plot <- function(cs, title = NULL, tops = NULL, width = NULL) {
     to <- (cw * nchar(cs$Count) + 300) * mf
     ym <- cs[1, ][["Count"]] + to[1] * 2
 
-    p <- ggplot(cs, aes(reorder(cs[[1]], cs$Count), cs$Count)) +
-        scale_x_discrete(limits = rev(cs[[1]])) +
-        scale_y_continuous(expand = c(0, 50 * mf, 0, 300 * mf),
-                           limits = c(0, NA)) +
-        coord_flip() +
-        geom_col(fill = "darkseagreen", alpha = 1.0) +
-        geom_text(aes(label = cs$Count, y = cs$Count + to, alpha = 0.75),
-                  size = 3.4) +
-        theme(axis.ticks.y = element_blank(),
-              axis.ticks.x = element_blank(),
-              axis.text.x = element_blank(),
-              panel.grid.major = element_blank(),
-              panel.grid.minor = element_blank(),
-              panel.background = element_blank()
-              ) +
-        labs(title = title, x = NULL, y = NULL)
+    p <- ggplot() + theme(axis.ticks.y = element_blank(),
+                          axis.ticks.x = element_blank(),
+                          axis.text.x = element_blank(),
+                          panel.grid.major = element_blank(),
+                          panel.grid.minor = element_blank(),
+                          panel.background = element_blank()) +
+                    labs(title = title, x = NULL, y = NULL)
 
     if (is.null(tops)) {
         p <- p + annotate("rect", xmin = 0.1, xmax = 0.9, ymin = 0, ymax = ym,
@@ -192,6 +183,18 @@ cities.plot <- function(cs, title = NULL, tops = NULL, width = NULL) {
         }
     }
 
+    # aliases for better plotly tooltips
+    loc <- reorder(cs[[1]], cs$Count)
+    cnt <- cs$Count
+    pos <- cs$Count + to
+
+    p <- p + scale_x_discrete(limits = rev(cs[[1]])) +
+             scale_y_continuous(expand = c(0, 50 * mf, 0, 300 * mf),
+                                limits = c(0, NA)) +
+             coord_flip() +
+             geom_col(aes(loc, cnt), fill = "darkseagreen", alpha = 1.0) +
+             geom_text(aes(loc, pos, label = cnt, alpha = 0.75), size = 3.4)
+
     # Cairo limits linear canvas sizes to 32767 pixels!
     height <- min(25 * nrow + 120, 32720)
     p <- ggplotly(p, height = height, width = width) %>%
@@ -199,7 +202,8 @@ cities.plot <- function(cs, title = NULL, tops = NULL, width = NULL) {
                     list(filename = `if`(is.null(title), "cities",
                                          gsub("[^[:alnum:]_\\-]", "_", title)),
                          height = height,
-                         width = `if`(is.null(width), w0, width), scale = 1))
+                         width = `if`(is.null(width), w0, width), scale = 1),
+                displaylogo = FALSE, collaborate = FALSE)
 
     print(paste(nrow, "cities plotted"), quote = FALSE)
 
