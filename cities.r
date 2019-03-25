@@ -173,8 +173,8 @@ cities.plot <- function(cs, title = NULL, tops = NULL, width = NULL) {
                               size = 0.4, linetype = "solid") +
                      annotate("text",
                               x = nrow - tops[i] + 1,
-                              y = ym - 300 * mf, color = "blue",
-                              label = tops[i], size = 3.0, alpha = 0.5)
+                              y = ym - 300 * mf, label = tops[i],
+                              color = alpha("blue", 0.5), size = 3.0)
             cur <- tops[i]
             ac <- ac / 2
             if (tops[i] == nrow) {
@@ -192,7 +192,7 @@ cities.plot <- function(cs, title = NULL, tops = NULL, width = NULL) {
              scale_y_continuous(expand = c(0, 50 * mf, 0, 300 * mf),
                                 limits = c(0, NA)) +
              coord_flip() +
-             geom_col(aes(loc, cnt), fill = "darkseagreen", alpha = 1.0) +
+             geom_col(aes(loc, cnt), fill = alpha("darkseagreen", 1.0)) +
              geom_text(aes(loc, pos, label = cnt, alpha = 0.75), size = 3.4)
 
     # Cairo limits linear canvas sizes to 32767 pixels!
