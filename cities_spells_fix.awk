@@ -736,6 +736,9 @@ NR < 2  { print; next }
               case "Goiânia":
                   $10 = "Goiania";
                   break
+              case "Ciudad De Mexico":              # Mexico
+                  $10 = "Mexico";
+                  break
               case "Ho Chi Minh City":              # Vietnam
                   if ($9 != "Ho Chi Minh")
                       suspicious_repl(substr($1, 2), $2, 9, 10,

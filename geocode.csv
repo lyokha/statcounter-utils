@@ -141,7 +141,7 @@ Russian Federation;Volgograd;Volzhskiy;44.751867;48.786293
 Canada;Ontario;Toronto;-79.387207;43.653963
 United States;California;San Francisco;-122.446904;37.759351
 Czech Republic;;;15.4749544;49.8167003
-Japan;Tokyo;Tokyo;139.753137;35.682272
+Japan;Tokyo;Tokyo;139.7594549;35.6828387
 Russian Federation;Chelyabinsk;Magnitogorsk;58.983136;53.4242184
 Russian Federation;Komi;Syktyvkar;50.809940;61.676420
 Russian Federation;Moskva;Krasnogorsk;37.330192;55.831099
@@ -395,7 +395,7 @@ Germany;Nordrhein-Westfalen;Essen;7.00067;51.452016
 Greece;Thessaloniki;Thessaloníki;22.929543;40.644877
 Hong Kong;;Central District;114.139751;22.274251
 Indonesia;;;120.0;-5.0
-Japan;Saitama;Saitama;139.648878;35.912883
+Japan;Saitama;Saitama;139.65657;35.90807
 Kazakhstan;Almaty;Taldykorgan;78.382096;45.017837
 Netherlands;Noord-Brabant;Eindhoven;5.486011;51.434619
 Netherlands;Utrecht;Utrecht;5.111773;52.096255
@@ -635,7 +635,7 @@ United States;Virginia;Manassas;-77.475489;38.750694
 United States;Virginia;Virginia Beach;-75.977081;36.849993
 United States;Wisconsin;North Freedom;-89.866383;43.460195
 Uruguay;Montevideo;Montevideo;-56.1913569;-34.9059039
-Argentina;;;-64.9672817;-34.9964963
+Argentina;;;-64.0;-34.0
 Argentina;Buenos Aires;La Plata;-57.954272;-34.921092
 Argentina;Buenos Aires;Mar Del Plata;-57.571086;-37.995186
 Australia;Australian Capital Territory;Canberra;149.125502;-35.306867
@@ -735,7 +735,7 @@ Montenegro;;Budva;18.843906;42.28908
 Netherlands;Friesland;Ternaard;5.963879;53.382039
 Netherlands;Limburg;Maastricht;5.694609;50.849375
 Pakistan;;;69.28032;29.801824
-Peru;Lima;Lima;-77.030554;-12.046016
+Peru;Lima;Lima;-77.0365256;-12.0621065
 Poland;Kujawsko-Pomorskie;Bydgoszcz;18.040938;53.125306
 Poland;Kujawsko-Pomorskie;Polska;17.249899;52.32714
 Poland;Lodzkie;Lodz;19.454715;51.77677
@@ -951,7 +951,7 @@ Belgium;Oost-Vlaanderen;Vlierzele;3.895553;50.931126
 Belgium;Oost-Vlaanderen;Wachtebeke;3.860339;51.170977
 Belgium;Vlaams-Brabant;Aarschot;4.829181;50.982677
 Belgium;West-Vlaanderen;Waregem;3.422994;50.887445
-Bolivia;La Paz;La Paz;-68.165933;-16.485969
+Bolivia;La Paz;La Paz;-68.1336346;-16.4956371
 Brazil;Bahia;Santo Antonio De Jesus;-39.258983;-12.967587
 Brazil;Distrito Federal;Brasilia;-47.8823172;-15.7934036
 Brazil;Goias;Goiania;-49.2532691;-16.680882
@@ -993,7 +993,7 @@ China;Heilongjiang;Jixi;130.971467;45.295493
 China;Hunan;Nanshan;131.231089;43.959777
 China;Shanxi;Taiyuan;112.551701;37.853894
 China;Sichuan;Chengdu;104.075485;30.664233
-Colombia;Antioquia;Medellin;-75.579226;6.243499
+Colombia;Antioquia;Medellin;-75.573553;6.2443382
 Costa Rica;San Jose;Escazú;-84.129966;9.927437
 Croatia;Istarska;Galizana;13.8698215;44.9328531
 Curacao;;Willemstad;-68.934245;12.109547
@@ -1183,7 +1183,7 @@ Japan;Okinawa;Uruma;127.805139;26.345831
 Japan;Osaka;Ikeda;135.433332;34.819371
 Japan;Saitama;Asaka;139.593733;35.7970861
 Japan;Shizuoka;Shizuoka;138.436305;34.993009
-Japan;Tokyo;Koto;139.817357;35.654379
+Japan;Tokyo;Koto;139.81279;35.649154
 Japan;Tokyo;Setagaya;139.635808;35.637141
 Kazakhstan;Almaty;Kaskelen;76.623401;43.202265
 Kazakhstan;Mangghystau;Aktau;51.157997;43.652058
@@ -1933,3 +1933,13 @@ Japan;Tokyo;Minamiaoyama;139.717332;35.659007
 France;Ile-de-France;Chevilly-larue;2.3469255;48.7714153
 Brazil;Sao Paulo;Sao Jose Do Rio Preto;-49.3804212;-20.8125851
 Thailand;Rayong;Rayong;101.2777435;12.6816485
+Panama;Panama;Panama;-79.5341802;8.9714493
+Guatemala;Guatemala;Guatemala City;-90.5185188;14.6222328
+Spain;Andalucia;Úbeda;-3.3719849;38.0126888
+Chile;;;-71.0;-30.0
+Mexico;Chihuahua;Juarez;-106.4555818;31.7097961
+Mexico;Baja California Sur;La Paz;-110.518542813;24.10843275
+Argentina;Buenos Aires;Wilde;-58.314592;-34.6984264
+Colombia;Distrito Especial;Bogota;-74.0761028;4.5980772
+Japan;Saitama;Misato;139.8722251;35.830091
+Japan;Saitama;Kawaguchi;139.7241054;35.8078228
