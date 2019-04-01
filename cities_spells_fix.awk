@@ -815,10 +815,11 @@ END     { if (suspicious_count > 0)
         }
 
 # Potentially ambiguos locations (you may want to check them with whois):
-#   Donetsk  (Rostov) -> Donetsk  (Donets'ka Oblast')
+#   Donetsk (Rostov) -> Donetsk (Donets'ka Oblast')
 
 # Suspicious locations with no clue to resolve (or too old to check):
-#   Niva  (Ryazan') -> Nizhniy Novgorod (Nizhegorod)  [92.255.244.51]
+#   Niva (Ryazan') -> Nizhniy Novgorod (Nizhegorod)  [92.255.244.51]
 #   Polska (Kujawsko-Pomorskie) -> ??? Warzachewka Polska, but it's a village
 #   Volga (Yaroslavl') -> ???, for those of them with OJSC/PJSC Megafon
+#   Sulin (Rostov) -> Krasny Sulin (Rostov), Sulin is a small khutor
 
