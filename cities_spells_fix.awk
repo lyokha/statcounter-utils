@@ -243,6 +243,9 @@ NR < 2  { print; next }
                       $12 ~ "Moskovskiy Gosudarstvennyy")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Moscow City", "Moscow");
+                  else if ($12 == "JSC ER-Telecom Holding Ryazan' Branch")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Ryazan'", "Ryazan");
                   break
               case "Ural":
                   if ($9 == "Krasnoyarsk")
