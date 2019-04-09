@@ -334,7 +334,7 @@ Russian Federation;Kursk;Zheleznogorsk;35.3515011;52.3306193
 Russian Federation;Leningrad;Vsevolozhsk;30.646042;60.024006
 Russian Federation;Moskva;Istra;36.860284;55.914287
 Russian Federation;Nizhegorod;Dzerzhinsk;43.461625;56.238377
-Russian Federation;Sverdlovsk;Pervouralsk;59.943249;56.905839
+Russian Federation;Sverdlovsk;Pervouralsk;59.943119;56.904858
 Russian Federation;Ul'yanovsk;Dimitrovgrad;49.621984;54.217715
 Serbia;;;20.55144;44.1534121
 Serbia;Serbia proper;Belgrade;20.4568974;44.8178131
@@ -414,7 +414,7 @@ Russian Federation;Rostov;Volgodonsk;42.1717606;47.5128177
 Russian Federation;Sverdlovsk;Asbest;61.458114;57.005274
 Russian Federation;Sverdlovsk;Novouralsk;60.095604;57.247235
 Russian Federation;Tatarstan;;50.911013;55.350336
-Russian Federation;Tyumen';Tobolsk;68.253762;58.201698
+Russian Federation;Tyumen';Tobolsk;68.2512924;58.1998048
 Russian Federation;Vladimir;Aleksandrov;38.7111103;56.3962287
 Russian Federation;Vladimir;Kirzhach;38.8721255;56.1592229
 Russian Federation;Yamal-Nenets;Nadym;72.531341;65.535924
@@ -801,10 +801,10 @@ Russian Federation;Smolensk;Roslavl;32.85678;53.947309
 Russian Federation;Stavropol';Nevinnomyssk;41.9473734561;44.6293247
 Russian Federation;Stavropol';Svetlograd;42.8434716;45.3355066
 Russian Federation;Stavropol';Yessentuki;42.8565018;44.0468389
-Russian Federation;Sverdlovsk;Aramil;60.834315;56.694538
-Russian Federation;Sverdlovsk;Irbit;63.057664;57.683819
+Russian Federation;Sverdlovsk;Aramil;60.8504536;56.6954649
+Russian Federation;Sverdlovsk;Irbit;63.063778;57.674042
 Russian Federation;Sverdlovsk;Revda;59.908718;56.800079
-Russian Federation;Sverdlovsk;Rezh;61.391639;57.373772
+Russian Federation;Sverdlovsk;Rezh;61.4042865;57.370647
 Russian Federation;Sverdlovsk;Zarechny;61.320636;56.814887
 Russian Federation;Tatarstan;Nizhnekamsk;51.809112;55.63407
 Russian Federation;Tula;Uzlovaya;38.160299;53.97844
@@ -1414,7 +1414,7 @@ Russian Federation;Saratov;Novosokolovogorskiy;46.055861;51.571067
 Russian Federation;Saratov;Sinodskoye;46.666087;51.98681
 Russian Federation;Stavropol';Georgievsk;43.4741718;44.1478944
 Russian Federation;Stavropol';Zheleznovodsk;43.0090751;44.1424034
-Russian Federation;Sverdlovsk;Polevskoy;60.177072;56.446499
+Russian Federation;Sverdlovsk;Polevskoy;60.165859;56.442108
 Russian Federation;Sverdlovsk;Pyshma;63.246966;56.953457
 Russian Federation;Sverdlovsk;Salda;60.702577;58.074855
 Russian Federation;Sverdlovsk;Severouralsk;59.952556;60.153281
@@ -1813,7 +1813,7 @@ Germany;Sachsen;Freiberg;13.3428889;50.9169415
 Czech Republic;Jihocesky kraj;Ktis;14.1326527;48.916976
 Russian Federation;Smolensk;Safonovo;33.237917;55.106304
 Russian Federation;Krasnoyarsk;Kamarchaga;93.6808;55.809469
-Russian Federation;Sverdlovsk;Verkhnyaya Pyshma;60.579194;56.966958
+Russian Federation;Sverdlovsk;Verkhnyaya Pyshma;60.5738926;56.9724682
 Belarus;Vitsyebskaya Voblasts';Novolukoml;29.141087;54.656933
 United Kingdom;Leicestershire;Hinckley;-1.3729379;52.5410591
 Netherlands;Noord-Holland;Beverwijk;4.67320362185;52.478626
@@ -1952,3 +1952,4 @@ Russian Federation;Leningrad;Koltushi;30.6601904;59.9339671
 United Kingdom;Southwark;Camberwell;-0.0925416;51.4745706
 Russian Federation;Kemerovo;Yurga;84.934799;55.7136
 Belarus;Mahilyowskaya Voblasts';Bobruisk;29.2281209;53.1449683
+Russian Federation;Adygey;Yablonovskiy;38.9382841;44.9864341
