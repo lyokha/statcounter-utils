@@ -206,6 +206,9 @@ NR < 2  { print; next }
               case "Pervoural'sk":
                   $10 = "Pervouralsk";
                   break
+              case "Pereslavl'-zalesskiy":
+                  $10 = "Pereslavl-zalesskiy";
+                  break
               case "Mineralnye":
               case "Mineralnye Vody":
                   if ($9 == "Stavropol'")
