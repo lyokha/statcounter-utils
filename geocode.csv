@@ -317,7 +317,7 @@ Ukraine;Kyyivs'ka Oblast';Brovary;30.790861;50.51109
 United States;California;;-118.7559974;36.7014631
 United States;California;Fremont;-121.9885719;37.5482697
 United States;Oregon;Portland;-122.671402;45.519435
-Australia;New South Wales;Sydney;151.211858;-33.873603
+Australia;New South Wales;Sydney;151.2164539; -33.8548157
 Belgium;Brussels Hoofdstedelijk Gewest;Brussels;4.483653;50.898586
 Bulgaria;Grad Sofiya;Sofia;23.321765;42.697747
 China;Beijing;Beijing;116.3912757;39.906217
@@ -325,7 +325,7 @@ Germany;Nordrhein-Westfalen;Münster;7.631134;51.963737
 Germany;Sachsen;Dresden;13.737891;51.049625
 Hungary;;;19.385329;47.135747
 Indonesia;Jakarta Raya;Jakarta;106.827183;-6.1753942
-Italy;Lombardia;Milan;9.181438;45.469157
+Italy;Lombardia;Milan;9.1904984;45.4667971
 Moldova, Republic of;Bender;Bendery;29.471604;46.826978
 Poland;Malopolskie;Kraków;19.936742;50.061971
 Russian Federation;Chelyabinsk;Kopeysk;61.61797;55.116732
@@ -347,7 +347,7 @@ United States;California;San Mateo;-122.308024;37.558592
 United States;District of Columbia;Washington;-77.036527;38.899513
 United States;New Jersey;Newark;-74.178968;40.730442
 United States;Texas;Houston;-95.363183;29.763693
-Australia;New South Wales;Alexandria;151.183192;-33.910087
+Australia;New South Wales;Alexandria;151.1921281;-33.9091568
 Belarus;Minskaya Voblasts';Borisov;28.511755;54.224069
 Bulgaria;Burgas;Burgas;27.467810;42.506060
 Canada;Alberta;Calgary;-114.083912;51.034091
@@ -438,7 +438,7 @@ United States;New Jersey;Mount Laurel;-74.891889;39.933994
 United States;Texas;Dallas;-96.7968559;32.7762719
 United States;Utah;Provo;-111.664156;40.231464
 United States;Washington;Tacoma;-122.4398746;47.2495798
-Australia;New South Wales;Balgowlah;151.264697;-33.796187
+Australia;New South Wales;Balgowlah;151.2608261;-33.7944424
 Brazil;Sao Paulo;Sao Paulo;-46.6333824;-23.5506507
 Bulgaria;Burgas;Nesebar;27.7167464;42.6607865
 Canada;Ontario;North York;-79.4132998;43.7708175
@@ -715,8 +715,8 @@ Israel;Hefa;Haifa;34.954139;32.419532
 Israel;Tel Aviv;;34.8071431648;32.09492
 Israel;Tel Aviv;Bat Yam;34.750689;32.015522
 Israel;Tel Aviv;Holon;34.776578;32.012338
-Italy;Campania;Naples;14.249544;40.853197
-Italy;Emilia-Romagna;Bologna;11.345111;44.504866
+Italy;Campania;Naples;14.2487826;40.8359336
+Italy;Emilia-Romagna;Bologna;11.3430347;44.4936714
 Italy;Piemonte;Turin;7.688672;45.069149
 Italy;Toscana;Arezzo;11.861346;43.460457
 Italy;Veneto;Padua;11.872548;45.409338
@@ -913,14 +913,14 @@ Australia;New South Wales;Cremorne;151.2254326;-33.8260081
 Australia;New South Wales;Earlwood;151.120292;-33.927985
 Australia;New South Wales;Eastwood;151.0844444;-33.79
 Australia;New South Wales;Kogarah;151.1341;-33.960284
-Australia;New South Wales;Lakemba;151.079194;-33.927588
+Australia;New South Wales;Lakemba;151.0749236;-33.9196311
 Australia;New South Wales;Newtown;151.173796;-33.895083
 Australia;New South Wales;Pyrmont;151.195715;-33.870546
 Australia;New South Wales;Rhodes;151.090684;-33.826638
 Australia;New South Wales;Roseville;151.1827257;-33.7826456
 Australia;New South Wales;Strathfield;151.078524591;-33.87981765
 Australia;New South Wales;Ultimo;151.196892;-33.878488
-Australia;New South Wales;Yagoona;151.028395;-33.905989
+Australia;New South Wales;Yagoona;151.0176677;-33.9037907
 Australia;Queensland;Brisbane;153.07968;-27.46316
 Australia;Queensland;Coorparoo;153.059198;-27.494487
 Australia;Queensland;Inala;152.979194;-27.597889
@@ -1143,30 +1143,30 @@ Israel;Tel Aviv;Herzliya;34.842137;32.164709
 Israel;Tel Aviv;Ramat Gan;34.828106;32.062236
 Italy;Abruzzi;Isola Del Gran Sasso D'italia;13.661139;42.502764
 Italy;Calabria;Villa San Giovanni;15.662;38.23529
-Italy;Emilia-Romagna;Cesena;12.250263;44.141529
+Italy;Emilia-Romagna;Cesena;12.2422442;44.136352
 Italy;Emilia-Romagna;Ferrara;11.612683;44.828699
-Italy;Emilia-Romagna;Piacenza;9.679769;45.042585
+Italy;Emilia-Romagna;Piacenza;9.6947461;45.0534751
 Italy;Emilia-Romagna;Rimini;12.571437;44.054374
 Italy;Lazio;Acquapendente;11.86308;42.743695
 Italy;Lazio;Guidonia;12.7263446;41.9972039
 Italy;Lazio;Sasso;12.043542;42.054764
-Italy;Lombardia;Brescia;10.209344;45.542247
+Italy;Lombardia;Brescia;10.2200214;45.5398022
 Italy;Lombardia;Casalpusterlengo;9.651248;45.180725
 Italy;Lombardia;Opera;9.212295;45.376856
 Italy;Lombardia;Sesto San Giovanni;9.243808;45.520199
 Italy;Lombardia;Valgreghentino;9.412503;45.776507
 Italy;Marche;Monteciccardo;12.781427;43.856455
 Italy;Puglia;Bari;16.868762;41.126005
-Italy;Puglia;Taranto;17.256017;40.461614
+Italy;Puglia;Taranto;17.2432278;40.4712427
 Italy;Sicilia;Palermo;13.3524434;38.1112268
 Italy;Toscana;Cascina;10.546769;43.676528
-Italy;Toscana;Florence;11.265817;43.779787
+Italy;Toscana;Florence;11.2555757;43.7698712
 Italy;Toscana;Larderello;10.88777;43.237419
 Italy;Toscana;Pisa;10.398943;43.710546
 Italy;Veneto;Fontaniva;11.7521976;45.6376293
 Italy;Veneto;Mestre;12.248421;45.497739
 Italy;Veneto;Peschiera Del Garda;10.688056;45.43239
-Italy;Veneto;Verona;10.973442;45.441586
+Italy;Veneto;Verona;10.9924122;45.4384958
 Japan;Aichi;Nagakute;137.049827;35.171577
 Japan;Chiba;Chiba;140.114107;35.612196
 Japan;Chiba;Ichikawa;140.032171;35.270386
@@ -1977,3 +1977,18 @@ Russian Federation;Krasnodar;Dinskaya;39.2249757;45.2168713
 Brazil;Sao Paulo;Barueri;-46.8764612;-23.5112184
 Russian Federation;Moskva;Skhodnya;37.2976171;55.9502833
 Lithuania;Vilniaus Apskritis;Lentvaris;25.0504034;54.6428696
+Russian Federation;Moskva;Razvilka;37.750278;55.590278
+Russian Federation;Nizhegorod;Arzamas;43.8408129;55.3989463
+Russian Federation;Saratov;Krasnoarmeysk;45.69252;51.025776
+United States;New Jersey;Toms River;-74.1979576;39.9537359
+United States;Oregon;Boardman;-119.7005834;45.839855
+United States;Arizona;Tucson;-110.9574232;32.22876425
+United States;Arizona;Sierra Vista;-110.2772249;31.5455709
+United States;California;San Carlos;-122.2618236;37.504936
+United States;California;Burbank;-118.3258554;34.1816482
+United States;Indiana;Indianapolis;-86.1583502;39.7683331
+Germany;Bayern;Pfaffenhofen;11.505;48.53053
+Indonesia;Jawa Timur;Surabaya;112.7378266;-7.2459717
+Australia;New South Wales;North Sydney;151.2083011;-33.8354519
+Japan;Osaka;Suita;135.51735;34.764884
+Korea, Republic of;Kyonggi-do;Seongnam;127.1262092;37.4201556
