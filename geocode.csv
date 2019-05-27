@@ -393,7 +393,7 @@ Colombia;;;-73.783892;2.8894434
 Estonia;Tartumaa;Tartu;26.728976;58.377948
 Germany;Nordrhein-Westfalen;Essen;7.011429;51.457087
 Greece;Thessaloniki;Thessaloníki;22.929543;40.644877
-Hong Kong;;Central District;114.139751;22.274251
+Hong Kong;;Central District;114.1602579;22.2813223
 Indonesia;;;120.0;-5.0
 Japan;Saitama;Saitama;139.65657;35.90807
 Kazakhstan;Almaty;Taldykorgan;78.382096;45.017837
@@ -509,7 +509,7 @@ United States;Washington;Bellevue;-122.1923372;47.6144219
 United States;Washington;Kirkland;-122.189635;47.681108
 Vietnam;Ho Chi Minh;Ho Chi Minh City;106.694936;10.776264
 Argentina;Distrito Federal;Buenos Aires;-58.437076;-34.6075616
-Australia;New South Wales;Seven Hills;150.935195;-33.775484
+Australia;New South Wales;Seven Hills;150.9427044;-33.7760305
 Belarus;Minskaya Voblasts';Zhodino;28.321572;54.09437
 Belarus;Vitsyebskaya Voblasts';Polotsk;28.768349;55.485576
 Belgium;Vlaams-Brabant;Leuven;4.696859;50.882416
@@ -580,7 +580,7 @@ Russian Federation;Sverdlovsk;Kushva;59.764682;58.282566
 Russian Federation;Tambovskaya oblast;Rasskazovo;41.874302;52.653842
 Russian Federation;Tatarstan;Almetyevsk;52.297113;54.901383
 Russian Federation;Tatarstan;Leninogorsk;52.442667;54.599028
-Russian Federation;Tatarstan;Urussu;53.461932;54.594506
+Russian Federation;Tatarstan;Urussu;53.4663259;54.5993324
 Russian Federation;Tver';Vyshniy Volochek;34.564530;57.591250
 Russian Federation;Udmurt;Igra;53.0991803;57.5467442
 Russian Federation;Ul'yanovsk;;47.606533;53.891057
@@ -638,10 +638,10 @@ Uruguay;Montevideo;Montevideo;-56.1913569;-34.9059039
 Argentina;;;-64.0;-34.0
 Argentina;Buenos Aires;La Plata;-57.954272;-34.921092
 Argentina;Buenos Aires;Mar Del Plata;-57.5482703;-37.9977225
-Australia;Australian Capital Territory;Canberra;149.125502;-35.306867
+Australia;Australian Capital Territory;Canberra;149.1012676;-35.2975906
 Australia;New South Wales;Bankstown;151.0335881;-33.9171897
 Australia;New South Wales;Beverly Hills;151.0817342;-33.9497444
-Australia;New South Wales;Penrith;150.694302;-33.754994
+Australia;New South Wales;Penrith;150.6941684;-33.7510792
 Australia;New South Wales;Wollongong;150.89385;-34.4243941
 Australia;South Australia;Adelaide;138.5999312;-34.9281805
 Australia;Victoria;Camberwell;145.0740767;-37.8384623
@@ -908,11 +908,11 @@ Asia/Pacific Region;;;121.0136561;14.6759968
 Australia;Australian Capital Territory;Bonner;149.1429557;-35.1559621
 Australia;New South Wales;Auburn;151.024694;-33.853886
 Australia;New South Wales;Bondi;151.2633333;-33.8930556
-Australia;New South Wales;Campsie;151.107491;-33.910888
+Australia;New South Wales;Campsie;151.1032133;-33.9143894
 Australia;New South Wales;Cremorne;151.2254326;-33.8260081
-Australia;New South Wales;Earlwood;151.120292;-33.927985
+Australia;New South Wales;Earlwood;151.1313889;-33.9247222
 Australia;New South Wales;Eastwood;151.0844444;-33.79
-Australia;New South Wales;Kogarah;151.1341;-33.960284
+Australia;New South Wales;Kogarah;151.1354509;-33.968226
 Australia;New South Wales;Lakemba;151.0749236;-33.9196311
 Australia;New South Wales;Newtown;151.173796;-33.895083
 Australia;New South Wales;Pyrmont;151.195715;-33.870546
@@ -921,19 +921,19 @@ Australia;New South Wales;Roseville;151.1827257;-33.7826456
 Australia;New South Wales;Strathfield;151.078524591;-33.87981765
 Australia;New South Wales;Ultimo;151.196892;-33.878488
 Australia;New South Wales;Yagoona;151.0176677;-33.9037907
-Australia;Queensland;Brisbane;153.07968;-27.46316
-Australia;Queensland;Coorparoo;153.059198;-27.494487
-Australia;Queensland;Inala;152.979194;-27.597889
+Australia;Queensland;Brisbane;153.0234991;-27.4689682
+Australia;Queensland;Coorparoo;153.0595973;-27.4962028
+Australia;Queensland;Inala;152.9720075;-27.59854
 Australia;Queensland;South Brisbane;153.024038;-27.481228
 Australia;Queensland;Waterford;153.1528045;-27.7035157
 Australia;South Australia;Whyalla;137.545688;-33.048744
 Australia;South Australia;Windsor;138.334095;-34.420783
 Australia;Victoria;Mulgrave;145.181798811;-37.9319869
-Australia;Victoria;Northcote;144.998894;-37.769384
-Australia;Victoria;Ringwood East;145.2477;-37.811089
+Australia;Victoria;Northcote;145.010324548;-37.77308
+Australia;Victoria;Ringwood East;145.2530126;-37.8130808
 Australia;Victoria;Rosanna;145.0696349;-37.7396345
 Australia;Victoria;South Yarra;144.9918537;-37.8377695
-Australia;Western Australia;Fremantle;115.754931;-32.051388
+Australia;Western Australia;Fremantle;115.7461693;-32.0558714
 Australia;Western Australia;Perth;115.8604796;-31.9527121
 Austria;Niederosterreich;Steinakirchen;15.049135;48.070045
 Austria;Steiermark;Graz;15.441267;47.073472
@@ -1330,10 +1330,10 @@ Russian Federation;Leningrad;Kommunar;30.393483;59.621609
 Russian Federation;Leningrad;Kudrovo;30.508295;59.907093
 Russian Federation;Leningrad;Luga;29.847999;58.735221
 Russian Federation;Leningrad;Lyuban;31.24858;59.349296
-Russian Federation;Leningrad;Priozërsk;30.119838;61.036554
+Russian Federation;Leningrad;Priozërsk;30.1248482;61.0385285
 Russian Federation;Leningrad;Slantsy;28.088136;59.11779
 Russian Federation;Leningrad;Sosnovy Bor;29.076492;59.89695
-Russian Federation;Leningrad;Vyborg;28.749404;60.710232
+Russian Federation;Leningrad;Vyborg;28.744051;60.709217
 Russian Federation;Lipetsk;Gryazi;39.95533;52.496186
 Russian Federation;Lipetsk;Lebedyan;39.127593;53.0126146
 Russian Federation;Lipetsk;Usman;39.7399996;52.0506929
@@ -1992,3 +1992,7 @@ Indonesia;Jawa Timur;Surabaya;112.7378266;-7.2459717
 Australia;New South Wales;North Sydney;151.2083011;-33.8354519
 Japan;Osaka;Suita;135.51735;34.764884
 Korea, Republic of;Kyonggi-do;Seongnam;127.1262092;37.4201556
+United States;New Jersey;;-74.4041622;40.0757384
+Netherlands;Noord-Holland;Lutjebroek;5.20087138914;52.69721715
+Russian Federation;Karelia;Kondopoga;34.268185;62.20929
+Spain;Andalucia;Marbella;-4.88562;36.508976

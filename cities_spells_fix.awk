@@ -101,6 +101,9 @@ NR < 2  { print; next }
                   if ($9 == "Sverdlovsk")
                       $10 = "Kamensk-uralskiy";
                   break
+              case "Al'met'yevsk":
+                  $10 = "Almetyevsk";
+                  break
               case "Nizhni Tagil":
               case "Nizhny Tagil":
                   $10 = "Nizhniy Tagil";
