@@ -318,7 +318,7 @@ United States;California;;-118.7559974;36.7014631
 United States;California;Fremont;-121.9885719;37.5482697
 United States;Oregon;Portland;-122.671402;45.519435
 Australia;New South Wales;Sydney;151.2164539; -33.8548157
-Belgium;Brussels Hoofdstedelijk Gewest;Brussels;4.483653;50.898586
+Belgium;Brussels Hoofdstedelijk Gewest;Brussels;4.351697;50.8465573
 Bulgaria;Grad Sofiya;Sofia;23.321765;42.697747
 China;Beijing;Beijing;116.3912757;39.906217
 Germany;Nordrhein-Westfalen;Münster;7.631134;51.963737
@@ -351,7 +351,7 @@ Australia;New South Wales;Alexandria;151.1921281;-33.9091568
 Belarus;Minskaya Voblasts';Borisov;28.511755;54.224069
 Bulgaria;Burgas;Burgas;27.467810;42.506060
 Canada;Alberta;Calgary;-114.083912;51.034091
-Cyprus;Limassol;Limassol;33.042165;34.687526
+Cyprus;Limassol;Limassol;33.042341;34.6735637
 France;Rhone-Alpes;Écully;4.778768;45.774307
 Germany;Hessen;Darmstadt;8.647973;49.868677
 Ireland;;;-7.9794599;52.865196
@@ -392,7 +392,7 @@ Canada;British Columbia;Vancouver;-123.1139529;49.2608724
 Colombia;;;-73.783892;2.8894434
 Estonia;Tartumaa;Tartu;26.728976;58.377948
 Germany;Nordrhein-Westfalen;Essen;7.011429;51.457087
-Greece;Thessaloniki;Thessaloníki;22.929543;40.644877
+Greece;Thessaloniki;Thessaloníki;22.9352716;40.6403167
 Hong Kong;;Central District;114.1602579;22.2813223
 Indonesia;;;120.0;-5.0
 Japan;Saitama;Saitama;139.65657;35.90807
@@ -512,7 +512,7 @@ Argentina;Distrito Federal;Buenos Aires;-58.437076;-34.6075616
 Australia;New South Wales;Seven Hills;150.9427044;-33.7760305
 Belarus;Minskaya Voblasts';Zhodino;28.321572;54.09437
 Belarus;Vitsyebskaya Voblasts';Polotsk;28.768349;55.485576
-Belgium;Vlaams-Brabant;Leuven;4.696859;50.882416
+Belgium;Vlaams-Brabant;Leuven;4.7011675;50.879202
 Brazil;;;-53.2;-10.3333333
 Canada;Ontario;Richmond Hill;-79.439392;43.880078
 Canada;Ontario;Waterloo;-80.513088;43.466798
@@ -666,7 +666,7 @@ Chile;Valparaiso;Quintero;-71.524384;-32.788585
 China;Zhejiang;Hangzhou;120.158616;30.273414
 Costa Rica;San Jose;San José;-84.084538;9.934776
 Croatia;;;16.106443;45.439828
-Cyprus;Limassol;Pissouri;32.698182;34.668164
+Cyprus;Limassol;Pissouri;32.7019524;34.6707579
 Czech Republic;Jihomoravsky kraj;Vyskov;16.998811;49.279857
 Denmark;Hovedstaden;Kongens Lyngby;12.5051413;55.7718649
 Ecuador;Guayas;Guayaquil;-79.889532;-2.189327
@@ -945,12 +945,12 @@ Belarus;Homyel'skaya Voblasts';Pokolyubichi;31.0349704;52.4986794
 Belarus;Minskaya Voblasts';Dzerjinsk;27.131493;53.685209
 Belarus;Minskaya Voblasts';Zaslavl;27.291241;54.004485
 Belgium;Antwerpen;Merksem;4.44439615996;51.2492887
-Belgium;Liege;Seraing;5.507832;50.609147
+Belgium;Liege;Seraing;5.5089437;50.6152381
 Belgium;Oost-Vlaanderen;Gent;3.7250121;51.0538286
 Belgium;Oost-Vlaanderen;Vlierzele;3.895553;50.931126
-Belgium;Oost-Vlaanderen;Wachtebeke;3.860339;51.170977
+Belgium;Oost-Vlaanderen;Wachtebeke;3.8574284;51.1701927
 Belgium;Vlaams-Brabant;Aarschot;4.829181;50.982677
-Belgium;West-Vlaanderen;Waregem;3.422994;50.887445
+Belgium;West-Vlaanderen;Waregem;3.4323287;50.8868095
 Bolivia;La Paz;La Paz;-68.1336346;-16.4956371
 Brazil;Bahia;Santo Antonio De Jesus;-39.258983;-12.967587
 Brazil;Distrito Federal;Brasilia;-47.8823172;-15.7934036
@@ -1233,8 +1233,8 @@ Netherlands;Zuid-Holland;Alphen Aan Den Rijn;4.658897;52.127199
 Netherlands;Zuid-Holland;Noordwijk;4.445637;52.241538
 Netherlands;Zuid-Holland;Numansdorp;4.437803;51.726557
 Netherlands;Zuid-Holland;Rijswijk;4.318992;52.043995
-Netherlands;Zuid-Holland;Rotterdam;4.467555;51.913099
-Netherlands;Zuid-Holland;Spijkenisse;4.339644;51.838415
+Netherlands;Zuid-Holland;Rotterdam;4.4631786;51.9228934
+Netherlands;Zuid-Holland;Spijkenisse;4.33532959606;51.84342795
 New Zealand;Northland;Whangarei;174.3206488;-35.7283469
 New Zealand;Wellington;Lower Hutt;174.914293;-41.207689
 Nigeria;;;8.043273;9.431514
@@ -1829,7 +1829,7 @@ Australia;New South Wales;Rydalmere;151.0411702;-33.8117088
 Australia;Victoria;Armadale;145.0206905;-37.8567619
 Australia;Victoria;Caulfield North;145.0218005;-37.870828
 Australia;Western Australia;Alkimos;115.6874428;-31.6151987
-Belgium;Vlaams-Brabant;Heverlee;4.69313075103;50.85172925
+Belgium;Vlaams-Brabant;Heverlee;4.69594;50.86386
 Germany;Baden-Wurttemberg;Goppingen;9.6541116;48.7031377
 Germany;Niedersachsen;Holzminden;9.4466591;51.828835
 Germany;Nordrhein-Westfalen;Paderborn;8.76486977818;51.71895955
@@ -1996,3 +1996,7 @@ United States;New Jersey;;-74.4041622;40.0757384
 Netherlands;Noord-Holland;Lutjebroek;5.20087138914;52.69721715
 Russian Federation;Karelia;Kondopoga;34.268185;62.20929
 Spain;Andalucia;Marbella;-4.88562;36.508976
+Russian Federation;Karelia;Pitkyaranta;31.4744211;61.5717807
+Uzbekistan;Andijon;Marhamat;72.3332813;40.5040676
+Italy;Trentino-Alto Adige;Trento;11.1257601;46.0664228
+Russian Federation;Irkutsk;Tulun;100.579216;54.562096
