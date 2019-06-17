@@ -557,6 +557,10 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Luhans'ka Oblast'", $10);
                   break
+              case "Irpin":
+                  if ($9 == "Kyyivs'ka Oblast'")
+                      $10 = "Irpen";
+                  break
               case "Vinnytsya":
               case "Vinnytsia":
                   $10 = "Vinnitsa";

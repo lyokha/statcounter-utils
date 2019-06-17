@@ -497,7 +497,7 @@ United States;Colorado;;-105.548722;38.99085
 United States;Colorado;Boulder;-105.2705456;40.0149856
 United States;Florida;Fort Lauderdale;-80.1433786;26.1223084
 United States;Florida;Miami;-80.1936589;25.7742658
-United States;Michigan;Macomb;-82.807044;42.596509
+United States;Michigan;Macomb;-82.902901;42.6741189
 United States;New York;Bronx;-73.840403558;40.85048545
 United States;New York;Rochester;-77.615214;43.157285
 United States;Pennsylvania;Philadelphia;-75.164088;39.951294
@@ -834,7 +834,7 @@ Ukraine;Khersons'ka Oblast';Genichesk;34.8068643;46.1738032
 Ukraine;Krym;Bakhchysaray;33.8534782;44.7522963
 Ukraine;Krym;Kerch;36.4538645;45.3534002
 Ukraine;Kyyivs'ka Oblast';Bila Tserkva;30.117269;49.795806
-Ukraine;Kyyivs'ka Oblast';Boyarka;30.292108;50.32797
+Ukraine;Kyyivs'ka Oblast';Boyarka;30.2847595;50.3356709
 Ukraine;Kyyivs'ka Oblast';Irpen;30.244587;50.519751
 Ukraine;L'vivs'ka Oblast';Brody;25.154077;50.07805
 Ukraine;L'vivs'ka Oblast';Komarno;23.703109;49.630621
@@ -1523,9 +1523,9 @@ Ukraine;Khmel'nyts'ka Oblast';Shatava;26.704722;48.774782
 Ukraine;Khmel'nyts'ka Oblast';Slavuta;26.88593;50.320678
 Ukraine;Krym;Alushta;34.41012;44.676404
 Ukraine;Kyyivs'ka Oblast';Borodyanka;29.920582;50.645825
-Ukraine;Kyyivs'ka Oblast';Bucha;30.213442;50.553346
+Ukraine;Kyyivs'ka Oblast';Bucha;30.2207143;50.5485813
 Ukraine;Kyyivs'ka Oblast';Obukhiv;30.627;50.111406
-Ukraine;Kyyivs'ka Oblast';Vasilkov;30.313146;50.179495
+Ukraine;Kyyivs'ka Oblast';Vasilkov;30.32158;50.17387
 Ukraine;L'vivs'ka Oblast';Boryslav;23.419061;49.28933
 Ukraine;L'vivs'ka Oblast';Zolochiv;24.896431;49.806196
 Ukraine;Luhans'ka Oblast';Krasnyj Luch;38.9198948;48.1351471
@@ -1705,7 +1705,7 @@ United States;Massachusetts;Watertown;-71.185387;42.365197
 United States;Massachusetts;Weymouth;-70.962281;42.214794
 United States;Michigan;Bay City;-83.891985;43.596194
 United States;Michigan;Potterville;-84.739087;42.625499
-United States;Michigan;Troy;-83.128785;42.591996
+United States;Michigan;Troy;-83.1499304;42.6055893
 United States;Michigan;West Bloomfield;-83.382981;42.571496
 United States;Michigan;Ypsilanti;-83.613085;42.240899
 United States;Minnesota;Chaska;-93.601686;44.789294
@@ -2002,3 +2002,5 @@ Italy;Trentino-Alto Adige;Trento;11.1257601;46.0664228
 Russian Federation;Irkutsk;Tulun;100.579216;54.562096
 Russian Federation;Saint Petersburg City;Peterhof;29.912041;59.881847
 Canada;Quebec;Sherbrooke;-71.889038;45.403271
+Japan;Tokyo;Shiba;139.748184298;35.65689945
+Germany;Bayern;Passau;13.4609744;48.5748229
