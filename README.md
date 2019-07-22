@@ -1,10 +1,12 @@
-### Table of contents
+Table of contents
+-----------------
 
 - [statcounter_update](#statcounter_update)
 - [statcounter_report](#statcounter_report)
 - [group_cities and cities.r](#group_cities-and-citiesr)
 
-### statcounter_update
+statcounter_update
+------------------
 
 Downloads CSV or XLSX log and writes its content to a CSV file or merge it with
 an existing CSV log file.
@@ -37,7 +39,8 @@ file *StatCounter-2019-07-22.csv* (if today is *2019-07-22*). If the file is
 being updated then it gets merged with new records that were added *2019-07-16*
 and after this date.
 
-### statcounter_report
+statcounter_report
+------------------
 
 A very simple script to print highlighted report on a terminal using utility
 [*hl*](http://sourceforge.net/projects/hlterm/).
@@ -71,7 +74,8 @@ The image can also be saved with
 gnuplot -e "datafile='20cities.csv'; set lmargin 54; set term pngcairo size 1200,700; set output '20cities.png'" stats.gpi
 ```
 
-### group_cities and cities.r
+group_cities and cities.r
+-------------------------
 
 Collected in StatCounter-Log.csv cities can be grouped and sorted by visits and
 geocoded.
