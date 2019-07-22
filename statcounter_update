@@ -78,6 +78,8 @@ die 'Failed to find download link' unless $content =~ $DLINK_PTN;
 
 $response = $ua->get( $url );
 
+die $response->status_line unless $response->is_success;
+
 $content = $response->decoded_content();
 
 if ( $opt_x )
