@@ -1,7 +1,13 @@
+### Table of contents
+
+- [statcounter_update](#statcounter_update)
+- [statcounter_report](#statcounter_report)
+- [group_cities and cities.r](#group_cities-and-citiesr)
+
 ### statcounter_update
 
-Downloads CSV log and writes its content to a file or merge it with an existing
-CSV log file.
+Downloads CSV or XLSX log and writes its content to a CSV file or merge it with
+an existing CSV log file.
 
 ```ShellSession
 $ statcounter_update -h
@@ -18,6 +24,18 @@ Usage: statcounter_update -i project-id -u user -p password
         -b - create backup file with the given pre-suffix
         -x - read in XLSX data
 ```
+
+For example,
+
+```sh
+statcounter_update -i... -u... -p... -s -b-`date -I` -n'2019-07-16' -x StatCounter-Log.csv
+```
+
+where *...* must be replaced with the project and the user names, and the
+password, shall update (or create) file *StatCounter-Log.csv* and write a backup
+file *StatCounter-2019-07-22.csv* (if today is *2019-07-22*). If the file is
+being updated then it gets merged with new records that were added *2019-07-16*
+and after this date.
 
 ### statcounter_report
 
