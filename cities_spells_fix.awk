@@ -711,6 +711,11 @@ NR < 2  { print; next }
                   if ($9 == "Malopolskie")
                       $10 = "Kraków";
                   break
+              case "Polska":
+                  if ($9 == "Kujawsko-Pomorskie" && $12 ~ "Polska")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      $9, "", $12 "  >>  ");
+                  break
               case "Geneve":                        # Switzerland
                   if ($9 == "Geneve")
                       $10 = "Geneva";
@@ -844,7 +849,6 @@ END     { if (suspicious_count > 0)
 
 # Suspicious locations with no clue to resolve (or too old to check):
 #   Niva (Ryazan') -> Nizhniy Novgorod (Nizhegorod)  [92.255.244.51]
-#   Polska (Kujawsko-Pomorskie) -> ??? Warzachewka Polska, but it's a village
 #   Volga (Yaroslavl') -> ???, for those of them with OJSC/PJSC Megafon
 #   Sulin (Rostov) -> Krasny Sulin (Rostov), Sulin is a small khutor
 
