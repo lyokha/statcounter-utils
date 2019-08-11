@@ -664,6 +664,15 @@ NR < 2  { print; next }
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Homyel'skaya Voblasts'", $10);
                   break
+              case "Baranovichi":
+                  if ($9 == "Vitsyebskaya Voblasts'" && $2 ~ "^176\\.60\\.")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Brestskaya Voblasts'", $10);
+                  break
+              case "Mazyr":
+                  if ($9 == "Homyel'skaya Voblasts'")
+                      $10 = "Mozyr";
+                  break
               case "Erevan":                        # Armenia
                   $10 = "Yerevan";
                   break

@@ -17,7 +17,7 @@ Russian Federation;Samara;Samara;50.101783;53.195538
 Russian Federation;Moskva;Dubna;37.173176;56.744002
 United States;;;-100.4458825;39.7837304
 Russian Federation;Rostov;Rostov-on-don;39.720349;47.222078
-Russian Federation;Tomsk;Tomsk;84.947649;56.48464
+Russian Federation;Tomsk;Tomsk;84.952324;56.488712
 Russian Federation;Permskiy Kray;Perm;56.246723;58.014965
 Russian Federation;Voronezh;Voronezh;39.200269;51.660781
 Russian Federation;Chelyabinsk;Chelyabinsk;61.402554;55.159897
@@ -93,7 +93,7 @@ Ukraine;Sevastopol';Sevastopol;33.5220842;44.6054434
 Russian Federation;Astrakhan';Astrakhan;48.033574;46.347869
 Russian Federation;Novgorod;Velikiy Novgorod;31.2757862;58.5209862
 Israel;Tel Aviv;Tel Aviv;34.7805274;32.0804808
-Russian Federation;Ivanovo;Ivanovo;40.973921;57.000348
+Russian Federation;Ivanovo;Ivanovo;40.9737394;56.9984452
 Israel;;;34.84609;30.982826
 Russian Federation;Rostov;Aksay;39.862615;47.269804
 Russian Federation;Vologda;Cherepovets;37.916389;59.128696
@@ -112,7 +112,7 @@ Kazakhstan;Qaraghandy;Karaganda;73.1044754;49.816592
 Russian Federation;Lipetsk;Lipetsk;39.5936899;52.6041877
 Russian Federation;Moskva;Lobnya;37.4670831;56.0104473
 Ukraine;Krym;Simferopol;34.100318;44.948237
-Belarus;Mahilyowskaya Voblasts';Mogilëv;30.330654;53.894548
+Belarus;Mahilyowskaya Voblasts';Mogilëv;30.3429838;53.9090245
 Latvia;;;24.921242;57.172425
 Russian Federation;Murmansk;Apatity;33.407115;67.568041
 Ukraine;Dnipropetrovs'ka Oblast';Krivoy Rog;33.391843;47.910505
@@ -156,7 +156,7 @@ Switzerland;Geneve;Geneva;6.1466014;46.2017559
 Thailand;;;100.83273;14.8971921
 Ukraine;Zhytomyrs'ka Oblast';Zhitomir;28.6692345;50.2598298
 Korea, Republic of;Seoul-t'ukpyolsi;Seoul;126.976937;37.570705
-Russian Federation;Kemerovo;Prokopyevsk;86.750055;53.884487
+Russian Federation;Kemerovo;Prokopyevsk;86.737663;53.890972
 Russian Federation;Moskva;Fryazino;38.0567691;55.954618
 Switzerland;;;8.2319736;46.7985624
 Ukraine;Chernivets'ka Oblast';Chernivtsi;25.9376532;48.2864702
@@ -285,7 +285,7 @@ Russian Federation;Krasnoyarsk;Zelenogorsk;94.589006;56.113246
 Russian Federation;Moskva;Domodedovo;37.754272;55.444794
 Russian Federation;Sverdlovsk;Nizhniy Tagil;59.9508466;57.905149
 Russian Federation;Tula;Novomoskovsk;38.290896;54.010993
-Russian Federation;Yaroslavl';Rostov;39.414526;57.185866
+Russian Federation;Yaroslavl';Rostov;39.4250;57.1860
 Sweden;Skane Lan;Bara;13.179193;55.581459
 United States;California;Palo Alto;-122.1598465;37.4443293
 United States;Florida;Gainesville;-82.325188;29.651794
@@ -365,7 +365,7 @@ Portugal;Lisboa;Lisbon;-9.1365919;38.7077507
 Russian Federation;Belgorod;Stary Oskol;37.833447;51.298075
 Russian Federation;Bryansk;Zhukovka;33.732547;53.533062
 Russian Federation;Chelyabinsk;Zlatoust;59.6792625;55.1674213
-Russian Federation;Kemerovo;Kiselëvsk;86.636679;54.006025
+Russian Federation;Kemerovo;Kiselëvsk;86.6354771;54.0049872
 Russian Federation;Leningrad;Murino;30.448406;60.045655
 Russian Federation;Moskva;Aprelevka;37.07322;55.545166
 Russian Federation;Moskva;Chekhov;37.4545328;55.1426603
@@ -755,10 +755,10 @@ Russian Federation;Ingush;Nazran;44.7540128;43.2320774
 Russian Federation;Irkutsk;;106.363305;57.100294
 Russian Federation;Irkutsk;Chunskiy;99.665539;56.085967
 Russian Federation;Irkutsk;Zheleznogorsk;104.114283;56.584843
-Russian Federation;Ivanovo;Kineshma;42.168923;57.442544
+Russian Federation;Ivanovo;Kineshma;42.1400999;57.4431
 Russian Federation;Kalmyk;Elista;44.269759;46.307743
 Russian Federation;Karachay-Cherkess;Cherkessk;42.04677;44.226863
-Russian Federation;Kemerovo;Belovo;86.303692;54.422114
+Russian Federation;Kemerovo;Belovo;86.303429;54.419323
 Russian Federation;Khanty-Mansiy;Uray;64.803944;60.129632
 Russian Federation;Krasnodar;Abinsk;38.1578189;44.8649528
 Russian Federation;Krasnodar;Krymsk;37.9880177;44.9295889
@@ -1301,8 +1301,8 @@ Russian Federation;Karachay-Cherkess;;41.753928;43.770947
 Russian Federation;Karachay-Cherkess;Karachayevsk;41.914313;43.773167
 Russian Federation;Karelia;Kostomuksha;30.5969076;64.5873013
 Russian Federation;Kemerovo;;87.207361;54.779047
-Russian Federation;Kemerovo;Anzhero-sudzhensk;86.018216;56.083175
-Russian Federation;Kemerovo;Kaltan;87.27716;53.521083
+Russian Federation;Kemerovo;Anzhero-sudzhensk;86.019356;56.077808
+Russian Federation;Kemerovo;Kaltan;87.286179;53.519459
 Russian Federation;Kemerovo;Mezhdurechensk;88.070372;53.686596
 Russian Federation;Kemerovo;Topki;85.615223;55.276508
 Russian Federation;Khabarovsk;Sovetskaya Gavan;140.285128;48.96644
@@ -1939,7 +1939,7 @@ Spain;Andalucia;Úbeda;-3.3719849;38.0126888
 Chile;;;-71.0;-30.0
 Mexico;Chihuahua;Juarez;-106.4555818;31.7097961
 Mexico;Baja California Sur;La Paz;-110.30973;24.13811
-Mexico;Puebla;Cholula;-98.3;19.05
+Mexico;Puebla;Cholula;-98.3;19.0511
 Mexico;Puebla;Puebla;-98.20193;19.04334
 Mexico;Tabasco;Villahermosa;-92.925110;17.976122
 Argentina;Buenos Aires;Wilde;-58.314592;-34.6984264
@@ -2023,3 +2023,12 @@ India;Gujarat;Bharuch;72.9959;21.7069
 Lithuania;Telsiu Apskritis;Mazeikiai;22.3383262;56.3115639
 Ukraine;Ivano-Frankivs'ka Oblast';Krasna;24.701389;48.57468
 United States;California;Rancho Cordova;-121.302728;38.5890723
+United States;Florida;Saint Cloud;-81.2839038;28.2498534
+Russian Federation;Kemerovo;Berezovskiy;86.274529;55.669926
+Portugal;Viana do Castelo;Ponte De Lima;-8.5830992;41.7675021
+Russian Federation;Ivanovo;Teykovo;40.5405863;56.8554753
+Israel;HaMerkaz;Ashdod;34.652994;31.7977307
+United States;California;Upland;-117.6483876;34.09751
+Madagascar;Antananarivo;Antananarivo;47.5255809;-18.9100122
+Ukraine;Krym;Alupka;34.0483715;44.4204046
+Belarus;Brestskaya Voblasts';Baranovichi;26.0184156;53.1322925
