@@ -7,7 +7,7 @@ provider="osm"
 back="Count"
 spell_fix_cmd="-e {print}"
 
-while getopts 'gp:f:' opt ; do
+while getopts :gp:f: opt ; do
     case $opt in
         g) geocode=1 back="Longitude;Lattitude" ;;
         p) #run geocode --help to see the list of all providers

@@ -8,8 +8,25 @@ scale=0.65      # fontscale for cities png
 lheights=$lheight
 bg="background rgb 'white'"
 
-#svg=
-if [ -n "$svg" ] ; then
+quiet=
+svg=
+
+while getopts :qs opt ; do
+    case $opt in
+        q) quiet=1 ;;
+        s) svg=1 ;;
+       \?) echo "Invalid option: -$OPTARG" >&2
+           exit 1 ;;
+    esac
+done
+
+if [ -z "$svg" ] ; then
+    ext=png
+    term=pngcairo
+    lmarginc=60
+    lmarginc1=58
+    lmargincn=26
+else
     ext=svg
     term=svg
     scale=0.6
@@ -18,12 +35,6 @@ if [ -n "$svg" ] ; then
     lmarginc=46
     lmarginc1=46
     lmargincn=24
-else
-    ext=png
-    term=pngcairo
-    lmarginc=60
-    lmarginc1=58
-    lmargincn=26
 fi
 
 statcounter_log_csv=StatCounter-Log.csv
@@ -41,9 +52,15 @@ if [ -e $spells_fixed_tmp ] ; then
     exit 1
 fi
 
-[ "$1" != '-q' ] && warn_suspicious='-v warn_suspicious=yes' || warn_suspicious=
+warn_suspicious=
+warn_spam=
 
-awk $warn_suspicious -f cities_spells_fix.awk $statcounter_log_csv > $spells_fixed_tmp
+if [ -z "$quiet" ] ; then
+    warn_suspicious='-v warn_suspicious=yes'
+    warn_spam='-v warn_spam=yes'
+fi
+
+awk $warn_suspicious $warn_spam -f cities_spells_fix.awk $statcounter_log_csv > $spells_fixed_tmp
 statcounter_report -p -t'"^ "$8" / "$9" / "$10' $spells_fixed_tmp | awk -F\| '{print $2,";",$1}' > $cities_tmp
 
 for lines in 20 40 ; do
@@ -64,13 +81,13 @@ if [ -z "$svg" ] && ((height > maxsize)) ; then
 fi
 mv $cities_tmp $cities_csv
 gnuplot -e "datafile='$cities_csv'; set term $term size $width,$height $scale $bg; set lmargin $lmarginc; set output '$cities_img'" $stats_gpi
-[ "$1" != '-q' ] && echo "  $lines cities were written"
+[ -z "$quiet" ] && echo "  $lines cities were written"
 
 statcounter_report -p -c $spells_fixed_tmp | awk -F\| '{print $2,";",$1}' > $countries_csv
 lines=$(wc -l $countries_csv | cut -f1 -d' ')
 ((height = lines * lheights))
 gnuplot -e "datafile='$countries_csv'; set term $term size $width,$height $bg; set lmargin $lmargincn; set output '$countries_img'" $stats_gpi
-[ "$1" != '-q' ] && echo "  $lines countries were written"
+[ -z "$quiet" ] && echo "  $lines countries were written"
 
 rm $spells_fixed_tmp
 

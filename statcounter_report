@@ -9,7 +9,7 @@ separator0=/
 filter=
 or_not_pageview=
 
-while getopts ':t:s:f:g:pc' opt ; do
+while getopts :t:s:f:g:pc opt ; do
     case $opt in
         t) template=$OPTARG ;;
         s) separator=$OPTARG ;;

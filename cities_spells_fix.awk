@@ -25,15 +25,33 @@ function suspicious_repl2(t, a, s, r, c, ns, nr, nc, m)
     $c = nc
 }
 
+function delete_spam()
+{
+    if (warn_spam) {
+        ++spam_count
+    }
+    next
+}
+
 BEGIN   { FS="\",\""; OFS = FS;
-          # warn_suspicious is expected to be passed via command line
+          # warn_suspicious and warn_spam
+          # are expected to be passed via command line
           warn_suspicious = warn_suspicious ~ /^y(es)?$/;
+          warn_spam = warn_spam ~ /^y(es)?$/;
           suspicious_count = 0;
+          spam_count = 0;
           delim = "--------"
+          delim2 = "  ----  "
         }
 
+# print header
 NR < 2  { print; next }
 
+# delete spam
+$17 == "http://super-seo-guru.com" { delete_spam() }
+$8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
+
+#fix spells
         { switch ($9) {
               case "Krasnoyarskiy Kray":            # Russian Federation
                   $9 = "Krasnoyarsk";
@@ -772,10 +790,6 @@ NR < 2  { print; next }
               case "Goiânia":
                   $10 = "Goiania";
                   break
-              case "Villa Angelica":                # Argentina
-                  if ($9 == "Entre Rios")
-                      suspicious_repl(substr($1, 2), $2, 9, 10, $9, "");
-                  break
               case "Ciudad De Mexico":              # Mexico
                   $10 = "Mexico";
                   break
@@ -854,7 +868,11 @@ NR < 2  { print; next }
         }
 
 END     { if (suspicious_count > 0)
-              printf "%s (%d repls)\n", delim, suspicious_count > "/dev/stderr"
+              printf "%s (%d repls)\n", delim,
+                     suspicious_count > "/dev/stderr";
+          if (spam_count > 0)
+              printf "%s (%d spam records deleted)\n", delim2,
+                     spam_count > "/dev/stderr"
         }
 
 # Potentially ambiguos locations (you may want to check them with whois):

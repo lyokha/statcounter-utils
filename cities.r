@@ -74,12 +74,15 @@ cities <- function(gcities, geocode, len = as.integer(.Machine$integer.max),
 }
 
 cities_df <- function(statcounter_log_csv, cities_spells_filter_awk = NULL,
-                      warn_suspicious = TRUE, type = "page view") {
+                      warn_suspicious = TRUE, warn_spam = TRUE,
+                      type = "page view") {
     df <- read.csv(`if`(is.null(cities_spells_filter_awk),
                         statcounter_log_csv,
                         pipe(paste("awk -f", cities_spells_filter_awk,
                                    `if`(warn_suspicious,
                                         "-v warn_suspicious=yes", NULL),
+                                   `if`(warn_spam,
+                                        "-v warn_spam=yes", NULL),
                                    statcounter_log_csv))),
                    header = TRUE, sep = ",", quote = "\"", as.is = TRUE)
 
