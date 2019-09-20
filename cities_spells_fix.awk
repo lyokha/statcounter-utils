@@ -683,7 +683,7 @@ $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
                                       "Homyel'skaya Voblasts'", $10);
                   break
               case "Baranovichi":
-                  if ($9 == "Vitsyebskaya Voblasts'" && $2 ~ "^176\\.60\\.")
+                  if ($9 == "Vitsyebskaya Voblasts'")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Brestskaya Voblasts'", $10);
                   break
