@@ -705,6 +705,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
               case "Frankfurt":                     # Germany
                   if ($9 == "Hessen")
                       $10 = "Frankfurt Am Main";
+                  else if ($9 == "Nordrhein-Westfalen")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Hessen", "Frankfurt Am Main");
                   break
               case "Muenster":
                   $10 = "Münster";
