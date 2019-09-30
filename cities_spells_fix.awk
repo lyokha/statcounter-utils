@@ -49,6 +49,7 @@ NR < 2  { print; next }
 
 # delete spam
 $17 == "http://super-seo-guru.com" { delete_spam() }
+$17 == "http://progressive-seo.com" { delete_spam() }
 $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
 
 #fix spells
