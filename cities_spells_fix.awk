@@ -266,6 +266,10 @@ $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
                   if ($9 == "Ryazan'")
                       $10 = "Ryazan";
                   break
+              case "Tayshet":
+                  if ($9 == "Irkutsk")
+                      $10 = "Taishet";
+                  break
               case "Moskovskaya":
                   if ($9 == "Kirov")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
