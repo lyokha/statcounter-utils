@@ -278,6 +278,7 @@ $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
               case "Moskovskiy":
                   if ($9 == "Moskva" &&
                       $12 == "Rosevrobank" ||
+                      $12 == "YANDEX LLC" ||
                       $12 ~ "Moskovskiy Gosudarstvennyy")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Moscow City", "Moscow");
