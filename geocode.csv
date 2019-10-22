@@ -286,14 +286,14 @@ Russian Federation;Moskva;Domodedovo;37.754272;55.444794
 Russian Federation;Sverdlovsk;Nizhniy Tagil;59.9508466;57.905149
 Russian Federation;Tula;Novomoskovsk;38.290896;54.010993
 Russian Federation;Yaroslavl';Rostov;39.4250;57.1860
-Sweden;Skane Lan;Bara;13.179193;55.581459
+Sweden;Skane Lan;Bara;13.1806037;55.5821668
 United States;California;Palo Alto;-122.1598465;37.4443293
 United States;Florida;Gainesville;-82.325188;29.651794
 Vietnam;;Hanoi;105.8544441;21.0294498
 Belarus;Vitsyebskaya Voblasts';Novopolotsk;28.645541;55.535284
 Canada;;;-107.9917071;61.0666922
 Czech Republic;Karlovarsky kraj;Cheb;12.3703526;50.0793511
-Denmark;Hovedstaden;Copenhagen;12.585828;55.680661
+Denmark;Hovedstaden;Copenhagen;12.5700724;55.6867243
 Germany;Nordrhein-Westfalen;Köln;6.959974;50.938361
 Japan;Kanagawa;Kawasaki;139.708024;35.523142
 Kazakhstan;Qostanay;Kostanay;63.632607;53.2146604
@@ -423,8 +423,8 @@ Sweden;Vastra Gotaland;Göteborg;11.9670171;57.7072326
 Thailand;Chiang Mai;Chiang Mai;98.995665;18.790246
 Turkey;Antalya;Antalya;30.6954846;36.9009641
 Ukraine;Poltavs'ka Oblast';Komsomolsk;33.636023;49.011725
-United Kingdom;Cambridgeshire;Cambridge;0.121794;52.20532
-United Kingdom;Oxfordshire;Oxford;-1.258486;51.752117
+United Kingdom;Cambridgeshire;Cambridge;0.1235817;52.2034823
+United Kingdom;Oxfordshire;Oxford;-1.2578499;51.7520131
 United States;Arizona;Phoenix;-112.0741;33.4482
 United States;California;Half Moon Bay;-122.4285862;37.4635519
 United States;California;Santa Cruz;-122.012874;36.962871
@@ -537,7 +537,7 @@ Germany;Thuringen;Jena;11.5879359;50.9281717
 Hong Kong;;;114.179358;22.326371
 India;Delhi;Delhi;77.2219388;28.6517178
 India;Punjab;Jalandhar;75.576889;31.3323762
-Ireland;Louth;Dundalk;-6.385719;54.004067
+Ireland;Louth;Dundalk;-6.4008879;54.0046033
 Japan;Kanagawa;Yokohama;139.636768;35.444991
 Japan;Kyoto;Kyoto;135.7634074;35.0231321
 Kazakhstan;Qyzylorda;Kyzylorda;65.495251;44.854884
@@ -547,7 +547,7 @@ Morocco;;;-7.3362482;31.1728205
 Netherlands;Gelderland;Nijmegen;5.861157;51.841987
 New Zealand;Canterbury;Christchurch;172.6366455;-43.530955
 Norway;Akershus;Skedsmokorset;11.0327969;60.0045779
-Norway;Hordaland;Bergen;5.333576;60.383659
+Norway;Hordaland;Bergen;5.3259192;60.3943055
 Russian Federation;Altaisky krai;Novoaltaysk;83.939407;53.393341
 Russian Federation;Altaisky krai;Rubtsovsk;81.2176174;51.5276264
 Russian Federation;Arkhangel'sk;;43.336661;63.637517
@@ -600,12 +600,12 @@ Ukraine;Luhans'ka Oblast';Antratsit;39.0886375;48.1164285
 Ukraine;Luhans'ka Oblast';Rubizhne;38.3667937;49.0222573
 Ukraine;Odes'ka Oblast';Teplodar;30.3271;46.5048
 Ukraine;Zaporiz'ka Oblast';Energodar;34.6487214;47.4970865
-United Kingdom;Edinburgh;Edinburgh;-3.1883739;55.953346
-United Kingdom;Liverpool;Liverpool;-2.9916084;53.4049673
-United Kingdom;Manchester;Manchester;-2.247962;53.480789
+United Kingdom;Edinburgh;Edinburgh;-3.1883749;55.9533456
+United Kingdom;Liverpool;Liverpool;-2.991665;53.407154
+United Kingdom;Manchester;Manchester;-2.2451148;53.4794892
 United Kingdom;Plymouth;Plymouth;-4.1425658;50.3712659
 United Kingdom;Reading;Reading;-0.9696512;51.456659
-United Kingdom;Sunderland;Sunderland;-1.375053;54.9063791
+United Kingdom;Sunderland;Sunderland;-1.3828;54.9058
 United Kingdom;Surrey;Egham;-0.5473085;51.4312585
 United States;Alabama;Goodwater;-86.053187;33.065394
 United States;California;Belmont;-122.274787;37.520394
@@ -650,8 +650,8 @@ Belarus;Minskaya Voblasts';Soligorsk;27.5318168;52.7893039
 Belarus;Vitsyebskaya Voblasts';Zaslonovo;28.930585;54.874325
 Belgium;Antwerpen;Antwerpen;4.396364;51.220117
 Brazil;Rio de Janeiro;Rio De Janeiro;-43.2093727;-22.9110137
-Brazil;Sao Paulo;Campinas;-47.063986;-22.915583
-Brazil;Sao Paulo;Osasco;-46.778295;-23.536816
+Brazil;Sao Paulo;Campinas;-47.06083;-22.90556
+Brazil;Sao Paulo;Osasco;-46.7916801;-23.5324859
 Bulgaria;Kurdzhali;Kardzhali;25.3722156;41.643746
 Bulgaria;Razgrad;Kubrat;26.501792;43.796355
 Bulgaria;Ruse;Rousse;25.9542057;43.8480413
@@ -819,9 +819,9 @@ Spain;Catalonia;Golmés;0.931795;41.632126
 Spain;Navarra;Pamplona;-1.655784;42.809858
 Sweden;Hallands Lan;Varberg;12.2502949;57.1057412
 Sweden;Skane Lan;Lund;13.1929449;55.7029296
-Sweden;Skane Lan;Malmö;13.000104;55.606161
-Sweden;Stockholms Lan;Huddinge;18.054224;59.212496
-Sweden;Uppsala Lan;Uppsala;17.638007;59.861376
+Sweden;Skane Lan;Malmö;13.0001566;55.6052931
+Sweden;Stockholms Lan;Huddinge;17.9748815;59.2293827
+Sweden;Uppsala Lan;Uppsala;17.6387436;59.8586126
 Switzerland;Ticino;Aurigeno;8.712167;46.230905
 Switzerland;Zug;Cham;8.460549;47.181487
 Tajikistan;Dushanbe;Dushanbe;68.7863573;38.5762709
@@ -842,15 +842,15 @@ Ukraine;L'vivs'ka Oblast';Mykolayiv;23.980167;49.525875
 Ukraine;Zaporiz'ka Oblast';Berdyansk;36.789317;46.755673
 Ukraine;Zaporiz'ka Oblast';Melitopol;35.3676448;46.8487478
 United Kingdom;Berkshire;Bracknell;-0.7449925;51.4143513
-United Kingdom;Darlington;Darlington;-1.551777;54.527636
-United Kingdom;Flintshire;Holywell;-3.216283;53.271595
+United Kingdom;Darlington;Darlington;-1.5554;54.5242
+United Kingdom;Flintshire;Holywell;-3.2212991;53.2714061
 United Kingdom;Glasgow City;Glasgow;-4.2501672;55.8611389
-United Kingdom;Hammersmith and Fulham;Shepherds Bush;-0.218631193172;51.5047579
+United Kingdom;Hammersmith and Fulham;Shepherds Bush;-0.2229007;51.505314
 United Kingdom;Hounslow;Feltham;-0.410659;51.4442232
 United Kingdom;Kensington and Chelsea;Chelsea;-0.1682205;51.4875417
-United Kingdom;Leicestershire;Loughborough;-1.221026;52.771878
+United Kingdom;Leicestershire;Loughborough;-1.2077985;52.7723859
 United Kingdom;Surrey;Epsom;-0.2678212;51.3326098
-United Kingdom;West Sussex;Littlehampton;-0.535629;50.810495
+United Kingdom;West Sussex;Littlehampton;-0.5366909;50.8122039
 United Kingdom;Worcestershire;Redditch;-1.9417444;52.3057655
 United States;Arkansas;Fayetteville;-94.157887;36.060498
 United States;California;American Canyon;-122.2608044;38.1749179
@@ -952,16 +952,16 @@ Belgium;Oost-Vlaanderen;Wachtebeke;3.8574284;51.1701927
 Belgium;Vlaams-Brabant;Aarschot;4.829181;50.982677
 Belgium;West-Vlaanderen;Waregem;3.4323287;50.8868095
 Bolivia;La Paz;La Paz;-68.1336346;-16.4956371
-Brazil;Bahia;Santo Antonio De Jesus;-39.258983;-12.967587
+Brazil;Bahia;Santo Antonio De Jesus;-39.260914;-12.9689361
 Brazil;Distrito Federal;Brasilia;-47.8823172;-15.7934036
 Brazil;Goias;Goiania;-49.2532691;-16.680882
-Brazil;Minas Gerais;Sete Lagoas;-44.24139;-19.456883
-Brazil;Parana;Curitiba;-49.248483;-25.459524
-Brazil;Parana;Maringá;-51.925489;-23.397282
-Brazil;Pernambuco;Recife;-34.871584;-8.060688
-Brazil;Rio Grande do Norte;Natal;-35.230587;-5.805689
-Brazil;Sao Paulo;Sao Bernardo Do Campo;-46.561289;-23.720515
-Brazil;Sao Paulo;São Carlos;-47.880582;-22.016985
+Brazil;Minas Gerais;Sete Lagoas;-44.246944;-19.466111
+Brazil;Parana;Curitiba;-49.2712724;-25.4295963
+Brazil;Parana;Maringá;-51.9382078;-23.425269
+Brazil;Pernambuco;Recife;-34.8781517;-8.0641931
+Brazil;Rio Grande do Norte;Natal;-35.2080905;-5.805398
+Brazil;Sao Paulo;Sao Bernardo Do Campo;-46.5505907;-23.7080089
+Brazil;Sao Paulo;São Carlos;-47.890932;-22.0183367
 Bulgaria;Blagoevgrad;Blagoevgrad;23.09273;42.007072
 Bulgaria;Burgas;Lozarevo;26.879044;42.7713055
 Bulgaria;Plovdiv;Plovdiv;24.756455;42.141997
@@ -1010,8 +1010,8 @@ Czech Republic;Stredocesky kraj;Tursko;14.321832;50.190979
 Czech Republic;Zlinsky kraj;Zlin;17.669035;49.227058
 Denmark;Hovedstaden;Frederiksberg;12.532459;55.678006
 Denmark;Hovedstaden;Kastrup;12.6291992;55.6340135
-Denmark;Nordjylland;Gistrup;9.985286;56.995759
-Denmark;Syddanmark;Aabenraa;9.418324;55.047765
+Denmark;Nordjylland;Gistrup;9.9946;56.9943
+Denmark;Syddanmark;Aabenraa;9.4209667;55.0446228
 Denmark;Syddanmark;Odense;10.3852104;55.3997225
 Dominican Republic;;;-69.981707;18.754804
 El Salvador;San Salvador;Tonacatepeque;-89.1181355;13.7799478
@@ -1238,14 +1238,14 @@ Netherlands;Zuid-Holland;Spijkenisse;4.33532959606;51.84342795
 New Zealand;Northland;Whangarei;174.3206488;-35.7283469
 New Zealand;Wellington;Lower Hutt;174.914293;-41.207689
 Nigeria;;;8.043273;9.431514
-Norway;Akershus;Råholt;11.178105;60.27683
-Norway;Akershus;Stabekk;10.598674;59.907397
+Norway;Akershus;Råholt;11.1797344;60.2773449
+Norway;Akershus;Stabekk;10.6015667;59.9083417
 Norway;Buskerud;Kongsberg;9.650466;59.666739
 Norway;Ostfold;Sarpsborg;11.094571;59.281988
-Norway;Rogaland;Stavanger;5.725511;58.965305
-Norway;Troms;Tromsø;18.962879;69.65493
-Norway;Vestfold;Sandefjord;10.219558;59.135329
-Norway;Vestfold;Tønsberg;10.414708;59.267068
+Norway;Rogaland;Stavanger;5.7324722;58.9680427
+Norway;Troms;Tromsø;18.9548489;69.6492969
+Norway;Vestfold;Sandefjord;10.2256;59.1300
+Norway;Vestfold;Tønsberg;10.4082;59.2677
 Philippines;Pangasinan;Lingayen;120.2306071;16.0206431
 Philippines;Quezon City;Quezon City;121.04926;14.65145
 Philippines;Rizal;Cainta;121.117;14.580
@@ -1255,10 +1255,10 @@ Poland;Podkarpackie;Rzeszów;22.0047174;50.0374531
 Poland;Slaskie;Katowice;19.0215852;50.2598987
 Poland;Wielkopolskie;Swarzedz;17.0771038;52.4103728
 Portugal;Aveiro;Aveiro;-8.654558;40.641257
-Portugal;Faro;Portimão;-8.540104;37.133803
-Portugal;Lisboa;Belas;-9.261469;38.777905
-Portugal;Lisboa;Carnaxide;-9.244518;38.724887
-Portugal;Lisboa;Parede;-9.35505402552;38.6932444
+Portugal;Faro;Portimão;-8.5368;37.1375
+Portugal;Lisboa;Belas;-9.2639;38.7759
+Portugal;Lisboa;Carnaxide;-9.2465597;38.7255103
+Portugal;Lisboa;Parede;-9.3560;38.6923
 Portugal;Porto;Porto;-8.6107884;41.1494512
 Romania;Alba;Alba Iulia;23.5704398;46.0687385
 Romania;Bacau;Bacau;26.9153557;46.5560493
@@ -1455,7 +1455,7 @@ South Africa;Gauteng;Johannesburg;28.049722;-26.205
 South Africa;Western Cape;Cape Town;18.422955;-33.92186
 Spain;Andalucia;Gabia La Grande;-3.6694292;37.1365244
 Spain;Andalucia;Mijas;-4.6375188;36.5957471
-Spain;Andalucia;Punta Umbría;-6.968366;37.181293
+Spain;Andalucia;Punta Umbría;-6.9662203;37.1830237
 Spain;Asturias;Oviedo;-5.8448989;43.3605977
 Spain;Cantabria;Maliaño;-3.83623;43.41845
 Spain;Cantabria;Soto De La Marina;-3.896209;43.465738
@@ -1476,13 +1476,13 @@ Spain;Pais Vasco;Donostia-san Sebastián;-1.982797;43.319297
 Sweden;Hallands Lan;Falkenberg;12.4888013;56.9027333
 Sweden;Jamtlands Lan;Alsen;13.9286711;63.3864609
 Sweden;Norrbottens Lan;Luleå;22.1460134;65.5831352
-Sweden;Ostergotlands Lan;Linköping;15.639732;58.412688
+Sweden;Ostergotlands Lan;Linköping;15.6245252;58.4098135
 Sweden;Skane Lan;Södra Sandby;13.342371;55.716798
-Sweden;Stockholms Lan;Bromma;17.945653;59.355379
-Sweden;Stockholms Lan;Tumba;17.827408;59.194067
+Sweden;Stockholms Lan;Bromma;17.9395411;59.339769
+Sweden;Stockholms Lan;Tumba;17.8343123;59.2005555
 Sweden;Stockholms Lan;Vallentuna;18.078011;59.532406
 Sweden;Stockholms Lan;Vällingby;17.8716341;59.3659643
-Sweden;Vasterbottens Lan;Umeå;20.256929;63.832838
+Sweden;Vasterbottens Lan;Umeå;20.2630745;63.8256568
 Sweden;Vasternorrlands Lan;Sundsvall;17.313662;62.387318
 Sweden;Vastra Gotaland;Lerum;12.271104;57.771225
 Switzerland;Aargau;Moriken;8.183239;47.415126
@@ -1545,49 +1545,49 @@ Ukraine;Zakarpats'ka Oblast';Mukachevo;22.718286;48.442105
 Ukraine;Zakarpats'ka Oblast';Vishkovo;23.4277;48.0460
 Ukraine;Zhytomyrs'ka Oblast';Sosnivka;29.157619;50.700615
 United Arab Emirates;Dubai;Dubai;55.296249;25.276987
-United Kingdom;Birmingham;Birmingham;-1.894053;52.4775396
+United Kingdom;Birmingham;Birmingham;-1.9025;52.4795
 United Kingdom;Blackburn with Darwen;Darwen;-2.4665093;53.6960957
 United Kingdom;Brighton and Hove;Brighton;-0.1374061;50.8220399
 United Kingdom;Brighton and Hove;Hove;-0.1745744;50.8286917
-United Kingdom;Cambridgeshire;Saint Neots;-0.262982;52.229095
+United Kingdom;Cambridgeshire;Saint Neots;-0.2707598;52.2275439
 United Kingdom;Cardiff;Cardiff;-3.1791934;51.4816546
 United Kingdom;Cheshire;Northwich;-2.516684;53.260565
 United Kingdom;Croydon;Purley;-0.115893;51.3385156
 United Kingdom;Devon;Paignton;-3.5632704;50.4377018
-United Kingdom;Devon;Totnes;-3.681646;50.431458
+United Kingdom;Devon;Totnes;-3.6870437;50.4322991
 United Kingdom;Dundee City;Dundee;-2.97019;56.4605938
-United Kingdom;Durham;Newton Aycliffe;-1.5715573;54.624581
+United Kingdom;Durham;Newton Aycliffe;-1.5663;54.6219
 United Kingdom;Essex;Benfleet;0.555819;51.5649501
-United Kingdom;Gloucestershire;Gloucester;-2.250702;51.858516
+United Kingdom;Gloucestershire;Gloucester;-2.2458192;51.8653705
 United Kingdom;Hackney;Hackney;-0.0493621;51.5432402
-United Kingdom;Hampshire;Fareham;-1.170684;50.854397
-United Kingdom;Hampshire;Stockbridge;-1.489488;51.114899
-United Kingdom;Haringey;Hornsey;-0.121488;51.587198
+United Kingdom;Hampshire;Fareham;-1.1783;50.8527
+United Kingdom;Hampshire;Stockbridge;-1.4929;51.1141
+United Kingdom;Haringey;Hornsey;-0.1209667;51.5873645
 United Kingdom;Hertford;Hitchin;-0.2791646;51.9464129
 United Kingdom;Hertford;Rickmansworth;-0.4718406;51.6390009
 United Kingdom;Hertford;Saint Albans;-0.3422526;51.7492956
 United Kingdom;Hertford;Ware;-0.0328751;51.8103288
 United Kingdom;Hounslow;Hounslow;-0.3613471;51.4686132
-United Kingdom;Lancashire;Lancaster;-2.796734;54.052396
-United Kingdom;Lancashire;Preston;-2.695539;53.762599
+United Kingdom;Lancashire;Lancaster;-2.7990345;54.0484068
+United Kingdom;Lancashire;Preston;-2.6992717;53.7593363
 United Kingdom;Leeds;Leeds;-1.5437941;53.7974185
-United Kingdom;Leicester;Leicester;-1.130323;52.636445
+United Kingdom;Leicester;Leicester;-1.1330789;52.6361398
 United Kingdom;Lewisham;Lewisham;-0.0101331;51.4624325
 United Kingdom;Medway;Gillingham;0.5457712;51.3876562
-United Kingdom;Milton Keynes;Milton Keynes;-0.745817;52.039347
+United Kingdom;Milton Keynes;Milton Keynes;-0.7589607;52.0429797
 United Kingdom;Norfolk;Norwich;1.29227;52.628606
 United Kingdom;North Tyneside;North Shields;-1.4451288;55.0093149
-United Kingdom;Northamptonshire;Northampton;-0.898136;52.236403
-United Kingdom;Northamptonshire;Towcester;-0.988587;52.133297
-United Kingdom;Northamptonshire;Wellingborough;-0.6911344;52.2984002
-United Kingdom;Oxfordshire;Didcot;-1.252782;51.610197
+United Kingdom;Northamptonshire;Northampton;-0.8963907;52.2381355
+United Kingdom;Northamptonshire;Towcester;-0.9948465;52.1350273
+United Kingdom;Northamptonshire;Wellingborough;-0.6937309;52.30189
+United Kingdom;Oxfordshire;Didcot;-1.2467923;51.6056908
 United Kingdom;Richmond upon Thames;Kew;-0.2919292;51.4806629
 United Kingdom;Somerset;Taunton;-3.1029555;51.0150265
-United Kingdom;Stoke-on-Trent;Stoke-on-trent;-2.189733;53.010499
+United Kingdom;Stoke-on-Trent;Stoke-on-trent;-2.1812607;53.0162014
 United Kingdom;Suffolk;Ipswich;1.1526345;52.0579495
 United Kingdom;Surrey;Woking;-0.5564726;51.3201891
 United Kingdom;Vale of Glamorga;Penarth;-3.1733023;51.435968
-United Kingdom;West Lothian;Broxburn;-3.484794;55.9339004
+United Kingdom;West Lothian;Broxburn;-3.4693866;55.9343917
 United Kingdom;Windsor and Maidenhead;Ascot;-0.6680194;51.4101286
 United Kingdom;Windsor and Maidenhead;Maidenhead;-0.726899;51.522417
 United States;Alabama;Anniston;-85.826686;33.656994
@@ -1838,7 +1838,7 @@ Italy;Veneto;Vicenza;11.5478825;45.5488306
 Mexico;Jalisco;Tlajomulco De Zuniga;-103.44654;20.47421
 Netherlands;Noord-Holland;Huizen;5.24058204069;52.29648445
 Netherlands;Noord-Holland;Uithoorn;4.82816050636;52.24400285
-Portugal;Porto;Mafamude;-8.60494548402;41.1152114
+Portugal;Porto;Mafamude;-8.6041;41.1137
 Sweden;Stockholms Lan;Upplands-väsby;17.9164192;59.517164
 Switzerland;Bern;Evilard;7.2395711;47.1494705
 United Kingdom;Cheshire;Crewe;-2.4414627;53.0996153
@@ -1881,7 +1881,7 @@ Japan;Aichi;Nagoya;136.90448;35.15792
 United States;Illinois;Buffalo Grove;-87.959794;42.1514146
 United States;Massachusetts;Norwood;-71.1994976;42.194543
 United States;Indiana;Georgetown;-85.9743;38.2939
-United Kingdom;Walsall;Walsall;-1.985107;52.5843965
+United Kingdom;Walsall;Walsall;-1.9822687;52.5847949
 Australia;Victoria;Fitzroy North;144.9837074;-37.7833316
 Ireland;Kilkenny;Kilkenny;-7.2484948;52.6510216
 Japan;Tokyo;Shinagawa-ku;139.73891;35.599252
@@ -1922,7 +1922,7 @@ Russian Federation;Sverdlovsk;Sabik;59.1903;57.1095
 United States;Utah;Sandy;-111.838904;40.5664878
 China;Fujian;Xiamen;118.0745391;24.4586961
 United States;Massachusetts;Brockton;-71.0183787;42.0834335
-United Kingdom;Cheshire;Sale;-2.323702000;53.425561000
+United Kingdom;Cheshire;Sale;-2.318415;53.4244939
 Cambodia;Phnum Penh;Phnom Penh;104.9237246;11.5626213
 Russian Federation;Moskva;Nakhabino;37.1771859;55.8394977
 Kazakhstan;Zhambyl;Taraz;71.3920902;42.8943882
@@ -2064,3 +2064,6 @@ Estonia;Harjumaa;Tabasalu;24.5418;59.4281
 Czech Republic;Olomoucky kraj;Hnevotin;17.1805004;49.572698
 Russian Federation;Irkutsk;Chistyye Klyuchi;103.9486557;52.1797733
 Germany;Nordrhein-Westfalen;Hurth;6.876568;50.8807379
+Portugal;Faro;Lagoa;-8.4540;37.1363
+Portugal;Faro;Albufeira;-8.2455;37.0904
+United Kingdom;Hackney;Stoke Newington;-0.0772816;51.5576971
