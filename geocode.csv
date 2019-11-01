@@ -14,7 +14,7 @@ Russian Federation;Tatarstan;Kazan;49.1242266;55.7823547
 Ukraine;Dnipropetrovs'ka Oblast';Dnepropetrovsk;35.0417711;48.4680221
 Belarus;;;27.701393;52.858248
 Russian Federation;Samara;Samara;50.113987;53.198627
-Russian Federation;Moskva;Dubna;37.173176;56.744002
+Russian Federation;Moskva;Dubna;37.1625;56.7362
 United States;;;-100.4458825;39.7837304
 Russian Federation;Rostov;Rostov-on-don;39.7114196;47.2213858
 Russian Federation;Tomsk;Tomsk;84.952324;56.488712
@@ -132,7 +132,7 @@ Czech Republic;Hlavni mesto Praha;Prague;14.4212535;50.0874654
 Russian Federation;Saint Petersburg City;;32.0;60.0
 France;Ile-de-France;Paris;2.351556;48.856663
 Germany;Berlin;Berlin;13.3888599;52.5170365
-Russian Federation;Moskva;Podolsk;37.544737;55.431177
+Russian Federation;Moskva;Podolsk;37.5453056;55.4308841
 Russian Federation;Murmansk;Murmansk;33.074981;68.970682
 Sweden;;;15.0;62.0
 Uzbekistan;Toshkent;Tashkent;69.279737;41.311151
@@ -268,7 +268,7 @@ Russian Federation;Tomsk;Seversk;84.880913;56.603185
 Sweden;Stockholms Lan;Stockholm;18.0710935;59.3251172
 Thailand;Krung Thep;Bangkok;100.523186;13.736717
 United States;California;Los Angeles;-118.2427666;34.0536909
-United States;Georgia;Atlanta;-84.39249;33.748699
+United States;Georgia;Atlanta;-84.3901849;33.7490987
 Australia;;;134.755;-24.7761086
 Belgium;;;4.6667145;50.6402809
 Finland;Southern Finland;Espoo;24.6603626;60.2241869
@@ -385,7 +385,7 @@ Ukraine;Volyns'ka Oblast';Vladimir;24.319245;50.846407
 United States;California;Oakland;-122.2713563;37.8044557
 United States;California;Santa Clara;-121.9551744;37.3541132
 United States;Delaware;Wilmington;-75.547489;39.746098
-United States;Ohio;Columbus;-82.99649;39.962597
+United States;Ohio;Columbus;-83.0007065;39.9622601
 Austria;;;14.754613;47.69646
 Azerbaijan;;;47.651476;40.359953
 Canada;British Columbia;Vancouver;-123.1139529;49.2608724
@@ -607,7 +607,7 @@ United Kingdom;Plymouth;Plymouth;-4.1425658;50.3712659
 United Kingdom;Reading;Reading;-0.9696512;51.456659
 United Kingdom;Sunderland;Sunderland;-1.3828;54.9058
 United Kingdom;Surrey;Egham;-0.5473085;51.4312585
-United States;Alabama;Goodwater;-86.053187;33.065394
+United States;Alabama;Goodwater;-86.0516886936;33.0604215
 United States;California;Belmont;-122.274787;37.520394
 United States;California;Berkeley;-122.2728639;37.8708393
 United States;California;Granada Hills;-118.505898557;34.2962795
@@ -868,14 +868,14 @@ United States;Colorado;Littleton;-105.014485;39.613798
 United States;Connecticut;Norwalk;-73.408483;41.117894
 United States;Florida;West Palm Beach;-80.0533746;26.7153425
 United States;Florida;Winter Park;-81.3510;28.5978
-United States;Georgia;Athens;-83.376684;33.957297
+United States;Georgia;Athens;-83.376398;33.9597677
 United States;Georgia;Buford;-84.004588;34.120498
-United States;Georgia;Lilburn;-84.136982;33.887
+United States;Georgia;Lilburn;-84.1429719;33.8901036
 United States;Illinois;Barrington;-88.1361888;42.1539141
 United States;Illinois;Gurnee;-87.9020186;42.3702996
 United States;Illinois;Winnetka;-87.7365286;42.1080703
 United States;Indiana;Greencastle;-86.843462;39.641841
-United States;Kentucky;Walton;-84.613386;38.8698
+United States;Kentucky;Walton;-84.6102213;38.8756194
 United States;Maine;Belfast;-69.0067359;44.4261194
 United States;Maryland;Baltimore;-76.610759;39.2908816
 United States;Maryland;Laurel;-76.848582;39.099198
@@ -984,8 +984,8 @@ Canada;Ontario;Scarborough;-79.257774;43.773077
 Canada;Ontario;Woodbridge;-79.5921039;43.7847162
 Canada;Prince Edward Island;Charlottetown;-63.1329;46.2331
 Canada;Quebec;Drummondville;-72.503188;45.882995
-Canada;Quebec;Laval;-73.7344173057;45.60558895
-Canada;Quebec;Verdun;-73.5651925;45.4603893
+Canada;Quebec;Laval;-73.7531;45.5758
+Canada;Quebec;Verdun;-73.5731;45.4590
 Canada;Quebec;Warwick;-71.98849;45.944394
 Canada;Saskatchewan;Saskatoon;-106.660767;52.131802
 China;Guangdong;Guangzhou;113.2592945;23.1301964
@@ -1467,8 +1467,8 @@ Spain;Catalonia;Vic;2.2545943;41.9302021
 Spain;Comunidad Valenciana;Alicante;-0.4901846;38.353738
 Spain;Galicia;Boiro;-8.883853;42.647374
 Spain;Galicia;Santiago De Compostela;-8.5458608;42.8804219
-Spain;Islas Baleares;Ibiza;1.427486;38.909312
-Spain;Islas Baleares;Palma De Mallorca;2.657315;39.571326
+Spain;Islas Baleares;Ibiza;1.4341;38.9094
+Spain;Islas Baleares;Palma De Mallorca;2.6500745;39.5695818
 Spain;Madrid;Colmenar Viejo;-3.7663207;40.6587901
 Spain;Madrid;Fuenlabrada;-3.794457;40.284375
 Spain;Pais Vasco;Bilbao;-2.938075;43.263659
@@ -1590,10 +1590,10 @@ United Kingdom;Vale of Glamorga;Penarth;-3.1733023;51.435968
 United Kingdom;West Lothian;Broxburn;-3.4693866;55.9343917
 United Kingdom;Windsor and Maidenhead;Ascot;-0.6680194;51.4101286
 United Kingdom;Windsor and Maidenhead;Maidenhead;-0.726899;51.522417
-United States;Alabama;Anniston;-85.826686;33.656994
-United States;Alabama;Calera;-86.752984;33.102593
-United States;Alabama;Gadsden;-85.999881;34.014595
-United States;Alabama;Madison;-86.751089;34.699093
+United States;Alabama;Anniston;-85.8315;33.6591
+United States;Alabama;Calera;-86.7505733;33.1035045
+United States;Alabama;Gadsden;-85.9989596;34.010929
+United States;Alabama;Madison;-86.7510;34.6927
 United States;Arizona;;-111.668064;34.167994
 United States;Arizona;Tempe;-111.9400;33.4254
 United States;Arkansas;Harrison;-93.107388;36.229599
@@ -1660,10 +1660,10 @@ United States;Florida;High Springs;-82.596883;29.826798
 United States;Florida;Jacksonville;-81.655651;30.3321838
 United States;Florida;Naples;-81.790439;26.148216
 United States;Florida;Tampa;-82.458785;27.947295
-United States;Georgia;Columbus;-84.993175;32.470499
+United States;Georgia;Columbus;-84.9877094;32.4609764
 United States;Georgia;Lawrenceville;-83.988284;33.956099
-United States;Georgia;Marietta;-84.550584;33.952199
-United States;Georgia;Norcross;-84.216384;33.9345
+United States;Georgia;Marietta;-84.5496148;33.9528472
+United States;Georgia;Norcross;-84.2135309;33.9412127
 United States;Georgia;Peachtree City;-84.595985;33.396494
 United States;Georgia;Snellville;-84.020084;33.857094
 United States;Illinois;Aurora;-88.3147539;41.7571701
@@ -1751,7 +1751,7 @@ United States;North Carolina;Morrisville;-78.8300321;35.824341
 United States;North Carolina;Salisbury;-80.469987;35.667297
 United States;North Carolina;Sanford;-79.180581;35.479898
 United States;Ohio;Cincinnati;-84.5124602;39.1014537
-United States;Ohio;Dayton;-84.201598;39.759626
+United States;Ohio;Dayton;-84.1916069;39.7589478
 United States;Ohio;Lima;-84.104903;40.746588
 United States;Oklahoma;Enid;-97.8791341;36.3967623
 United States;Oregon;Albany;-123.1059324;44.6365071
@@ -2067,3 +2067,8 @@ Germany;Nordrhein-Westfalen;Hurth;6.876568;50.8807379
 Portugal;Faro;Lagoa;-8.4540;37.1363
 Portugal;Faro;Albufeira;-8.2455;37.0904
 United Kingdom;Hackney;Stoke Newington;-0.0772816;51.5576971
+Russian Federation;Moskva;Bogorodskoye;38.1825572;56.4939062
+United States;Alabama;Huntsville;-86.5858;34.7296
+Canada;Quebec;Saint-lazare;-74.1359184;45.3996015
+Spain;Catalonia;Manresa;1.8286765;41.7288939
+Russian Federation;Krasnodar;Slavyansk-na-kubani;38.1244609;45.2590875
