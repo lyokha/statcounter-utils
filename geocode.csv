@@ -395,7 +395,7 @@ Germany;Nordrhein-Westfalen;Essen;7.0165;51.4581
 Greece;Thessaloniki;Thessaloníki;22.9352716;40.6403167
 Hong Kong;;Central District;114.1602579;22.2813223
 Indonesia;;;120.0;-5.0
-Japan;Saitama;Saitama;139.65657;35.90807
+Japan;Saitama;Saitama;139.6462;35.8615
 Kazakhstan;Almaty;Taldykorgan;78.3791841;45.0164138
 Netherlands;Noord-Brabant;Eindhoven;5.478633;51.4392648
 Netherlands;Utrecht;Utrecht;5.111773;52.096255
@@ -723,7 +723,7 @@ Italy;Veneto;Padua;11.8734455;45.4077172
 Japan;Gifu;Tajimi;137.129652;35.334793
 Japan;Kagawa;Takamatsu;134.0465338;34.3425592
 Japan;Tokyo;Heiwajima;139.735013455;35.5788522
-Japan;Tokyo;Nerima;139.654753;35.737265
+Japan;Tokyo;Nerima;139.6390;35.7482
 Kazakhstan;Atyrau;Atyrau;51.9244533;47.1053426
 Kazakhstan;East Kazakhstan;Ridder;83.506157;50.338932
 Korea, Republic of;Kyonggi-do;Dobong;127.0405;37.67416
@@ -816,7 +816,7 @@ Russian Federation;Yamal-Nenets;Salekhard;66.6157469;66.5375387
 Russian Federation;Yamal-Nenets;Urengoy;78.3679808;65.9642323
 Slovakia;Bratislava;Bratislava;17.1093063;48.1516988
 Spain;Catalonia;Golmés;0.931795;41.632126
-Spain;Navarra;Pamplona;-1.655784;42.809858
+Spain;Navarra;Pamplona;-1.6442556;42.8184538
 Sweden;Hallands Lan;Varberg;12.2502949;57.1057412
 Sweden;Skane Lan;Lund;13.1929449;55.7029296
 Sweden;Skane Lan;Malmö;13.0001566;55.6052931
@@ -1458,7 +1458,7 @@ Spain;Andalucia;Mijas;-4.6375188;36.5957471
 Spain;Andalucia;Punta Umbría;-6.9662203;37.1830237
 Spain;Asturias;Oviedo;-5.8448989;43.3605977
 Spain;Cantabria;Maliaño;-3.83623;43.41845
-Spain;Cantabria;Soto De La Marina;-3.896209;43.465738
+Spain;Cantabria;Soto De La Marina;-3.8948;43.4661
 Spain;Castilla-La Mancha;Azuqueca De Henares;-3.264972;40.56821
 Spain;Catalonia;Gavá;2.0063126;41.3050933
 Spain;Catalonia;Lleida;0.6267842;41.6147605
@@ -1472,7 +1472,7 @@ Spain;Islas Baleares;Palma De Mallorca;2.6500745;39.5695818
 Spain;Madrid;Colmenar Viejo;-3.7663207;40.6587901
 Spain;Madrid;Fuenlabrada;-3.794457;40.284375
 Spain;Pais Vasco;Bilbao;-2.938075;43.263659
-Spain;Pais Vasco;Donostia-san Sebastián;-1.982797;43.319297
+Spain;Pais Vasco;Donostia-san Sebastián;-1.9838889;43.3224219
 Sweden;Hallands Lan;Falkenberg;12.4888013;56.9027333
 Sweden;Jamtlands Lan;Alsen;13.9286711;63.3864609
 Sweden;Norrbottens Lan;Luleå;22.1460134;65.5831352
@@ -2072,3 +2072,6 @@ United States;Alabama;Huntsville;-86.5858;34.7296
 Canada;Quebec;Saint-lazare;-74.1359184;45.3996015
 Spain;Catalonia;Manresa;1.8286765;41.7288939
 Russian Federation;Krasnodar;Slavyansk-na-kubani;38.1244609;45.2590875
+Russian Federation;Krasnoyarsk;Aban;96.0678;56.6767
+United Kingdom;Sutton;Cheam;-0.2162414;51.3576155
+Spain;Aragon;Zaragoza;-0.8810;41.6521

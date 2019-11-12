@@ -678,6 +678,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
               case "Horad Minsk":
                   $10 = "Minsk";
                   break
+              case "Hrodna":
+                  $10 = "Grodno";
+                  break
               case "Grodno":
                   if ($9 == "Minskaya Voblasts'")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
