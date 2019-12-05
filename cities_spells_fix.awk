@@ -808,6 +808,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
               case "Ciudad De Mexico":              # Mexico
                   $10 = "Mexico";
                   break
+              case "León":
+                  $10 = "Leon";
+                  break
               case "Limasol":                       # Cyprus
                   $10 = "Limassol";
                   break

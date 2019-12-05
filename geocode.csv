@@ -541,7 +541,7 @@ Ireland;Louth;Dundalk;-6.4008879;54.0046033
 Japan;Kanagawa;Yokohama;139.636768;35.444991
 Japan;Kyoto;Kyoto;135.7634074;35.0231321
 Kazakhstan;Qyzylorda;Kyzylorda;65.495251;44.854884
-Mexico;Nuevo Leon;Garza García;-100.37758;25.65384
+Mexico;Nuevo Leon;Garza García;-100.4022714;25.6651051
 Mongolia;Ulaanbaatar;Ulaanbaatar;106.917602;47.918501
 Morocco;;;-7.3362482;31.1728205
 Netherlands;Gelderland;Nijmegen;5.861157;51.841987
@@ -1209,10 +1209,10 @@ Malaysia;Selangor;Seri Kembangan;101.7055684;3.0340649
 Maldives;Male;Male;73.509769;4.174467
 Malta;;Sliema;14.501647;35.912744
 Mauritius;Port Louis;Port Louis;57.501925;-20.161676
-Mexico;Chiapas;Tuxtla Gutierrez;-93.104289;16.751798
-Mexico;Guanajuato;León;-101.671602;21.121646
-Mexico;Hidalgo;Guadalajara;-103.3469982;20.676143
-Mexico;Queretaro de Arteaga;Querétaro;-100.394081;20.588798
+Mexico;Chiapas;Tuxtla Gutierrez;-93.115959;16.753801
+Mexico;Guanajuato;Leon;-101.6825081;21.1218598
+Mexico;Hidalgo;Guadalajara;-103.3383962;20.6720375
+Mexico;Queretaro de Arteaga;Querétaro;-100.3972;20.5944
 Mexico;Sonora;Nogales;-110.940384;31.305594
 Mexico;Yucatan;Merida;-89.6237402;20.9670759
 Moldova, Republic of;;Sîngera;28.9679;46.9153
@@ -1835,7 +1835,7 @@ Germany;Niedersachsen;Holzminden;9.4466591;51.828835
 Germany;Nordrhein-Westfalen;Paderborn;8.76486977818;51.71895955
 Italy;Campania;Santa Maria Capua Vetere;14.25342;41.08156
 Italy;Veneto;Vicenza;11.5478825;45.5488306
-Mexico;Jalisco;Tlajomulco De Zuniga;-103.44654;20.47421
+Mexico;Jalisco;Tlajomulco De Zuniga;-103.4469713;20.4737273
 Netherlands;Noord-Holland;Huizen;5.2578;52.2962
 Netherlands;Noord-Holland;Uithoorn;4.8251;52.2411
 Portugal;Porto;Mafamude;-8.6041;41.1137
@@ -1938,9 +1938,9 @@ Guatemala;Guatemala;Guatemala City;-90.5185188;14.6222328
 Spain;Andalucia;Úbeda;-3.3719849;38.0126888
 Chile;;;-71.0;-30.0
 Mexico;Chihuahua;Juarez;-106.4555818;31.7097961
-Mexico;Baja California Sur;La Paz;-110.30973;24.13811
+Mexico;Baja California Sur;La Paz;-110.3126162;24.1422841
 Mexico;Puebla;Cholula;-98.3;19.0511
-Mexico;Puebla;Puebla;-98.20193;19.04334
+Mexico;Puebla;Puebla;-98.1982;19.0423
 Mexico;Tabasco;Villahermosa;-92.9364;17.9880
 Argentina;Buenos Aires;Wilde;-58.314592;-34.6984264
 Colombia;Distrito Especial;Bogota;-74.0761028;4.5980772
