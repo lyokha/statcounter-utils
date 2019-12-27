@@ -892,6 +892,11 @@ $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
                       suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
                                        "Ukraine", "", "", $12 "  >>  ");
                   break
+              case "LLC texnoprosistem":
+                  if ($8 == "Korea, Republic of")
+                      suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
+                                       "Uzbekistan", "", "", $12 "  >>  ");
+                  break
           }
           print
         }
