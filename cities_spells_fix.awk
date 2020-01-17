@@ -512,11 +512,15 @@ $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
                   }
                   break
               case "Cesky Tesin":
-                  if ($2 == "5.59.57.175") {
-                      suspicious_repl(substr($1, 2), $2, 9, 10,
-                                      "Rostov", "Azov", $2 "  >>  ");
-                      $8 = "Russian Federation"
-                  }
+                  if ($2 == "5.59.57.175")
+                      suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
+                                       "Russian Federation", "Rostov", "Azov",
+                                       $12 "  >>  ");
+                  break
+              case "Temryuk":
+                  if ($9 == "Moscow City" && $12 == "Intertelecom Ltd(PDSN)")
+                      suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
+                                       "Ukraine", "", "", $12 "  >>  ");
                   break
               case "":
                   if ($9 == "Leningrad")
@@ -639,11 +643,10 @@ $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
                                       "Poltavs'ka Oblast'", $10);
                   break
               case "Sevastopol":
-                  if ($9 == "Kaluga") {
-                      suspicious_repl(substr($1, 2), $2, 9, 10,
-                                      "Sevastopol'", $10);
-                      $8 = "Ukraine"
-                  }
+                  if ($9 == "Kaluga")
+                      suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
+                                       "Ukraine", "Sevastopol'", $10,
+                                       $12 "  >>  ");
                   break
               case "Dmitriy":
                   if ($12 == "Bystrov Dmitriy Sergeevich")
@@ -719,6 +722,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
                   if ($9 == "Almaty")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Almaty City", "Almaty");
+                  break
+              case "Gorod Bishkek":                 # Kyrgyzstan
+                  $10 = "Bishkek";
                   break
               case "Frankfurt":                     # Germany
                   if ($9 == "Hessen")

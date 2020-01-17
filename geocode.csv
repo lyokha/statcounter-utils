@@ -328,7 +328,7 @@ Indonesia;Jakarta Raya;Jakarta;106.827183;-6.1753942
 Italy;Lombardia;Milan;9.1904984;45.4667971
 Moldova, Republic of;Bender;Bendery;29.4746;46.8189
 Poland;Malopolskie;Kraków;19.936742;50.061971
-Russian Federation;Chelyabinsk;Kopeysk;61.61797;55.116732
+Russian Federation;Chelyabinsk;Kopeysk;61.6216332;55.1131951
 Russian Federation;Krasnoyarsk;Kansk;95.706787;56.205997
 Russian Federation;Kursk;Zheleznogorsk;35.3515011;52.3306193
 Russian Federation;Leningrad;Vsevolozhsk;30.646042;60.024006
@@ -787,7 +787,7 @@ Russian Federation;Orel;Livny;37.6089;52.4253859
 Russian Federation;Orenburg;Sol-iletsk;54.996372;51.161289
 Russian Federation;Penza;Serdobsk;44.213924;52.461506
 Russian Federation;Permskiy Kray;Krasnokamsk;55.7586943;58.0812613
-Russian Federation;Permskiy Kray;Solikamsk;56.771029;59.648333
+Russian Federation;Permskiy Kray;Solikamsk;56.779594;59.649437
 Russian Federation;Primor'ye;Artëm;132.18563;43.354804
 Russian Federation;Primor'ye;Nakhodka;132.892811;42.824037
 Russian Federation;Primor'ye;Partizansk;133.1436968;43.1413275
@@ -1355,7 +1355,7 @@ Russian Federation;Moskva;Lesnoy Gorodok;37.212612;55.636239
 Russian Federation;Moskva;Malakhovka;38.0042385;55.6452616
 Russian Federation;Moskva;Molzino;38.384213;55.890669
 Russian Federation;Moskva;Mosrentgen;37.473815;55.620947
-Russian Federation;Moskva;Nazar'yevo;37.260232;55.968846
+Russian Federation;Moskva;Nazar'yevo;37.0428753;55.6741749
 Russian Federation;Moskva;Ostrovtsy;37.992637;55.591345
 Russian Federation;Moskva;Ozeretskoye;37.3882991;56.070326
 Russian Federation;Moskva;Ozeri;38.559824;54.854087
@@ -1374,7 +1374,7 @@ Russian Federation;Murmansk;Kovdor;30.474025;67.562914
 Russian Federation;Murmansk;Monchegorsk;32.931679;67.939903
 Russian Federation;Murmansk;Safonovo;33.292049;69.059029
 Russian Federation;Nenets;Naryan-mar;53.006926;67.63805
-Russian Federation;Nizhegorod;Linda;44.102349;56.612707
+Russian Federation;Nizhegorod;Linda;44.0991624;56.6144302
 Russian Federation;Nizhegorod;Pavlovo;43.071114;55.965137
 Russian Federation;Novgorod;Borovichi;33.9068275;58.389009
 Russian Federation;Novgorod;Staraya Russa;31.3634905;57.9898923
@@ -1432,8 +1432,8 @@ Russian Federation;Tula;Shchëkino;37.517626;54.002146
 Russian Federation;Tver';Bezhetsk;36.692535;57.781357
 Russian Federation;Tver';Kimry;37.355678;56.873338
 Russian Federation;Tver';Redkino;36.2909911;56.645784
-Russian Federation;Tver';Rzhev;34.329065;56.262877
-Russian Federation;Tver';Toropets;31.635466;56.501173
+Russian Federation;Tver';Rzhev;34.330151;56.259262
+Russian Federation;Tver';Toropets;31.641077;56.496479
 Russian Federation;Tver';Torzhok;34.973373;57.040794
 Russian Federation;Tver';Udomlya;35.00511;57.876779
 Russian Federation;Tyumen';Ishim;69.473366;56.110912
@@ -1975,7 +1975,7 @@ Belarus;Homyel'skaya Voblasts';Rechitsa;30.3860239;52.3717518
 Russian Federation;Tula;Yefremov;38.116188;53.141834
 Russian Federation;Krasnodar;Dinskaya;39.2249757;45.2168713
 Brazil;Sao Paulo;Barueri;-46.8764612;-23.5112184
-Russian Federation;Moskva;Skhodnya;37.2976171;55.9502833
+Russian Federation;Moskva;Skhodnya;37.2994541;55.9512317
 Lithuania;Vilniaus Apskritis;Lentvaris;25.0504034;54.6428696
 Russian Federation;Moskva;Razvilka;37.750278;55.590278
 Russian Federation;Nizhegorod;Arzamas;43.8408129;55.3989463
@@ -2099,3 +2099,13 @@ United States;Arizona;Scottsdale;-111.9260;33.4943
 United States;Florida;Miami Beach;-80.1353006;25.7929198
 Russian Federation;Krasnodar;Armavir;41.1295;44.9990
 Russian Federation;Voronezh;Rossosh;39.5764857;50.1961874
+Russian Federation;Tomsk;Asino;86.14167;56.999187
+Russian Federation;Permskiy Kray;Gornozavodsk;58.325058;58.374001
+Russian Federation;Sverdlovsk;Monetnyy;60.880337;57.048367
+Russian Federation;Moskva;Podolino;37.2643093;55.9310436
+Germany;Bayern;Olching;11.3311557;48.2036863
+Russian Federation;Tver';Ostashkov;33.102665;57.1555447
+Russian Federation;Chelyabinsk;Chebarkul';60.37009;54.977795
+Russian Federation;Kaluga;Maloyaroslavets;36.4590246;55.012181
+Russian Federation;Nizhegorod;Semenov;44.49155;56.788342
+Sri Lanka;Western;Colombo;79.8538463;6.9349969
