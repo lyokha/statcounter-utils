@@ -485,6 +485,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" && $15 ~ "showComment" { delete_spam() }
                   if ($12 ~ "Telecom MPK$")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Moskva", "Dubna", $12 "  >>  ");
+                  else if ($12 == "Yandex enterprise network")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Moscow City", "Moscow", $12 "  >>  ");
                   break
               case "Krasnoznamensk":
                   if ($9 == "Mordovia")
