@@ -226,6 +226,10 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
               case "Leningrad":
                   $10 = "Saint Petersburg";
                   break
+              case "Petergof":
+                  if ($9 == "Saint Petersburg City")
+                      $10 = "Peterhof";
+                  break
               case "Belebei":
                   $10 = "Belebey";
                   break
