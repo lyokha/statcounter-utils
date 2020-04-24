@@ -569,7 +569,7 @@ Russian Federation;Mordovia;Ruzaevka;44.954391;54.058735
 Russian Federation;Moscow City;;37.380031;55.815792
 Russian Federation;Moskva;Khotkovo;37.978677;56.252182
 Russian Federation;Moskva;Stupino;38.07839;54.88688
-Russian Federation;Moskva;Voskresensk;38.673353;55.322978
+Russian Federation;Moskva;Voskresensk;38.6816824;55.322518
 Russian Federation;Omsk;Novaya Sharapovka;72.779941;54.981133
 Russian Federation;Saint Petersburg City;Pushkin;30.415731;59.722256
 Russian Federation;Sakhalin;Korsakov;142.78027;46.633785
@@ -718,7 +718,7 @@ Israel;Tel Aviv;Holon;34.776578;32.012338
 Italy;Campania;Naples;14.2487826;40.8359336
 Italy;Emilia-Romagna;Bologna;11.3430347;44.4936714
 Italy;Piemonte;Turin;7.688672;45.069149
-Italy;Toscana;Arezzo;11.861346;43.460457
+Italy;Toscana;Arezzo;11.8783;43.4629
 Italy;Veneto;Padua;11.8734455;45.4077172
 Japan;Gifu;Tajimi;137.129652;35.334793
 Japan;Kagawa;Takamatsu;134.0465338;34.3425592
@@ -1147,7 +1147,7 @@ Italy;Emilia-Romagna;Cesena;12.2422442;44.136352
 Italy;Emilia-Romagna;Ferrara;11.6186451;44.8372737
 Italy;Emilia-Romagna;Piacenza;9.6947461;45.0534751
 Italy;Emilia-Romagna;Rimini;12.571437;44.054374
-Italy;Lazio;Acquapendente;11.86308;42.743695
+Italy;Lazio;Acquapendente;11.864988;42.7439961
 Italy;Lazio;Guidonia;12.7263446;41.9972039
 Italy;Lazio;Sasso;12.043542;42.054764
 Italy;Lombardia;Brescia;10.2200214;45.5398022
@@ -1156,7 +1156,7 @@ Italy;Lombardia;Opera;9.212295;45.376856
 Italy;Lombardia;Sesto San Giovanni;9.243808;45.520199
 Italy;Lombardia;Valgreghentino;9.412503;45.776507
 Italy;Marche;Monteciccardo;12.781427;43.856455
-Italy;Puglia;Bari;16.868762;41.126005
+Italy;Puglia;Bari;16.8620293;41.1257843
 Italy;Puglia;Taranto;17.2432278;40.4712427
 Italy;Sicilia;Palermo;13.3524434;38.1112268
 Italy;Toscana;Cascina;10.546769;43.676528
@@ -1658,7 +1658,7 @@ United States;Florida;Boca Raton;-80.0830984;26.3586885
 United States;Florida;Delray Beach;-80.07339;26.461496
 United States;Florida;High Springs;-82.596883;29.826798
 United States;Florida;Jacksonville;-81.655651;30.3321838
-United States;Florida;Naples;-81.790439;26.148216
+United States;Florida;Naples;-81.7942944;26.1421976
 United States;Florida;Tampa;-82.458785;27.947295
 United States;Georgia;Columbus;-84.9877094;32.4609764
 United States;Georgia;Lawrenceville;-83.988284;33.956099
@@ -2169,3 +2169,8 @@ United States;California;Laguna Hills;-117.6882067;33.5948758
 United States;South Carolina;Bluffton;-80.8604;32.2372
 Germany;Hessen;Weiterstadt;8.584137;49.9060908
 Russian Federation;Krasnoyarsk;Bogotol;89.531639;56.211464
+Russian Federation;Moskva;Isakovo;38.5784302;55.4205369
+Cameroon;Littoral;Douala;9.706203;4.0429408
+Brazil;Rio Grande do Norte;Apodi;-37.796927;-5.6631109
+Russian Federation;Irkutsk;Svirsk;103.342331;53.066269
+United States;Florida;Bradenton;-82.5748194;27.4989278
