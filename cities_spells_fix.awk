@@ -871,6 +871,10 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   if ($8 == "Tajikistan")
                       $9 = "Dushanbe";
                   break
+              case "Tbilisi":                       # Georgia
+                  if ($9 == "Dushet'is Raioni")
+                      $9 = "";
+                  break
           }
           switch ($12) {
               case "EUNnet":
