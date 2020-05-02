@@ -187,6 +187,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
               case "Zheleznodorozhnyy":
                   $10 = "Zheleznodorozhny";
                   break
+              case "Elektrostal'":
+                  $10 = "Elektrostal";
+                  break
               case "Pavlovo-posad":
                   $10 = "Pavlovskiy Posad";
                   break
