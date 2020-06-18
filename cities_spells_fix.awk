@@ -860,6 +860,10 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
               case "Limasol":                       # Cyprus
                   $10 = "Limassol";
                   break
+              case "Bengaluru":                     # India
+                  if ($9 == "Karnataka")
+                      $10 = "Bangalore";
+                  break
               case "Ho Chi Minh City":              # Vietnam
                   if ($9 != "Ho Chi Minh")
                       suspicious_repl(substr($1, 2), $2, 9, 10,

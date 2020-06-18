@@ -151,7 +151,7 @@ Japan;;;139.2394179;36.5748441
 Poland;;;19.0258159;52.0977181
 Russian Federation;Moskva;Lyubertsy;37.89377;55.6783142
 Russian Federation;Moskva;Pushkino;37.847155;56.010428
-Singapore;;Singapore;103.82967;1.318308
+Singapore;;Singapore;103.8520;1.2905
 Switzerland;Geneve;Geneva;6.1466014;46.2017559
 Thailand;;;100.83273;14.8971921
 Ukraine;Zhytomyrs'ka Oblast';Zhitomir;28.6692345;50.2598298
@@ -1203,7 +1203,7 @@ Luxembourg;Luxembourg;Larochette;6.2197136;49.78323
 Macedonia;;;21.750414;41.605594
 Malaysia;Kelantan;Kubang Kerian;102.2845137;6.0940366
 Malaysia;Kuala Lumpur;Kuala Lumpur;101.6943028;3.1516636
-Malaysia;Pulau Pinang;Butterworth;100.3748721;5.3953964
+Malaysia;Pulau Pinang;Butterworth;100.3697;5.4083
 Malaysia;Selangor;Klang;101.4492077;3.0471533
 Malaysia;Selangor;Seri Kembangan;101.7055684;3.0340649
 Maldives;Male;Male;73.509769;4.174467
@@ -2212,3 +2212,6 @@ Ukraine;Ternopil's'ka Oblast';Berezhany;24.938854;49.4450296
 Ukraine;Volyns'ka Oblast';Gorokhov;24.7600734;50.4986166
 Belarus;Minskaya Voblasts';Borovlyany;27.6677;53.9981
 Spain;Castilla y Leon;Valladolid;-4.728562;41.6521328
+Malaysia;Pulau Pinang;Bayan Lepas;100.2604606;5.295127
+India;Gujarat;Ahmedabad;72.5797068;23.0216238
+Russian Federation;Krasnodar;Tikhoretsk;40.128124;45.854679
