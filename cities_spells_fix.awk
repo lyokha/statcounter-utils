@@ -81,6 +81,11 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   if ($8 == "Singapore")
                       $10 = "Singapore";
                   break
+              case "Slough":                        # United Kingdom
+                  if ($10 == "London")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "London", "London");
+                  break
           }
           switch ($10) {
               case "Tolyatti":                      # Russian Federation
