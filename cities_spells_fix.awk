@@ -611,6 +611,7 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   break
               case "Dnipropetrovsk":
               case "Dniepropetrovsk":
+              case "Dnipro":
                   $10 = "Dnepropetrovsk";
                   break
               case "Mykolaiv":

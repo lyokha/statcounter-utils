@@ -567,7 +567,7 @@ Russian Federation;Leningrad;Volkhov;32.3276803;59.9275868
 Russian Federation;Mariy-El;Volzhsk;48.3618598;55.8636579
 Russian Federation;Mordovia;Ruzaevka;44.954391;54.058735
 Russian Federation;Moscow City;;37.380031;55.815792
-Russian Federation;Moskva;Khotkovo;37.978677;56.252182
+Russian Federation;Moskva;Khotkovo;37.9908107;56.2541234
 Russian Federation;Moskva;Stupino;38.07839;54.88688
 Russian Federation;Moskva;Voskresensk;38.6816824;55.322518
 Russian Federation;Omsk;Novaya Sharapovka;72.779941;54.981133
@@ -833,7 +833,7 @@ Ukraine;Kharkivs'ka Oblast';Pesochin;36.1239316;49.9622881
 Ukraine;Khersons'ka Oblast';Genichesk;34.8068643;46.1738032
 Ukraine;Krym;Bakhchysaray;33.8534782;44.7522963
 Ukraine;Krym;Kerch;36.4538645;45.3534002
-Ukraine;Kyyivs'ka Oblast';Bila Tserkva;30.117269;49.795806
+Ukraine;Kyyivs'ka Oblast';Bila Tserkva;30.1116924;49.8038191
 Ukraine;Kyyivs'ka Oblast';Boyarka;30.2847595;50.3356709
 Ukraine;Kyyivs'ka Oblast';Irpen;30.244587;50.519751
 Ukraine;L'vivs'ka Oblast';Brody;25.1438;50.0833
@@ -1348,7 +1348,7 @@ Russian Federation;Moskva;Elektrougli;38.219659;55.716859
 Russian Federation;Moskva;Golitsyno;36.987117;55.615944
 Russian Federation;Moskva;Kashira;38.1505119;54.837449
 Russian Federation;Moskva;Kommunarka;37.475495;55.570395
-Russian Federation;Moskva;Krasnoarmeysk;38.14094;56.120959
+Russian Federation;Moskva;Krasnoarmeysk;38.1457655;56.1210895
 Russian Federation;Moskva;Krasnozavodsk;38.244339;56.440507
 Russian Federation;Moskva;Kupavna;38.1223089;55.7483527
 Russian Federation;Moskva;Lesnoy Gorodok;37.2068966;55.6402275
@@ -2221,3 +2221,8 @@ Morocco;Chaouia-Ouardigha;Khouribga;-6.909238;32.885508
 Ukraine;Vinnyts'ka Oblast';Bershad;29.51889;48.36594
 Germany;Baden-Wurttemberg;Kornwestheim;9.1873875;48.8611498
 Russian Federation;Sverdlovsk;Berezovskiy;60.812012;56.90979
+Russian Federation;Moskva;Sofrino;37.9305867;56.137427
+Russian Federation;Saint Petersburg City;Kolpino;30.604479;59.748444
+Ukraine;Kyyivs'ka Oblast';Berezan;31.4689158;50.3132713
+Belarus;Minskaya Voblasts';Krupki;29.1398503;54.317197
+Ukraine;Krym;Bilohirsk;34.594959;45.0584385
