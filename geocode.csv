@@ -436,7 +436,7 @@ United States;Minnesota;Minneapolis;-93.267836;44.970382
 United States;New Jersey;Dumont;-73.9968051;40.9406541
 United States;New Jersey;Mount Laurel;-74.891889;39.933994
 United States;Texas;Dallas;-96.7968559;32.7762719
-United States;Utah;Provo;-111.664156;40.231464
+United States;Utah;Provo;-111.6584;40.2335
 United States;Washington;Tacoma;-122.4398746;47.2495798
 Australia;New South Wales;Balgowlah;151.2608261;-33.7944424
 Brazil;Sao Paulo;Sao Paulo;-46.6333824;-23.5506507
@@ -1067,7 +1067,7 @@ Germany;Baden-Wurttemberg;Philippsburg;8.4563825;49.2358053
 Germany;Baden-Wurttemberg;Walldorf;8.6433518;49.3038134
 Germany;Baden-Wurttemberg;Weinheim;8.6717458;49.5462349
 Germany;Baden-Wurttemberg;Östringen;8.7097172;49.2192418
-Germany;Bayern;Bamberg;10.8876149;49.8926723
+Germany;Bayern;Bamberg;10.8868478;49.8916044
 Germany;Bayern;Dachau;11.4354419;48.2592477
 Germany;Bayern;Feucht;11.215071;49.376305
 Germany;Bayern;Freising;11.747044;48.404485
@@ -1175,7 +1175,7 @@ Japan;Fukuoka;Kitakyushu;130.8749015;33.8829996
 Japan;Fukushima;Aizu-wakamatsu;139.942135;37.48043
 Japan;Ibaraki;Naka;135.56564;34.815944
 Japan;Kagoshima;Kagoshima;130.55;31.56667
-Japan;Kanagawa;Kamakura;139.550126;35.318177
+Japan;Kanagawa;Kamakura;139.54442;35.329564
 Japan;Niigata;Niigata;139.0365006;37.9160769
 Japan;Niigata;Shibata;139.327227;37.946943
 Japan;Okinawa;Onna;127.805139;26.345831
@@ -1779,7 +1779,7 @@ United States;Texas;San Marcos;-97.941285;29.882794
 United States;Texas;Tyler;-95.3010624;32.3512601
 United States;Texas;Wichita Falls;-98.493282;33.913899
 United States;Texas;Wylie;-96.538485;33.016994
-United States;Utah;Lehi;-111.856081;40.387497
+United States;Utah;Lehi;-111.8491619;40.3880902
 United States;Utah;North Salt Lake;-111.916601;40.84366
 United States;Utah;Salt Lake City;-111.8904308;40.7670126
 United States;Vermont;Barre;-72.501688;44.197394
@@ -2226,3 +2226,5 @@ Russian Federation;Saint Petersburg City;Kolpino;30.604479;59.748444
 Ukraine;Kyyivs'ka Oblast';Berezan;31.4689158;50.3132713
 Belarus;Minskaya Voblasts';Krupki;29.1398503;54.317197
 Ukraine;Krym;Bilohirsk;34.594959;45.0584385
+Japan;Kanagawa;Fujisawa;139.465077;35.364842
+Belarus;Brestskaya Voblasts';Pinsk;26.102377;52.1113612
