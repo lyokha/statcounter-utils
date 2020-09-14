@@ -706,11 +706,10 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                                       "Odes'ka Oblast'", "Odessa");
                   break
               case "Pokrovsk":
-                  if ($2 == "31.148.171.214") {
+                  if ($2 == "31.148.171.214")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Donets'ka Oblast'", "Rodinskoye",
                                       $2 "  >>  ");
-                  }
                   break
               case "Mogilev":                       # Belarus
                   $10 = "Mogilëv";
@@ -769,6 +768,12 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
               case "Gorod Bishkek":                 # Kyrgyzstan
                   $10 = "Bishkek";
                   break
+              case "Bischkek":
+                  if ($8 == "Kyrgyzstan") {
+                      $9 = "Bishkek";
+                      $10 = "Bishkek";
+                  }
+                  break
               case "Frankfurt":                     # Germany
                   if ($9 == "Hessen")
                       $10 = "Frankfurt Am Main";
@@ -825,6 +830,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   if ($9 == "Midtjyllen")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Hovedstaden", "Kongens Lyngby");
+                  break
+              case "Aarhus C":
+                  $10 = "Aarhus";
                   break
               case "A Coruña":                      # Spain
                   if ($9 == "Galicia")

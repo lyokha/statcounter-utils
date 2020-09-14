@@ -1030,7 +1030,7 @@ France;Bourgogne;Dijon;5.0414701;47.3215806
 France;Bretagne;Quimper;-4.10063;47.997244
 France;Bretagne;Rennes;-1.6800198;48.1113387
 France;Centre;Lucé;1.4628645;48.4364696
-France;Franche-Comte;Besançon;6.032645;47.237009
+France;Franche-Comte;Besançon;6.0243622;47.2380222
 France;Ile-de-France;Claye-souilly;2.6883703;48.9460871
 France;Ile-de-France;Conflans-sainte-honorine;2.095491;48.994869
 France;Ile-de-France;Cormeilles-en-parisis;2.1998877;48.9759637
@@ -1536,8 +1536,8 @@ Ukraine;Poltavs'ka Oblast';Mirgorod;33.611455;49.965752
 Ukraine;Poltavs'ka Oblast';Novi Sanzhary;34.316048;49.333315
 Ukraine;Rivnens'ka Oblast';Dubno;25.759649;50.398781
 Ukraine;Rivnens'ka Oblast';Ostrog;26.513668;50.327775
-Ukraine;Sums'ka Oblast';Konotop;33.209881;51.238926
-Ukraine;Sums'ka Oblast';Romny;33.48375;50.744312
+Ukraine;Sums'ka Oblast';Konotop;33.206675;51.2397495
+Ukraine;Sums'ka Oblast';Romny;33.4877;50.74207
 Ukraine;Vinnyts'ka Oblast';;28.685821;48.920776
 Ukraine;Vinnyts'ka Oblast';Khmelnik;27.9491205;49.556175
 Ukraine;Zakarpats'ka Oblast';Chop;22.212426;48.431214
@@ -2228,3 +2228,12 @@ Belarus;Minskaya Voblasts';Krupki;29.1398503;54.317197
 Ukraine;Krym;Bilohirsk;34.594959;45.0584385
 Japan;Kanagawa;Fujisawa;139.465077;35.364842
 Belarus;Brestskaya Voblasts';Pinsk;26.102377;52.1113612
+France;Alsace;Fellering;6.9858441;47.8965061
+Ukraine;Sums'ka Oblast';Shostka;33.4728213;51.8643223
+United States;Michigan;Taylor;-83.2696509;42.240872
+Portugal;Viseu;Viseu;-7.9138664;40.6574713
+Portugal;Leiria;Leiria;-8.8071119;39.7437902
+United Kingdom;Tower Hamlets;Poplar;-0.0144629;51.5110713
+Brazil;Minas Gerais;Barbacena;-43.7735087;-21.2254524
+Russian Federation;Saratov;Marx;46.7483653;51.7069911
+Russian Federation;Leningrad;Lampovo;30.069447;59.285698
