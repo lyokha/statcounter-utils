@@ -638,6 +638,12 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Vinnyts'ka Oblast'", "Vinnitsa");
                   break
+              case "Sokolivka":
+                  if ($12 == "Inmart-Internet LTD")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Donets'ka Oblast'", "Horlivka",
+                                      $12 "  >>  ");
+                  break
               case "Cherkasy":
                   $10 = "Cherkassy";
                   break
