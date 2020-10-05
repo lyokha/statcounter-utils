@@ -837,8 +837,8 @@ Ukraine;Kyyivs'ka Oblast';Bila Tserkva;30.1116924;49.8038191
 Ukraine;Kyyivs'ka Oblast';Boyarka;30.2847595;50.3356709
 Ukraine;Kyyivs'ka Oblast';Irpen;30.244587;50.519751
 Ukraine;L'vivs'ka Oblast';Brody;25.1438;50.0833
-Ukraine;L'vivs'ka Oblast';Komarno;23.703109;49.630621
-Ukraine;L'vivs'ka Oblast';Mykolayiv;23.980167;49.525875
+Ukraine;L'vivs'ka Oblast';Komarno;23.6969962;49.6260714
+Ukraine;L'vivs'ka Oblast';Mykolayiv;23.9788155;49.5253714
 Ukraine;Zaporiz'ka Oblast';Berdyansk;36.789317;46.755673
 Ukraine;Zaporiz'ka Oblast';Melitopol;35.3676448;46.8487478
 United Kingdom;Berkshire;Bracknell;-0.7449925;51.4143513
@@ -1315,9 +1315,9 @@ Russian Federation;Komi;Sosnogorsk;53.9305546;63.5895298
 Russian Federation;Krasnodar;Belorechensk;39.87114;44.761141
 Russian Federation;Krasnodar;Gulkevichi;40.6962256;45.3565119
 Russian Federation;Krasnodar;Kanevskaya;38.967856;46.0748081
-Russian Federation;Krasnodar;Kurganinsk;40.591364;44.887641
+Russian Federation;Krasnodar;Kurganinsk;40.5891773;44.8846971
 Russian Federation;Krasnodar;Lesodacha;40.9410305;45.3692057
-Russian Federation;Krasnodar;Medvedovskaya;38.9604592;45.4433769
+Russian Federation;Krasnodar;Medvedovskaya;39.0167858;45.4525812
 Russian Federation;Krasnodar;Novokubansk;41.0366896;45.1083184
 Russian Federation;Krasnodar;Strelka;37.2861077;45.201431
 Russian Federation;Krasnodar;Ust-labinsk;39.6896725;45.2178027
@@ -1540,8 +1540,8 @@ Ukraine;Sums'ka Oblast';Konotop;33.206675;51.2397495
 Ukraine;Sums'ka Oblast';Romny;33.4877;50.74207
 Ukraine;Vinnyts'ka Oblast';;28.685821;48.920776
 Ukraine;Vinnyts'ka Oblast';Khmelnik;27.9491205;49.556175
-Ukraine;Zakarpats'ka Oblast';Chop;22.212426;48.431214
-Ukraine;Zakarpats'ka Oblast';Mukachevo;22.718286;48.442105
+Ukraine;Zakarpats'ka Oblast';Chop;22.2096148;48.4310953
+Ukraine;Zakarpats'ka Oblast';Mukachevo;22.7171164;48.4415318
 Ukraine;Zakarpats'ka Oblast';Vishkovo;23.4277;48.0460
 Ukraine;Zhytomyrs'ka Oblast';Sosnivka;29.157619;50.700615
 United Arab Emirates;Dubai;Dubai;55.296249;25.276987
@@ -2238,3 +2238,11 @@ Brazil;Minas Gerais;Barbacena;-43.7735087;-21.2254524
 Russian Federation;Saratov;Marx;46.7483653;51.7069911
 Russian Federation;Leningrad;Lampovo;30.069447;59.285698
 Belarus;Minskaya Voblasts';Fanipol;27.3342647;53.7468361
+Ukraine;Krym;Yevpatoriya;33.3679049;45.1907635
+Kazakhstan;North Kazakhstan;Kokshetau;69.3814676;53.2852054
+Ukraine;L'vivs'ka Oblast';Stebnyk;23.5646648;49.2940892
+Ukraine;Zakarpats'ka Oblast';Beregovo;22.6453246;48.2050985
+Poland;Opolskie;Praszka;18.4485221;51.05536
+Russian Federation;Krasnodar;Labinsk;40.7242185;44.6347953
+Russian Federation;Khakass;Chernogorsk;91.31321;53.828236
+United States;Washington;Naches;-120.699516;46.730958

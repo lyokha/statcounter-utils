@@ -205,6 +205,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
               case "Sergiyev Posad":
                   $10 = "Sergiev Posad";
                   break
+              case "Orekhovo-zuyevo":
+                  $10 = "Orekhovo-zuevo";
+                  break
               case "Usolye":
                   if ($9 == "Irkutsk")
                       $10 = "Usol'ye-sibirskoye";
