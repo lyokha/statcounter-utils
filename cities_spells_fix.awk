@@ -149,6 +149,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
               case "Nizhnii Novgorod":
                   $10 = "Nizhniy Novgorod";
                   break
+              case "Blagoveschensk":
+                  $10 = "Blagoveshchensk";
+                  break
               case "Stavropol'":
                   $10 = "Stavropol";
                   break
@@ -882,6 +885,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   break
               case "León":
                   $10 = "Leon";
+                  break
+              case "Queretaro":
+                  $10 = "Querétaro";
                   break
               case "Limasol":                       # Cyprus
                   $10 = "Limassol";

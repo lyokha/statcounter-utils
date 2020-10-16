@@ -254,7 +254,7 @@ Spain;Catalonia;Barcelona;2.1774322;41.3828939
 Ukraine;Donets'ka Oblast';Kramatorsk;37.5848;48.7388
 Ukraine;Poltavs'ka Oblast';Kremenchug;33.4053;49.0613
 Ukraine;Ternopil's'ka Oblast';Ternopil;25.5923;49.5557
-Australia;Victoria;Melbourne;144.963033;-37.81374
+Australia;Victoria;Melbourne;144.9631608;-37.8142176
 Denmark;;;10.3333283;55.670249
 France;Ile-de-France;Sartrouville;2.161023;48.941108
 France;Rhone-Alpes;Villeurbanne;4.8869339;45.7733105
@@ -501,7 +501,7 @@ United States;Michigan;Macomb;-82.9571;42.6998
 United States;New York;Bronx;-73.8785;40.8466
 United States;New York;Rochester;-77.615214;43.157285
 United States;Pennsylvania;Philadelphia;-75.1635262;39.9527237
-United States;Pennsylvania;Pittsburgh;-79.996485;40.440594
+United States;Pennsylvania;Pittsburgh;-79.9900861;40.4416941
 United States;Texas;Spring;-95.416983;30.079298
 United States;Virginia;Richmond;-77.43428;37.5385087
 United States;Washington;;-120.2126139;47.2868352
@@ -517,7 +517,7 @@ Brazil;;;-53.2;-10.3333333
 Canada;Ontario;Richmond Hill;-79.439392;43.880078
 Canada;Ontario;Waterloo;-80.513088;43.466798
 Canada;Quebec;Québec;-71.2352226;46.8259601
-China;Guangdong;Shenzhen;114.054555;22.546327
+China;Guangdong;Shenzhen;114.0543297;22.555454
 China;Shanghai;Shanghai;121.4890497;31.2252985
 Croatia;Grad Zagreb;Zagreb;15.977048;45.813177
 Czech Republic;Jihocesky kraj;Tabor;14.6584713;49.4140896
@@ -621,7 +621,7 @@ United States;Illinois;Schaumburg;-88.083406;42.0333608
 United States;Indiana;Jeffersonville;-85.7371604;38.2770227
 United States;Iowa;Bondurant;-93.462157;41.7005441
 United States;Kentucky;Louisville;-85.759407;38.2542376
-United States;Massachusetts;Lexington;-71.224787;42.446398
+United States;Massachusetts;Lexington;-71.2245003;42.4473175
 United States;Missouri;Saint Louis;-90.1994097;38.6268039
 United States;Nevada;Las Vegas;-115.149225;36.1662859
 United States;New Jersey;Plainsboro;-74.6004341;40.3334409
@@ -689,7 +689,7 @@ Germany;Baden-Wurttemberg;Heidelberg;8.694724;49.4093582
 Germany;Baden-Wurttemberg;Ulm;9.9932755;48.3973944
 Germany;Bayern;Garching;11.6509662;48.2513878
 Germany;Brandenburg;Strausberg;13.8833952;52.5814009
-Germany;Niedersachsen;Göttingen;9.93393;51.53819
+Germany;Niedersachsen;Göttingen;9.9352051;51.5327604
 Germany;Niedersachsen;Hanover;9.7385532;52.3744779
 Germany;Niedersachsen;Oldenburg;8.2146017;53.1389753
 Germany;Nordrhein-Westfalen;Bochum;7.2196635;51.4818111
@@ -864,7 +864,7 @@ United States;California;Tustin;-117.826166;33.7458511
 United States;California;Vallejo;-122.2566367;38.1040864
 United States;California;Whittier;-118.0308396;33.9708782
 United States;Colorado;Aurora;-104.8319196;39.729432
-United States;Colorado;Littleton;-105.014485;39.613798
+United States;Colorado;Littleton;-105.0166498;39.613321
 United States;Connecticut;Norwalk;-73.408483;41.117894
 United States;Florida;West Palm Beach;-80.0533746;26.7153425
 United States;Florida;Winter Park;-81.3510;28.5978
@@ -929,7 +929,7 @@ Australia;Queensland;Waterford;153.1528045;-27.7035157
 Australia;South Australia;Whyalla;137.545688;-33.048744
 Australia;South Australia;Windsor;138.334095;-34.420783
 Australia;Victoria;Mulgrave;145.181798811;-37.9319869
-Australia;Victoria;Northcote;145.010324548;-37.77308
+Australia;Victoria;Northcote;145.0010;-37.7729
 Australia;Victoria;Ringwood East;145.2530126;-37.8130808
 Australia;Victoria;Rosanna;145.0696349;-37.7396345
 Australia;Victoria;South Yarra;144.9918537;-37.8377695
@@ -1093,7 +1093,7 @@ Germany;Niedersachsen;Lehrte;9.9748557;52.3749334
 Germany;Niedersachsen;Luneburg;10.407855;53.248706
 Germany;Niedersachsen;Osterholz-scharmbeck;8.7948239;53.2281763
 Germany;Niedersachsen;Ottersberg;9.14217;53.111094
-Germany;Niedersachsen;Uslar;9.638213;51.660669
+Germany;Niedersachsen;Uslar;9.6338073;51.6586082
 Germany;Nordrhein-Westfalen;Bergkamen;7.6362876;51.6149389
 Germany;Nordrhein-Westfalen;Bielefeld;8.540868;52.010877
 Germany;Nordrhein-Westfalen;Duisburg;6.759562;51.434999
@@ -1130,7 +1130,7 @@ India;Delhi;New Delhi;77.2022662;28.6141793
 India;Haryana;Gurgaon;77.0299194;28.4646148
 India;Kerala;Ernakulam;76.3431013546;9.9870993
 India;Maharashtra;Mumbai;72.8353355;18.9387711
-India;Tamil Nadu;Chennai;80.2838331;13.0801721
+India;Tamil Nadu;Chennai;80.2704;13.0837
 India;West Bengal;Kharagpur;87.3012875;22.34309
 India;West Bengal;Kolkata;88.3476023;22.5677459
 Iraq;An Najaf;Najaf;44.3299926;32.0010227
@@ -1484,7 +1484,7 @@ Sweden;Stockholms Lan;Vallentuna;18.078011;59.532406
 Sweden;Stockholms Lan;Vällingby;17.8716341;59.3659643
 Sweden;Vasterbottens Lan;Umeå;20.2630745;63.8256568
 Sweden;Vasternorrlands Lan;Sundsvall;17.313662;62.387318
-Sweden;Vastra Gotaland;Lerum;12.271104;57.771225
+Sweden;Vastra Gotaland;Lerum;12.2696;57.7701
 Switzerland;Aargau;Moriken;8.183239;47.415126
 Switzerland;Aargau;Neuenhof;8.3276312;47.4493396
 Switzerland;Graubunden;Laax;9.2581267;46.806412
@@ -1616,7 +1616,7 @@ United States;California;Emeryville;-122.2865266;37.8314089
 United States;California;Fair Oaks;-123.3413984;39.3784978
 United States;California;Fresno;-119.7848;36.7393
 United States;California;Hayward;-122.0807964;37.6688205
-United States;California;Inglewood;-118.348125;33.953876
+United States;California;Inglewood;-118.353132;33.9562003
 United States;California;Jackson St Forest;-120.4011718;38.035981
 United States;California;Los Altos;-122.112982;37.381197
 United States;California;Newbury Park;-118.9118302;34.183671
@@ -1641,7 +1641,7 @@ United States;California;Union City;-122.0816297;37.5963232
 United States;California;Ventura;-119.2930;34.2779
 United States;Colorado;Arvada;-105.0811573;39.8005505
 United States;Colorado;Colorado Springs;-104.8253485;38.8339578
-United States;Colorado;Denver;-104.985586;39.739898
+United States;Colorado;Denver;-104.9848623;39.7392364
 United States;Colorado;Frederick;-104.937688;40.098699
 United States;Colorado;Golden;-105.2210997;39.755543
 United States;Colorado;Lafayette;-105.0897058;39.9935959
@@ -1651,7 +1651,7 @@ United States;Colorado;Salida;-105.9989023;38.5347193
 United States;Connecticut;Bristol;-72.951888;41.671695
 United States;Connecticut;Brookfield;-73.409588;41.482097
 United States;Connecticut;Fairfield;-73.263684;41.140899
-United States;Connecticut;Guilford;-72.684486;41.287799
+United States;Connecticut;Guilford;-72.6817616;41.2889866
 United States;Connecticut;Newington;-72.723788;41.697796
 United States;Connecticut;Willimantic;-72.2115623;41.7125169
 United States;Florida;Boca Raton;-80.0830984;26.3586885
@@ -1690,16 +1690,16 @@ United States;Maryland;Charlestown;-78.975182;39.556294
 United States;Maryland;Elkridge;-76.713987;39.212495
 United States;Maryland;Greenbelt;-76.878388;39.0089
 United States;Maryland;Pasadena;-76.5486;39.1357
-United States;Massachusetts;Arlington;-71.152886;42.414994
+United States;Massachusetts;Arlington;-71.1564428;42.4153739
 United States;Massachusetts;Boxford;-71.0013691481;42.6778091
 United States;Massachusetts;Brighton;-71.1564423;42.3500971
 United States;Massachusetts;Canton;-71.145286;42.158695
-United States;Massachusetts;Gardner;-71.997985;42.575699
+United States;Massachusetts;Gardner;-71.9831716;42.5823564
 United States;Massachusetts;Milton;-71.065573;42.2501425
 United States;Massachusetts;North Reading;-71.079682;42.573694
 United States;Massachusetts;Seekonk;-71.336385;41.808498
 United States;Massachusetts;Somerville;-71.0993;42.3873
-United States;Massachusetts;Waltham;-71.235989;42.376295
+United States;Massachusetts;Waltham;-71.2358004;42.3756401
 United States;Massachusetts;Wareham;-70.720086;41.761394
 United States;Massachusetts;Watertown;-71.1828321;42.3709299
 United States;Massachusetts;Weymouth;-70.9391625;42.2212188
@@ -1829,7 +1829,7 @@ Australia;New South Wales;Rydalmere;151.0411702;-33.8117088
 Australia;Victoria;Armadale;145.0206905;-37.8567619
 Australia;Victoria;Caulfield North;145.0218005;-37.870828
 Australia;Western Australia;Alkimos;115.6874428;-31.6151987
-Belgium;Vlaams-Brabant;Heverlee;4.69594;50.86386
+Belgium;Vlaams-Brabant;Heverlee;4.6937736;50.8645908
 Germany;Baden-Wurttemberg;Goppingen;9.6541116;48.7031377
 Germany;Niedersachsen;Holzminden;9.4466591;51.828835
 Germany;Nordrhein-Westfalen;Paderborn;8.76486977818;51.71895955
@@ -2246,3 +2246,57 @@ Poland;Opolskie;Praszka;18.4485221;51.05536
 Russian Federation;Krasnodar;Labinsk;40.7242185;44.6347953
 Russian Federation;Khakass;Chernogorsk;91.31321;53.828236
 United States;Washington;Naches;-120.699516;46.730958
+Poland;Slaskie;Cieszyn;18.6334308;49.7488623
+Netherlands;Zuid-Holland;Zoetermeer;4.4901218;52.0622531
+India;Gujarat;Surat;72.8081281;21.1864607
+Czech Republic;Stredocesky kraj;Kladno;14.1025379;50.1478497
+United States;Kentucky;Ewing;-83.8632557;38.4272984
+Canada;Quebec;Compton;-71.827927;45.243228
+United Kingdom;Southwark;Bermondsey;-0.063268;51.4970125
+United States;New Jersey;Bergenfield;-73.9973608;40.9275987
+United States;California;Encino;-118.5016166;34.1591324
+India;Andhra Pradesh;Visakhapatnam;83.3012842;17.7231276
+Germany;Bayern;Germering;11.3657306;48.1340035
+United States;Pennsylvania;New Cumberland;-76.8846956;40.2323122
+United States;California;Lake Forest;-117.6859213;33.6469261
+United Kingdom;Birmingham;Sutton Coldfield;-1.8239794;52.5623089
+United States;Texas;Richmond;-95.7607832;29.5821811
+United States;New Jersey;Princeton Junction;-74.61986;40.31732
+Netherlands;Utrecht;Baarn;5.2931;52.2112
+United States;New Jersey;Midland Park;-74.1401008;40.9893112
+United States;Tennessee;Murfreesboro;-86.3920452;35.845999
+Netherlands;Zuid-Holland;Schiedam;4.4020;51.9172
+United States;California;Santa Monica;-118.4912;34.0195
+Portugal;Porto;Vila Nova De Gaia;-8.6058415;41.1300103
+Sweden;Stockholms Lan;Lidingö;18.133142;59.3643845
+Belgium;Oost-Vlaanderen;Wetteren;3.8855494;51.0068804
+United Kingdom;Lewisham;New Cross;-0.0321;51.4749
+Portugal;Lisboa;Queluz;-9.2559895;38.7604252
+United States;Pennsylvania;Imperial;-80.2445041;40.4495127
+United States;Maryland;Columbia;-76.8582;39.2152
+United States;New York;Keeseville;-73.48012;44.50505
+Hong Kong;;Kwai Chung;114.1290095;22.3609551
+United States;Massachusetts;Littleton;-71.5120096;42.5375917
+Belgium;Vlaams-Brabant;Kessel-lo;4.7313734;50.8852456
+India;Andhra Pradesh;Tirupati;79.4231711;13.6316368
+United States;Connecticut;New Haven;-72.9250518;41.3082138
+Netherlands;Gelderland;Kootwijkerbroek;5.6632;52.1513
+Colombia;Bolivar;Cartagena;-75.5271224;10.4195841
+Netherlands;Flevoland;Almere Stad;5.2176582;52.3722582
+United States;Michigan;Chelsea;-84.020224;42.3180163
+United Kingdom;Cambridgeshire;Bourn;-0.0658853;52.192077
+United States;Arizona;Chandler;-111.8413317;33.3062223
+United States;Alaska;Wasilla;-149.4425638;61.5824216
+United States;Arkansas;Springdale;-94.1288142;36.1867442
+United States;Ohio;Akron;-81.518485;41.083064
+United States;New York;Queens;-73.7976337;40.7498243
+Hungary;Debrecen;Debrecen;21.6259782;47.531399
+Australia;Victoria;Malvern East;145.0658739;-37.876835
+United States;Iowa;Des Moines;-93.6037149;41.5910641
+Sweden;Vastra Gotaland;Mölnlycke;12.1135762;57.6583613
+Germany;Bayern;Tirschenreuth;12.3372014;49.8780269
+Germany;Thuringen;Hermsdorf;11.8567132;50.897952
+France;Bretagne;Brest;-4.4860088;48.3905283
+United States;Pennsylvania;Mount Pocono;-75.3646997;41.1220987
+United States;Massachusetts;Medford;-71.1061639;42.4184296
+Romania;Cluj;Cluj-napoca;23.5899542;46.769379
