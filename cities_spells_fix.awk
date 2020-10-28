@@ -923,6 +923,10 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   if ($9 == "Dushet'is Raioni")
                       $9 = "";
                   break
+              case "Jackson St Forest":             # United States
+                  if ($9 == "California")
+                      suspicious_repl(substr($1, 2), $2, 9, 10, $9, "");
+                  break
           }
           switch ($12) {
               case "EUNnet":

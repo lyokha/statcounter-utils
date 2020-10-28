@@ -206,7 +206,7 @@ cities.plot <- function(cs, title = NULL, tops = NULL, width = NULL) {
                                          gsub("[^[:alnum:]_\\-]", "_", title)),
                          height = height,
                          width = `if`(is.null(width), w0, width), scale = 1),
-                displaylogo = FALSE, collaborate = FALSE)
+                displaylogo = FALSE)
 
     print(paste(nrow, "cities plotted"), quote = FALSE)
 
