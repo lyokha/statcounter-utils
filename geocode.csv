@@ -1820,7 +1820,7 @@ Netherlands;Zuid-Holland;Delft;4.3586;52.0112
 Japan;Ibaraki;Tsuchiura;140.2044486;36.0781788
 United States;Arkansas;Conway;-92.4421011;35.0886963
 United States;Washington;Everett;-122.2013998;47.9673056
-Indonesia;Bali;Gianyar;115.3258603;-8.5426971
+Indonesia;Bali;Gianyar;115.3261;-8.5482
 Australia;New South Wales;Greenacre;151.058546;-33.9022902
 Australia;New South Wales;Peakhurst;151.0590667;-33.9616444
 Australia;New South Wales;Petersham;151.1554222;-33.8945061
@@ -2079,7 +2079,7 @@ Germany;Baden-Wurttemberg;Weingarten;9.6431145;47.8075299
 India;Gujarat;Jamnagar;70.0552102;22.4732415
 Russian Federation;Sverdlovsk;Nizhnyaya Tura;59.867397;58.618427
 Netherlands;Drenthe;Meppel;6.1978;52.6935
-Indonesia;Jawa Barat;Tangerang;106.4992042;-6.1734808
+Indonesia;Jawa Barat;Tangerang;106.6384468;-6.1760311
 Germany;Nordrhein-Westfalen;Wetter;7.3951553;51.3879463
 Russian Federation;Tambovskaya oblast;Volchki;40.7009944;52.4951041
 United States;California;Thousand Oaks;-118.8374;34.1698
@@ -2313,3 +2313,4 @@ Jamaica;Saint Andrew;Kingston;-76.7928128;17.9712148
 Ukraine;Kirovohrads'ka Oblast';Kapitanivka;31.7095642;48.9138546
 United States;California;San Andreas;-120.68048;38.19603
 Russian Federation;Irkutsk;Zima;102.052727;53.928402
+Russian Federation;Orenburg;Sorochinsk;53.154175;52.426971

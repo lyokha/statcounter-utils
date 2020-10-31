@@ -90,6 +90,7 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
           switch ($10) {
               case "Tolyatti":                      # Russian Federation
               case "Tol'yatti":
+              case "Togliatti-on-the-volga":
                   $10 = "Togliatti";
                   break
               case "Togliatti":
