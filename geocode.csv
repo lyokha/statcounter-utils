@@ -252,7 +252,7 @@ Russian Federation;Moscow City;Zelenograd;37.1984616;55.9964173
 Russian Federation;Vladimir;Kovrov;41.311676;56.374603
 Spain;Catalonia;Barcelona;2.1774322;41.3828939
 Ukraine;Donets'ka Oblast';Kramatorsk;37.5848;48.7388
-Ukraine;Poltavs'ka Oblast';Kremenchug;33.4053;49.0613
+Ukraine;Poltavs'ka Oblast';Kremenchug;33.403516;49.0629553
 Ukraine;Ternopil's'ka Oblast';Ternopil;25.5923;49.5557
 Australia;Victoria;Melbourne;144.9631608;-37.8142176
 Denmark;;;10.3333283;55.670249
@@ -422,7 +422,7 @@ Slovakia;Kosice;Kosice;21.2496774;48.7172272
 Sweden;Vastra Gotaland;Göteborg;11.9670171;57.7072326
 Thailand;Chiang Mai;Chiang Mai;98.995665;18.790246
 Turkey;Antalya;Antalya;30.6954846;36.9009641
-Ukraine;Poltavs'ka Oblast';Komsomolsk;33.636023;49.011725
+Ukraine;Poltavs'ka Oblast';Komsomolsk;33.6330875;49.0140647
 United Kingdom;Cambridgeshire;Cambridge;0.1235817;52.2034823
 United Kingdom;Oxfordshire;Oxford;-1.2578499;51.7520131
 United States;Arizona;Phoenix;-112.0741;33.4482
@@ -768,7 +768,7 @@ Russian Federation;Krasnoyarsk;Lesosibirsk;92.48597;58.223511
 Russian Federation;Krasnoyarsk;Minusinsk;91.697235;53.700325
 Russian Federation;Kurgan;Shadrinsk;63.629747;56.087042
 Russian Federation;Kursk;Kurchatov;35.6521;51.6601
-Russian Federation;Leningrad;Novoye Devyatkino;30.47637;60.057321
+Russian Federation;Leningrad;Novoye Devyatkino;30.475435;60.058025
 Russian Federation;Leningrad;Sertolovo;30.207806;60.143707
 Russian Federation;Mariy-El;Zvenigovo;48.01532;55.972312
 Russian Federation;Moskva;Goretovka;37.10874;55.95955
@@ -826,7 +826,7 @@ Switzerland;Ticino;Aurigeno;8.7124592;46.2318273
 Switzerland;Zug;Cham;8.460549;47.181487
 Tajikistan;Dushanbe;Dushanbe;68.7863573;38.5762709
 Thailand;Phuket;Phuket;98.3918736;7.887994
-Ukraine;Cherkas'ka Oblast';Uman;30.219694;48.750807
+Ukraine;Cherkas'ka Oblast';Uman;30.2203052;48.7497621
 Ukraine;Chernihivs'ka Oblast';;32.004054;51.35542
 Ukraine;Donets'ka Oblast';Dokuchayevsk;37.676169;47.745845
 Ukraine;Kharkivs'ka Oblast';Pesochin;36.1239316;49.9622881
@@ -2314,3 +2314,5 @@ Ukraine;Kirovohrads'ka Oblast';Kapitanivka;31.7095642;48.9138546
 United States;California;San Andreas;-120.68048;38.19603
 Russian Federation;Irkutsk;Zima;102.052727;53.928402
 Russian Federation;Orenburg;Sorochinsk;53.154175;52.426971
+Ireland;Kildare;Maynooth;-6.5922806;53.3830239
+Estonia;Ida-Virumaa;Jõhvi;27.4135654;59.3579433
