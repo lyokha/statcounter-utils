@@ -286,6 +286,10 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   if ($9 == "Tatarstan")
                       $10 = "Yelabuga";
                   break
+              case "Innopolis":
+                  if ($9 == "" && $8 == "Russian Federation")
+                      $9 = "Tatarstan";
+                  break
               case "Tatarstan":
                   if ($9 == "Tatarstan")
                       $10 = "";
@@ -390,6 +394,11 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   if ($9 == "Arkhangel'sk")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Arkhangel'sk", "");
+                  break
+              case "Krasnogorsk":
+                  if ($9 == "Smolensk")
+                      suspicious_repl(substr($1, 2), $2, 9, 10,
+                                      "Moskva", $10);
                   break
               case "Bras":
                   if ($9 == "Sakhalin")
@@ -678,13 +687,17 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   $10 = "Zaporizhzhya";
                   break
               case "Pervomaysk":
-                  $10 = "Pervomaisk";
+                  if ($9 == "Mykolayivs'ka Oblast'")
+                      $10 = "Pervomaisk";
                   break
               case "Kramators'k":
                   $10 = "Kramatorsk";
                   break
               case "Makeevka":
                   $10 = "Makiyivka";
+                  break
+              case "Sloviansk":
+                  $10 = "Slavyansk";
                   break
               case "Krivoy Rog":
                   if ($9 == "Khersons'ka Oblast'")
