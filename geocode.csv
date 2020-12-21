@@ -595,7 +595,7 @@ Ukraine;Chernihivs'ka Oblast';Nezhin;31.880024;51.046414
 Ukraine;Dnipropetrovs'ka Oblast';Pavlograd;35.869532;48.531422
 Ukraine;Donets'ka Oblast';Novogrodovka;37.3405;48.1997
 Ukraine;Kharkivs'ka Oblast';;36.505108;49.61494
-Ukraine;Khmel'nyts'ka Oblast';Netishyn;26.63892;50.337918
+Ukraine;Khmel'nyts'ka Oblast';Netishyn;26.6496103;50.3339213
 Ukraine;Luhans'ka Oblast';Antratsit;39.0886375;48.1164285
 Ukraine;Luhans'ka Oblast';Rubizhne;38.3667937;49.0222573
 Ukraine;Odes'ka Oblast';Teplodar;30.3271;46.5048
@@ -1519,8 +1519,8 @@ Ukraine;Ivano-Frankivs'ka Oblast';Burshtyn;24.6338;49.2518
 Ukraine;Ivano-Frankivs'ka Oblast';Kolomyya;25.037969;48.525861
 Ukraine;Ivano-Frankivs'ka Oblast';Tlumach;25.001988;48.8659853
 Ukraine;Kharkivs'ka Oblast';Zolochev;35.9824347;50.2790531
-Ukraine;Khmel'nyts'ka Oblast';Shatava;26.7003782;48.7712522
-Ukraine;Khmel'nyts'ka Oblast';Slavuta;26.88593;50.320678
+Ukraine;Khmel'nyts'ka Oblast';Shatava;26.704938;48.7735361
+Ukraine;Khmel'nyts'ka Oblast';Slavuta;26.8658254;50.2962398
 Ukraine;Krym;Alushta;34.41012;44.676404
 Ukraine;Kyyivs'ka Oblast';Borodyanka;29.9255843;50.6465712
 Ukraine;Kyyivs'ka Oblast';Bucha;30.2207143;50.5485813
@@ -1534,8 +1534,8 @@ Ukraine;Odes'ka Oblast';;30.405789;46.908223
 Ukraine;Poltavs'ka Oblast';;33.778487;49.73238
 Ukraine;Poltavs'ka Oblast';Mirgorod;33.611455;49.965752
 Ukraine;Poltavs'ka Oblast';Novi Sanzhary;34.316048;49.333315
-Ukraine;Rivnens'ka Oblast';Dubno;25.759649;50.398781
-Ukraine;Rivnens'ka Oblast';Ostrog;26.513668;50.327775
+Ukraine;Rivnens'ka Oblast';Dubno;25.7455972;50.4187918
+Ukraine;Rivnens'ka Oblast';Ostrog;26.5203627;50.329021
 Ukraine;Sums'ka Oblast';Konotop;33.206675;51.2397495
 Ukraine;Sums'ka Oblast';Romny;33.4877;50.74207
 Ukraine;Vinnyts'ka Oblast';;28.685821;48.920776
@@ -2333,3 +2333,6 @@ United Kingdom;Southwark;Dulwich;-0.0843244;51.4418786
 Germany;Niedersachsen;Loningen;7.7570655;52.7363493
 Czech Republic;Moravskoslezsky kraj;Karvina;18.5416556;49.8542719
 Russian Federation;Kirov;Omutninsk;52.17625;58.668304
+United States;Minnesota;;-94.6113288;45.9896587
+Ukraine;Khmel'nyts'ka Oblast';Kamyianets-podilskyy;26.5852225;48.6784597
+Ukraine;Dnipropetrovs'ka Oblast';Verkhivtseve;34.24232;48.48404
