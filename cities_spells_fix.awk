@@ -385,6 +385,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                                       "Saint Petersburg City",
                                       "Saint Petersburg", $12 "  >>  ");
                   break
+              case "Arkhangel'sk":
+                  $10 = "Arkhangelsk";
+                  break
               case "Arkhangelsk":
                   if ($9 == "Chelyabinsk")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
