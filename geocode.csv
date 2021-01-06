@@ -669,8 +669,8 @@ Croatia;;;16.106443;45.439828
 Cyprus;Limassol;Pissouri;32.7019524;34.6707579
 Czech Republic;Jihomoravsky kraj;Vyskov;16.9994446;49.2778194
 Denmark;Hovedstaden;Kongens Lyngby;12.5051413;55.7718649
-Ecuador;Guayas;Guayaquil;-79.889532;-2.189327
-Ecuador;Pichincha;Quito;-78.509746;-0.219273
+Ecuador;Guayas;Guayaquil;-79.8867;-2.1900
+Ecuador;Pichincha;Quito;-78.5123274;-0.2201641
 Estonia;Ida-Virumaa;Kohtla-järve;27.2880288;59.4025488
 Finland;Eastern Finland;Joensuu;29.7589;62.6003
 Finland;Western Finland;Jyväskylä;25.74621;62.239264
@@ -893,7 +893,7 @@ United States;Ohio;Vandalia;-84.198687;39.890793
 United States;Oregon;Beaverton;-122.8037804;45.4871723
 United States;Pennsylvania;Media;-75.387185;39.916198
 United States;South Carolina;Summerville;-80.1747537;33.0206179
-United States;Texas;Arlington;-97.107289;32.738696
+United States;Texas;Arlington;-97.1071;32.7356
 United States;Texas;Fort Worth;-97.3327459;32.753177
 United States;Texas;Katy;-95.82419;29.785197
 United States;Texas;Pflugerville;-97.619688;30.438696
@@ -1942,7 +1942,7 @@ Mexico;Puebla;Cholula;-98.3;19.0511
 Mexico;Puebla;Puebla;-98.1982;19.0423
 Mexico;Tabasco;Villahermosa;-92.9364;17.9880
 Argentina;Buenos Aires;Wilde;-58.314592;-34.6984264
-Colombia;Distrito Especial;Bogota;-74.0761028;4.5980772
+Colombia;Distrito Especial;Bogota;-74.083652;4.6533326
 Japan;Saitama;Misato;139.8722251;35.830091
 Japan;Saitama;Kawaguchi;139.7241054;35.8078228
 Poland;Slaskie;Gilowice;19.3089524;49.711931
@@ -2342,3 +2342,8 @@ United States;Ohio;Cleveland;-81.6934446;41.5051613
 Russian Federation;Permskiy Kray;Chusovoy;57.821075;58.282055
 Ukraine;Zakarpats'ka Oblast';Kalliv;23.36895;48.34705
 Kazakhstan;Qaraghandy;Balkhash;74.9774;46.8433
+Ukraine;Khmel'nyts'ka Oblast';;27.0;49.5
+Ukraine;Donets'ka Oblast';Druzhkivka;37.524945;48.6198614
+Ukraine;L'vivs'ka Oblast';Rava-rus'ka;23.6240014;50.230654
+Ukraine;Kirovohrads'ka Oblast';Oleksandriya;33.1169742;48.670609
+Kazakhstan;Almaty;Talgar;77.2395288;43.3027233
