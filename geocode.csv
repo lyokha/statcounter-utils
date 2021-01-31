@@ -335,7 +335,7 @@ Russian Federation;Leningrad;Vsevolozhsk;30.646042;60.024006
 Russian Federation;Moskva;Istra;36.860284;55.914287
 Russian Federation;Nizhegorod;Dzerzhinsk;43.4617405;56.2382157
 Russian Federation;Sverdlovsk;Pervouralsk;59.943119;56.904858
-Russian Federation;Ul'yanovsk;Dimitrovgrad;49.621984;54.217715
+Russian Federation;Ul'yanovsk;Dimitrovgrad;49.6038982;54.2188995
 Serbia;;;20.55144;44.1534121
 Serbia;Serbia proper;Belgrade;20.4568974;44.8178131
 Switzerland;Aargau;Villigen;8.2147282;47.5262684
@@ -350,7 +350,7 @@ United States;Texas;Houston;-95.3676974;29.7589382
 Australia;New South Wales;Alexandria;151.1921281;-33.9091568
 Belarus;Minskaya Voblasts';Borisov;28.511755;54.224069
 Bulgaria;Burgas;Burgas;27.4721;42.4936
-Canada;Alberta;Calgary;-114.0587;51.0526
+Canada;Alberta;Calgary;-114.0625892;51.0534234
 Cyprus;Limassol;Limassol;33.042341;34.6735637
 France;Rhone-Alpes;Écully;4.778768;45.774307
 Germany;Hessen;Darmstadt;8.651177;49.872775
@@ -432,7 +432,7 @@ United States;Illinois;;-89.4337288;40.0796606
 United States;Massachusetts;Cambridge;-71.1056157;42.3750997
 United States;Michigan;Ann Arbor;-83.7312291;42.2681569
 United States;Michigan;Canton;-83.4865;42.3073
-United States;Minnesota;Minneapolis;-93.267836;44.970382
+United States;Minnesota;Minneapolis;-93.2654692;44.9772995
 United States;New Jersey;Dumont;-73.9968051;40.9406541
 United States;New Jersey;Mount Laurel;-74.891889;39.933994
 United States;Texas;Dallas;-96.7968559;32.7762719
@@ -656,7 +656,7 @@ Bulgaria;Kurdzhali;Kardzhali;25.3722156;41.643746
 Bulgaria;Razgrad;Kubrat;26.501792;43.796355
 Bulgaria;Ruse;Rousse;25.9542057;43.8480413
 Bulgaria;Varna;Varna;27.9150855;43.2069025
-Canada;Alberta;Edmonton;-113.511802;53.530798
+Canada;Alberta;Edmonton;-113.507996;53.535411
 Canada;British Columbia;Port Moody;-122.830013;49.2824413
 Canada;Ontario;Hamilton;-79.858486;43.252898
 Canada;Ontario;Kitchener;-80.494423;43.453168
@@ -709,7 +709,7 @@ Greece;;;21.9877132;38.9953683
 Iceland;;;-18.1059013;64.9841821
 India;Andhra Pradesh;Hyderabad;78.4752;17.3606
 Indonesia;Bali;Denpasar;115.2191175;-8.6524973
-Ireland;Cork;Cork;-8.4705806;51.8979282
+Ireland;Cork;Cork;-8.4705942;51.89862
 Israel;HaZafon;Nahariya;35.0945579;33.006306
 Israel;Hefa;Haifa;34.954139;32.419532
 Israel;Tel Aviv;;34.8071431648;32.09492
@@ -796,7 +796,7 @@ Russian Federation;Rostov;Gukovo;39.9441925;48.0530303
 Russian Federation;Rostov;Zverevo;40.118561;48.020645
 Russian Federation;Sakhalin;;142.750797;50.150926
 Russian Federation;Samara;Avtozavodskiy Rayon;49.2929;53.5452
-Russian Federation;Saratov;Balakovo;47.819667;52.018424
+Russian Federation;Saratov;Balakovo;47.819141;52.01812
 Russian Federation;Smolensk;Roslavl;32.85678;53.947309
 Russian Federation;Stavropol';Nevinnomyssk;41.9476;44.6245
 Russian Federation;Stavropol';Svetlograd;42.8461;45.3401
@@ -967,11 +967,11 @@ Bulgaria;Burgas;Lozarevo;26.879044;42.7713055
 Bulgaria;Plovdiv;Plovdiv;24.756455;42.141997
 Bulgaria;Varna;Aksakovo;27.8173611;43.2586259
 Canada;British Columbia;Burnaby;-122.9725459;49.2433804
-Canada;British Columbia;New Westminster;-122.9108651;49.205728
+Canada;British Columbia;New Westminster;-122.9108818;49.2067726
 Canada;British Columbia;Richmond;-123.1376687;49.1632727
-Canada;British Columbia;Victoria;-123.366788;48.423095
-Canada;Manitoba;Winnipeg;-97.168579;49.884017
-Canada;Northwest Territories;Yellowknife;-114.371788;62.453972
+Canada;British Columbia;Victoria;-123.3649533;48.4283182
+Canada;Manitoba;Winnipeg;-97.1384584;49.8955367
+Canada;Northwest Territories;Yellowknife;-114.377385;62.4540807
 Canada;Nova Scotia;Oxford;-63.8589;45.7325
 Canada;Ontario;Brampton;-79.759582;43.686796
 Canada;Ontario;Kanata;-75.8984895;45.3159283
@@ -1242,7 +1242,7 @@ Norway;Akershus;Råholt;11.1797344;60.2773449
 Norway;Akershus;Stabekk;10.6015667;59.9083417
 Norway;Buskerud;Kongsberg;9.650466;59.666739
 Norway;Ostfold;Sarpsborg;11.094571;59.281988
-Norway;Rogaland;Stavanger;5.7324722;58.9680427
+Norway;Rogaland;Stavanger;5.7294654;58.9689601
 Norway;Troms;Tromsø;18.9548489;69.6492969
 Norway;Vestfold;Sandefjord;10.2256;59.1300
 Norway;Vestfold;Tønsberg;10.4082;59.2677
@@ -1407,11 +1407,11 @@ Russian Federation;Saint Petersburg City;Pavlovsk;30.433264;59.684853
 Russian Federation;Saint Petersburg City;Sestroretsk;29.9597606;60.0981084
 Russian Federation;Samara;Novokuybyshevsk;49.947767;53.099469
 Russian Federation;Samara;Oktyabrsk;48.670668;53.164038
-Russian Federation;Samara;Syzran;48.474485;53.155782
+Russian Federation;Samara;Syzran;48.474121;53.15538
 Russian Federation;Samara;Zhigulevsk;49.4956;53.4003
 Russian Federation;Saratov;Balashov;43.1717621;51.537084
 Russian Federation;Saratov;Novosokolovogorskiy;46.055861;51.571067
-Russian Federation;Saratov;Sinodskoye;46.666087;51.98681
+Russian Federation;Saratov;Sinodskoye;46.669334;51.988297
 Russian Federation;Stavropol';Georgievsk;43.4741718;44.1478944
 Russian Federation;Stavropol';Zheleznovodsk;43.0090751;44.1424034
 Russian Federation;Sverdlovsk;Polevskoy;60.165859;56.442108
@@ -1708,8 +1708,8 @@ United States;Michigan;Troy;-83.1499304;42.6055893
 United States;Michigan;West Bloomfield;-83.3733531;42.5685582
 United States;Michigan;Ypsilanti;-83.613085;42.240899
 United States;Minnesota;Chaska;-93.601686;44.789294
-United States;Minnesota;Cottage Grove;-92.952285;44.825797
-United States;Minnesota;Northfield;-93.159787;44.4562
+United States;Minnesota;Cottage Grove;-92.9438218;44.8277446
+United States;Minnesota;Northfield;-93.1611;44.4582
 United States;Minnesota;Sandstone;-92.867385;46.131098
 United States;Missouri;Kansas City;-94.5781416;39.100105
 United States;Nebraska;Omaha;-95.9383758;41.2587459
@@ -1791,9 +1791,9 @@ United States;Virginia;Sterling;-77.4032011;39.0016194
 United States;Washington;Bothell;-122.207485;47.759955
 United States;Washington;Lynnwood;-122.3053932;47.8278656
 United States;Washington;Port Ludlow;-122.68229;47.925499
-United States;Washington;Redmond;-122.122612;47.669751
+United States;Washington;Redmond;-122.1238767;47.6694141
 United States;Washington;Sammamish;-122.0423067;47.6088445
-United States;Wisconsin;Bruce;-91.273387;45.457994
+United States;Wisconsin;Bruce;-91.2732106;45.4569087
 United States;Wisconsin;Madison;-89.38141;43.076109
 Uruguay;;;-56.0201525;-32.8755548
 Uzbekistan;Qashqadaryo;;66.130504;38.681237
@@ -2347,3 +2347,15 @@ Ukraine;Donets'ka Oblast';Druzhkivka;37.524945;48.6198614
 Ukraine;L'vivs'ka Oblast';Rava-rus'ka;23.6240014;50.230654
 Ukraine;Kirovohrads'ka Oblast';Oleksandriya;33.1169742;48.670609
 Kazakhstan;Almaty;Talgar;77.2395288;43.3027233
+United States;South Carolina;;-80.4363743;33.6874388
+Saudi Arabia;Makkah;Jeddah;39.1653612;21.5810088
+Japan;Tokyo;Bunkyo-ku;139.744732;35.71881
+Russian Federation;Bryansk;Moskovskiy;33.1933;52.8396
+United States;Minnesota;Faribault;-93.2687;44.2948
+Russian Federation;Moskva;Lesnoy;37.9277319;56.0807652
+Ukraine;Dnipropetrovs'ka Oblast';Slobozhanske;35.0827384;48.5308728
+United States;New Jersey;North Bergen;-74.012084;40.8042674
+Ukraine;Kyyivs'ka Oblast';Vyshneve;30.3678999;50.3917497
+Ukraine;Kharkivs'ka Oblast';Balakliia;36.8786912;49.4628203
+Kazakhstan;Qaraghandy;Osakarovka;72.5813736;50.5606688
+France;Aquitaine;Pugnac;-0.4956194;45.0816918
