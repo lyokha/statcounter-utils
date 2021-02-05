@@ -138,7 +138,7 @@ Sweden;;;15.0;62.0
 Uzbekistan;Toshkent;Tashkent;69.279737;41.311151
 Russian Federation;Rostov;Novocherkassk;40.101986;47.41066
 Russian Federation;Volgograd;Volzhskiy;44.7779843;48.782102
-Canada;Ontario;Toronto;-79.387207;43.653963
+Canada;Ontario;Toronto;-79.3839347;43.6534817
 United States;California;San Francisco;-122.4192363;37.7792808
 Czech Republic;;;15.4749544;49.8167003
 Japan;Tokyo;Tokyo;139.7594549;35.6828387
@@ -515,7 +515,7 @@ Belarus;Vitsyebskaya Voblasts';Polotsk;28.768349;55.485576
 Belgium;Vlaams-Brabant;Leuven;4.7011675;50.879202
 Brazil;;;-53.2;-10.3333333
 Canada;Ontario;Richmond Hill;-79.439392;43.880078
-Canada;Ontario;Waterloo;-80.513088;43.466798
+Canada;Ontario;Waterloo;-80.5222961;43.4652699
 Canada;Quebec;Québec;-71.2352226;46.8259601
 China;Guangdong;Shenzhen;114.0543297;22.555454
 China;Shanghai;Shanghai;121.4890497;31.2252985
@@ -658,10 +658,10 @@ Bulgaria;Ruse;Rousse;25.9542057;43.8480413
 Bulgaria;Varna;Varna;27.9150855;43.2069025
 Canada;Alberta;Edmonton;-113.507996;53.535411
 Canada;British Columbia;Port Moody;-122.830013;49.2824413
-Canada;Ontario;Hamilton;-79.858486;43.252898
-Canada;Ontario;Kitchener;-80.494423;43.453168
-Canada;Ontario;Markham;-79.326782;43.854336
-Canada;Ontario;Oakville;-79.666381;43.448494
+Canada;Ontario;Hamilton;-79.8728583;43.2560802
+Canada;Ontario;Kitchener;-80.4927815;43.451291
+Canada;Ontario;Markham;-79.3376825;43.8563707
+Canada;Ontario;Oakville;-79.666672;43.447436
 Chile;Valparaiso;Quintero;-71.524384;-32.788585
 China;Zhejiang;Hangzhou;120.2052342;30.2489634
 Costa Rica;San Jose;San José;-84.084538;9.934776
@@ -973,20 +973,20 @@ Canada;British Columbia;Victoria;-123.3649533;48.4283182
 Canada;Manitoba;Winnipeg;-97.1384584;49.8955367
 Canada;Northwest Territories;Yellowknife;-114.377385;62.4540807
 Canada;Nova Scotia;Oxford;-63.8589;45.7325
-Canada;Ontario;Brampton;-79.759582;43.686796
-Canada;Ontario;Kanata;-75.8984895;45.3159283
-Canada;Ontario;London;-81.231489;42.988897
-Canada;Ontario;Maple;-79.821484;43.326794
-Canada;Ontario;Mississauga;-79.645729;43.590338
+Canada;Ontario;Brampton;-79.7599337;43.6858146
+Canada;Ontario;Kanata;-75.8940;45.3128
+Canada;Ontario;London;-81.2496068;42.9836747
+Canada;Ontario;Maple;-79.5123386;43.854853
+Canada;Ontario;Mississauga;-79.6443879;43.5896231
 Canada;Ontario;Newmarket;-79.461708;44.056258
 Canada;Ontario;Sault Sainte Marie;-84.320068;46.52391
-Canada;Ontario;Scarborough;-79.257774;43.773077
+Canada;Ontario;Scarborough;-79.2576479;43.7729744
 Canada;Ontario;Woodbridge;-79.5921039;43.7847162
 Canada;Prince Edward Island;Charlottetown;-63.132935;46.234953
-Canada;Quebec;Drummondville;-72.503188;45.882995
+Canada;Quebec;Drummondville;-72.5018764;45.8864303
 Canada;Quebec;Laval;-73.7531;45.5758
 Canada;Quebec;Verdun;-73.5731;45.4590
-Canada;Quebec;Warwick;-71.98849;45.944394
+Canada;Quebec;Warwick;-71.990662;45.945659
 Canada;Saskatchewan;Saskatoon;-106.660767;52.131802
 China;Guangdong;Guangzhou;113.2592945;23.1301964
 China;Heilongjiang;Jixi;130.9619259;45.2928513
@@ -1740,7 +1740,7 @@ United States;New York;Pittsford;-77.515886;43.090595
 United States;New York;Silver Bay;-73.508789;43.691594
 United States;New York;Sunnyside;-73.9354153;40.7398242
 United States;New York;Syracuse;-76.147788;43.050895
-United States;New York;Tonawanda;-78.879987;43.020398
+United States;New York;Tonawanda;-78.8783;43.0206
 United States;New York;Troy;-73.692881;42.727696
 United States;New York;Wantagh;-73.510388;40.683696
 United States;North Carolina;Apex;-78.850585;35.732197
@@ -1965,7 +1965,7 @@ Mexico;Baja California;Tijuana;-116.9646629;32.5010188
 China;Liaoning;Dalian;121.6388678;38.920716
 Russian Federation;Arkhangel'sk;Novodvinsk;40.793793;64.419212
 Russian Federation;Irkutsk;Belorechenskiy;103.5256;52.8141
-Russian Federation;Chechnya;Groznyy;45.698967;43.316845
+Russian Federation;Chechnya;Groznyy;45.6934308;43.3197031
 Russian Federation;Tver';Bologoye;34.049603;57.885204
 Russian Federation;Stavropol';Kislovodsk;42.7192186;43.9128743
 United States;Massachusetts;Ipswich;-70.8411583;42.679273
@@ -2359,3 +2359,5 @@ Ukraine;Kyyivs'ka Oblast';Vyshneve;30.3678999;50.3917497
 Ukraine;Kharkivs'ka Oblast';Balakliia;36.8786912;49.4628203
 Kazakhstan;Qaraghandy;Osakarovka;72.5813736;50.5606688
 France;Aquitaine;Pugnac;-0.4956194;45.0816918
+United States;Michigan;Livonia;-83.3527097;42.36837
+Ukraine;Kirovohrads'ka Oblast';Hannivka;33.45989;48.23479
