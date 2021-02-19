@@ -53,7 +53,7 @@ Russian Federation;Moskva;Dolgoprudnyy;37.5142417;55.9341491
 Belarus;Homyel'skaya Voblasts';Gomel;31.0131698;52.4238936
 Russian Federation;Mordovia;Saransk;45.18383;54.18671
 Russian Federation;Khabarovsk;Khabarovsk;135.076935;48.481403
-Ukraine;Vinnyts'ka Oblast';Vinnitsa;28.46868;49.232553
+Ukraine;Vinnyts'ka Oblast';Vinnitsa;28.467975;49.2320162
 United Kingdom;;;-2.69531;54.75844
 Netherlands;;;5.53460738162;52.2379891
 Russian Federation;Tver';Tver;35.9208284;56.858675
@@ -399,7 +399,7 @@ Japan;Saitama;Saitama;139.6462;35.8615
 Kazakhstan;Almaty;Taldykorgan;78.3791841;45.0164138
 Netherlands;Noord-Brabant;Eindhoven;5.478633;51.4392648
 Netherlands;Utrecht;Utrecht;5.1098;52.0949
-New Zealand;Wellington;Wellington;174.776069;-41.297278
+New Zealand;Wellington;Wellington;174.7772114;-41.2887953
 Poland;Slaskie;Siemianowice Slaskie;19.0275635;50.3052029
 Russian Federation;Chuvashia;Novocheboksarsk;47.4870341;56.1140023
 Russian Federation;Moskva;Balashikha;37.9646488;55.8036225
@@ -1236,7 +1236,7 @@ Netherlands;Zuid-Holland;Rijswijk;4.318992;52.043995
 Netherlands;Zuid-Holland;Rotterdam;4.4631786;51.9228934
 Netherlands;Zuid-Holland;Spijkenisse;4.3287681;51.8464881
 New Zealand;Northland;Whangarei;174.3206488;-35.7283469
-New Zealand;Wellington;Lower Hutt;174.914293;-41.207689
+New Zealand;Wellington;Lower Hutt;174.9057;-41.2127
 Nigeria;;;8.043273;9.431514
 Norway;Akershus;Råholt;11.1797344;60.2773449
 Norway;Akershus;Stabekk;10.6015667;59.9083417
@@ -2361,3 +2361,10 @@ Kazakhstan;Qaraghandy;Osakarovka;72.5813736;50.5606688
 France;Aquitaine;Pugnac;-0.4956194;45.0816918
 United States;Michigan;Livonia;-83.3527097;42.36837
 Ukraine;Kirovohrads'ka Oblast';Hannivka;33.45989;48.23479
+Georgia;;Suhumi;41.0192741;43.0033629
+Australia;New South Wales;Marrickville;151.1556908;-33.9103854
+United States;Pennsylvania;Langhorne;-74.9226665;40.1745538
+Ukraine;Vinnyts'ka Oblast';Haysyn;29.3893874;48.8120874
+Spain;Catalonia;Santa Coloma De Farners;2.6659047;41.8603109
+Russian Federation;Moskva;Demikhovo;38.8831789;55.7977789
+Russian Federation;Tatarstan;Zelenodolsk;48.5097031;55.8477605

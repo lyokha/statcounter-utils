@@ -244,6 +244,10 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   if ($9 == "Moskva")
                       $10 = "Shchëlkovo";
                   break
+              case "Beloozerskiy":
+                  if ($9 == "Moskva")
+                      $10 = "Beloozërskiy";
+                  break
               case "Saint-petersburg":
               case "Sankt-peterburg":
               case "St Petersburg":
@@ -696,6 +700,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
               case "Zaporozhe":
                   $10 = "Zaporizhzhya";
                   break
+              case "Kryvyy Rih":
+                  $10 = "Krivoy Rog";
+                  break
               case "Khmelnytskyy":
                   $10 = "Khmelnitskiy";
                   break
@@ -715,6 +722,10 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
               case "Henichesk":
                   if ($9 == "Khersons'ka Oblast'")
                       $10 = "Genichesk";
+                  break
+              case "Drohobych":
+                  if ($9 == "L'vivs'ka Oblast'")
+                      $10 = "Drogobych";
                   break
               case "Kiev":
                   if ($9 == "L'vivs'ka Oblast'")
