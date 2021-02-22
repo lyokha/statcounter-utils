@@ -660,6 +660,10 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   if ($9 == "Kyyivs'ka Oblast'")
                       $10 = "Irpen";
                   break
+              case "Vasylkiv":
+                  if ($9 == "Kyyivs'ka Oblast'")
+                      $10 = "Vasilkov";
+                  break
               case "Vinnytsya":
               case "Vinnytsia":
                   $10 = "Vinnitsa";
