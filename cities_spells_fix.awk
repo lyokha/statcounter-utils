@@ -752,6 +752,12 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                                        "Ukraine", "Sevastopol'", $10,
                                        $12 "  >>  ");
                   break
+              case "Saki":
+                  if ($9 == "Smolensk")
+                      suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
+                                       "Ukraine", "Krym", $10,
+                                       $12 "  >>  ");
+                  break
               case "Dmitriy":
                   if ($12 == "Bystrov Dmitriy Sergeevich")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
