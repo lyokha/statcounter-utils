@@ -726,6 +726,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
               case "Sloviansk":
                   $10 = "Slavyansk";
                   break
+              case "Krasnyi Luch":
+                  $10 = "Krasnyj Luch";
+                  break
               case "Lysychansk":
                   if ($9 == "Luhans'ka Oblast'")
                       $10 = "Lisichansk";
@@ -941,6 +944,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   break
               case "São Paulo":                     # Brazil
                   $10 = "Sao Paulo";
+                  break
+              case "São Carlos":
+                  $10 = "Sao Carlos";
                   break
               case "Brasília":
                   $10 = "Brasilia";
