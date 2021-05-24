@@ -58,7 +58,7 @@ United Kingdom;;;-2.69531;54.75844
 Netherlands;;;5.53460738162;52.2379891
 Russian Federation;Tver';Tver;35.9208284;56.858675
 Ukraine;Cherkas'ka Oblast';Cherkassy;32.0587805;49.4447888
-Ukraine;Sums'ka Oblast';Sumy;34.7985;50.9063
+Ukraine;Sums'ka Oblast';Sumy;34.798386;50.9070007
 Moldova, Republic of;;Chisinau;28.8322534;47.0244707
 Russian Federation;Tyumen';Tyumen;65.542274;57.153534
 Russian Federation;Smolensk;Smolensk;32.0461;54.7813
@@ -188,12 +188,12 @@ Russian Federation;Kamchatka;Petropavlovsk-kamchatskiy;158.6472187;53.0199693
 Russian Federation;Moskva;Protvino;37.218316;54.870621
 Russian Federation;Saratov;;46.797223;51.578529
 Russian Federation;Tatarstan;Chelny;52.3992173;55.7420117
-Switzerland;Zurich;Zurich;8.5423328;47.3723941
+Switzerland;Zurich;Zurich;8.5410422;47.3744489
 Bulgaria;;;25.286389;42.725351
 Estonia;;;24.800104;58.856069
 Finland;Southern Finland;Helsinki;24.9425683;60.1674086
 Russian Federation;Krasnoyarsk;Norilsk;88.201176;69.349033
-Russian Federation;Novosibirsk;Berdsk;83.107135;54.758288
+Russian Federation;Novosibirsk;Berdsk;83.1068095;54.75795
 Russian Federation;Yaroslavl';Rybinsk;38.834637;58.050373
 United States;California;San Jose;-121.890583;37.3361905
 United States;Washington;Seattle;-122.3300624;47.6038321
@@ -352,7 +352,7 @@ Belarus;Minskaya Voblasts';Borisov;28.511755;54.224069
 Bulgaria;Burgas;Burgas;27.4721;42.4936
 Canada;Alberta;Calgary;-114.0625892;51.0534234
 Cyprus;Limassol;Limassol;33.042341;34.6735637
-France;Rhone-Alpes;Écully;4.778768;45.774307
+France;Rhone-Alpes;Écully;4.7785644;45.7754498
 Germany;Hessen;Darmstadt;8.651177;49.872775
 Ireland;;;-7.9794599;52.865196
 Israel;HaMerkaz;Rishon Le Zion;34.788697;31.970813
@@ -452,7 +452,7 @@ Germany;Baden-Wurttemberg;Karlsruhe;8.4034195;49.0068705
 Germany;Baden-Wurttemberg;Konstanz;9.1750718;47.659216
 Germany;Nordrhein-Westfalen;Jülich;6.3611015;50.9220931
 Germany;Rheinland-Pfalz;Mainz;8.2762513;50.0012314
-Italy;Lazio;Rome;12.4853384;41.894802
+Italy;Lazio;Rome;12.4829321;41.8933203
 Romania;Dolj;Craiova;23.7965614;44.3190159
 Russian Federation;Adygey;Maykop;40.104053;44.6062079
 Russian Federation;Bashkortostan;Belebey;54.107811;54.106495
@@ -480,7 +480,7 @@ Russian Federation;Yamal-Nenets;Novyy Urengoy;76.6799167;66.085196
 Slovakia;;;19.638735;48.672714
 Spain;Andalucia;Málaga;-4.4216366;36.7213028
 Spain;Murcia;Cartagena;-1.0006184;37.6267868
-Switzerland;Basel-Stadt;Basel;7.590315;47.554542
+Switzerland;Basel-Stadt;Basel;7.5878261;47.5581077
 Switzerland;Bern;Bern;7.4514512;46.9482713
 Ukraine;Donets'ka Oblast';Krasnoarmeysk;37.1774;48.2766
 Ukraine;Donets'ka Oblast';Makiyivka;37.9619;48.0441
@@ -522,7 +522,7 @@ China;Shanghai;Shanghai;121.4890497;31.2252985
 Croatia;Grad Zagreb;Zagreb;15.977048;45.813177
 Czech Republic;Jihocesky kraj;Tabor;14.6584713;49.4140896
 Czech Republic;Jihomoravsky kraj;Brno;16.6113382;49.1922443
-France;Auvergne;Clermont-ferrand;3.088624;45.771132
+France;Auvergne;Clermont-ferrand;3.0819427;45.7774551
 France;Nord-Pas-de-Calais;Seclin;3.0252819;50.5452102
 Germany;Baden-Wurttemberg;Mannheim;8.467236;49.489591
 Germany;Baden-Wurttemberg;Tübingen;9.0535531;48.5236164
@@ -544,7 +544,7 @@ Kazakhstan;Qyzylorda;Kyzylorda;65.5036151;44.8426778
 Mexico;Nuevo Leon;Garza García;-100.4022714;25.6651051
 Mongolia;Ulaanbaatar;Ulaanbaatar;106.917602;47.918501
 Morocco;;;-7.3362482;31.1728205
-Netherlands;Gelderland;Nijmegen;5.861157;51.841987
+Netherlands;Gelderland;Nijmegen;5.8639;51.8475
 New Zealand;Canterbury;Christchurch;172.6366455;-43.530955
 Norway;Akershus;Skedsmokorset;11.0327969;60.0045779
 Norway;Hordaland;Bergen;5.3259192;60.3943055
@@ -611,7 +611,7 @@ United States;Alabama;Goodwater;-86.0516886936;33.0604215
 United States;California;Belmont;-122.274787;37.520394
 United States;California;Berkeley;-122.2728639;37.8708393
 United States;California;Granada Hills;-118.505898557;34.2962795
-United States;California;La Jolla;-117.2616203;32.8335005
+United States;California;La Jolla;-117.2716839;32.83259
 United States;California;San Bruno;-122.41549;37.628799
 United States;California;Sunnyvale;-122.0363496;37.3688301
 United States;California;Walnut Creek;-122.0618702;37.9020731
@@ -684,7 +684,7 @@ France;Ile-de-France;Issy-les-moulineaux;2.273457;48.8250508
 France;Ile-de-France;Montesson;2.1492681;48.9076421
 France;Rhone-Alpes;Annemasse;6.2341093;46.1934005
 France;Rhone-Alpes;Gières;5.7904194;45.1798245
-France;Rhone-Alpes;Morancé;4.700534;45.896996
+France;Rhone-Alpes;Morancé;4.6998465;45.897961
 Germany;Baden-Wurttemberg;Heidelberg;8.694724;49.4093582
 Germany;Baden-Wurttemberg;Ulm;9.9932755;48.3973944
 Germany;Bayern;Garching;11.6509662;48.2513878
@@ -704,7 +704,7 @@ Germany;Sachsen-Anhalt;Halle;11.9705452;51.4825041
 Germany;Sachsen;Leipzig;12.3747329;51.3406321
 Germany;Sachsen;Neumark;12.354925;50.65727
 Germany;Schleswig-Holstein;Kiel;10.135555;54.3227085
-Germany;Schleswig-Holstein;Mölln;10.686889;53.627439
+Germany;Schleswig-Holstein;Mölln;10.6880174;53.62892
 Greece;;;21.9877132;38.9953683
 Iceland;;;-18.1059013;64.9841821
 India;Andhra Pradesh;Hyderabad;78.4752;17.3606
@@ -717,7 +717,7 @@ Israel;Tel Aviv;Bat Yam;34.750689;32.015522
 Israel;Tel Aviv;Holon;34.776578;32.012338
 Italy;Campania;Naples;14.2487826;40.8359336
 Italy;Emilia-Romagna;Bologna;11.3430347;44.4936714
-Italy;Piemonte;Turin;7.688672;45.069149
+Italy;Piemonte;Turin;7.6824892;45.0677551
 Italy;Toscana;Arezzo;11.8783;43.4629
 Italy;Veneto;Padua;11.8734455;45.4077172
 Japan;Gifu;Tajimi;137.129652;35.334793
@@ -733,7 +733,7 @@ Mexico;;;-102.277714;23.530671
 Mexico;Distrito Federal;Mexico;-99.133296;19.432605
 Montenegro;;Budva;18.8378775;42.2835454
 Netherlands;Friesland;Ternaard;5.963879;53.382039
-Netherlands;Limburg;Maastricht;5.694609;50.849375
+Netherlands;Limburg;Maastricht;5.6911;50.8513
 Pakistan;;;69.28032;29.801824
 Peru;Lima;Lima;-77.0365256;-12.0621065
 Poland;Kujawsko-Pomorskie;Bydgoszcz;18.0004;53.1219
@@ -823,7 +823,7 @@ Sweden;Skane Lan;Malmö;13.0001566;55.6052931
 Sweden;Stockholms Lan;Huddinge;17.9748815;59.2293827
 Sweden;Uppsala Lan;Uppsala;17.6387436;59.8586126
 Switzerland;Ticino;Aurigeno;8.7124592;46.2318273
-Switzerland;Zug;Cham;8.460549;47.181487
+Switzerland;Zug;Cham;8.4611036;47.1823761
 Tajikistan;Dushanbe;Dushanbe;68.7863573;38.5762709
 Thailand;Phuket;Phuket;98.3918736;7.887994
 Ukraine;Cherkas'ka Oblast';Uman;30.2203052;48.7497621
@@ -857,7 +857,7 @@ United States;California;American Canyon;-122.2608044;38.1749179
 United States;California;Pasadena;-118.1444779;34.1476452
 United States;California;Pleasant Hill;-122.0607963;37.9479786
 United States;California;Pleasanton;-121.8746789;37.6624312
-United States;California;San Diego;-117.154587;32.715696
+United States;California;San Diego;-117.1627728;32.7174202
 United States;California;Saratoga;-122.021983;37.264194
 United States;California;Sonoma;-122.457684;38.291993
 United States;California;Tustin;-117.826166;33.7458511
@@ -949,7 +949,7 @@ Belgium;Liege;Seraing;5.5089437;50.6152381
 Belgium;Oost-Vlaanderen;Gent;3.7250121;51.0538286
 Belgium;Oost-Vlaanderen;Vlierzele;3.895553;50.931126
 Belgium;Oost-Vlaanderen;Wachtebeke;3.8574284;51.1701927
-Belgium;Vlaams-Brabant;Aarschot;4.829181;50.982677
+Belgium;Vlaams-Brabant;Aarschot;4.8365;50.9843
 Belgium;West-Vlaanderen;Waregem;3.4323287;50.8868095
 Bolivia;La Paz;La Paz;-68.1336346;-16.4956371
 Brazil;Bahia;Santo Antonio De Jesus;-39.260914;-12.9689361
@@ -1025,9 +1025,9 @@ France;Alsace;Zeinheim;7.4862746;48.6727664
 France;Aquitaine;Saint-jean-de-luz;-1.6635695;43.3870763
 France;Basse-Normandie;Hérouville-saint-clair;-0.3353513;49.2031097
 France;Basse-Normandie;Lisieux;0.2255168;49.1460831
-France;Basse-Normandie;Saint-paul-du-vernay;-0.761798;49.187929
+France;Basse-Normandie;Saint-paul-du-vernay;-0.7605556;49.1883333
 France;Bourgogne;Dijon;5.0414701;47.3215806
-France;Bretagne;Quimper;-4.10063;47.997244
+France;Bretagne;Quimper;-4.1024782;47.9960325
 France;Bretagne;Rennes;-1.6800198;48.1113387
 France;Centre;Lucé;1.4628645;48.4364696
 France;Franche-Comte;Besançon;6.0243622;47.2380222
@@ -1044,11 +1044,11 @@ France;Ile-de-France;Rueil-malmaison;2.1802832;48.87778
 France;Ile-de-France;Versailles;2.1266886;48.8035403
 France;Languedoc-Roussillon;Montpellier;3.8767337;43.6112422
 France;Lorraine;Alsting;7.0003939;49.1793035
-France;Lorraine;Vandoeuvre;6.16742;48.661302
+France;Lorraine;Vandoeuvre;6.1724618;48.6599676
 France;Nord-Pas-de-Calais;Lille;3.0635282;50.6365654
 France;Nord-Pas-de-Calais;Marcq-en-baroeul;3.1043032;50.6767018
-France;Pays de la Loire;Le Mans;0.192985;48.007065
-France;Pays de la Loire;Vertou;-1.466392;47.172385
+France;Pays de la Loire;Le Mans;0.1967599;48.0073796
+France;Pays de la Loire;Vertou;-1.4722242;47.1685211
 France;Provence-Alpes-Cote d'Azur;Biot;7.0966644;43.6280001
 France;Provence-Alpes-Cote d'Azur;Cannes;7.0134418;43.5515198
 France;Rhone-Alpes;Allonzier-la-caille;6.1185532;46.0001467
@@ -1069,9 +1069,9 @@ Germany;Baden-Wurttemberg;Weinheim;8.6717458;49.5462349
 Germany;Baden-Wurttemberg;Östringen;8.7097172;49.2192418
 Germany;Bayern;Bamberg;10.8868478;49.8916044
 Germany;Bayern;Dachau;11.4354419;48.2592477
-Germany;Bayern;Feucht;11.215071;49.376305
-Germany;Bayern;Freising;11.747044;48.404485
-Germany;Bayern;Gilching;11.294042;48.113256
+Germany;Bayern;Feucht;11.2158185;49.3752531
+Germany;Bayern;Freising;11.7439565;48.4008273
+Germany;Bayern;Gilching;11.2921549;48.1140289
 Germany;Bayern;Haldenwang;10.4461615;48.4373815
 Germany;Bayern;Höhenkirchen-siegertsbrunn;11.7170264;48.0201651
 Germany;Bayern;Oberhaching;11.5963153;48.0261447
@@ -1095,21 +1095,21 @@ Germany;Niedersachsen;Osterholz-scharmbeck;8.7948239;53.2281763
 Germany;Niedersachsen;Ottersberg;9.14217;53.111094
 Germany;Niedersachsen;Uslar;9.6338073;51.6586082
 Germany;Nordrhein-Westfalen;Bergkamen;7.6362876;51.6149389
-Germany;Nordrhein-Westfalen;Bielefeld;8.540868;52.010877
+Germany;Nordrhein-Westfalen;Bielefeld;8.531007;52.0191005
 Germany;Nordrhein-Westfalen;Duisburg;6.759562;51.434999
 Germany;Nordrhein-Westfalen;Hagen;7.479175;51.356607
 Germany;Nordrhein-Westfalen;Hamm;7.817274;51.678739
 Germany;Nordrhein-Westfalen;Herne;7.219985;51.5380394
 Germany;Nordrhein-Westfalen;Herten;7.1368071;51.5942009
-Germany;Nordrhein-Westfalen;Herzogenrath;6.096704;50.867325
-Germany;Nordrhein-Westfalen;Kreuzau;6.492834;50.745537
+Germany;Nordrhein-Westfalen;Herzogenrath;6.0950514;50.8684545
+Germany;Nordrhein-Westfalen;Kreuzau;6.4893293;50.7468554
 Germany;Nordrhein-Westfalen;Monchengladbach;6.4353641;51.1946983
 Germany;Nordrhein-Westfalen;Rösrath;7.1825445;50.8963758
-Germany;Nordrhein-Westfalen;Simmerath;6.300667;50.606408
-Germany;Nordrhein-Westfalen;Steinheim;9.097293;51.866798
+Germany;Nordrhein-Westfalen;Simmerath;6.3005267;50.6072499
+Germany;Nordrhein-Westfalen;Steinheim;9.0942767;51.8660478
 Germany;Nordrhein-Westfalen;Troisdorf;7.1593271;50.8153071
-Germany;Nordrhein-Westfalen;Wachtberg;7.1;50.63333
-Germany;Nordrhein-Westfalen;Warendorf;7.987802;51.949789
+Germany;Nordrhein-Westfalen;Wachtberg;7.0870;50.61993
+Germany;Nordrhein-Westfalen;Warendorf;7.9912335;51.9532449
 Germany;Nordrhein-Westfalen;Wuppertal;7.1780374;51.264018
 Germany;Rheinland-Pfalz;Bingen;7.9;49.9667
 Germany;Rheinland-Pfalz;Frankenthal;8.3540061;49.5445804
@@ -1141,31 +1141,31 @@ Israel;HaMerkaz;Yakum;34.842299;32.247867
 Israel;Tel Aviv;Azor;34.807615;32.023191
 Israel;Tel Aviv;Herzliya;34.842137;32.164709
 Israel;Tel Aviv;Ramat Gan;34.828106;32.062236
-Italy;Abruzzi;Isola Del Gran Sasso D'italia;13.661139;42.502764
-Italy;Calabria;Villa San Giovanni;15.662;38.23529
+Italy;Abruzzi;Isola Del Gran Sasso D'italia;13.6595164;42.5030579
+Italy;Calabria;Villa San Giovanni;15.6373809;38.2201116
 Italy;Emilia-Romagna;Cesena;12.2422442;44.136352
 Italy;Emilia-Romagna;Ferrara;11.6186451;44.8372737
 Italy;Emilia-Romagna;Piacenza;9.6947461;45.0534751
-Italy;Emilia-Romagna;Rimini;12.571437;44.054374
+Italy;Emilia-Romagna;Rimini;12.5685;44.0595
 Italy;Lazio;Acquapendente;11.864988;42.7439961
 Italy;Lazio;Guidonia;12.7263446;41.9972039
-Italy;Lazio;Sasso;12.043542;42.054764
+Italy;Lazio;Sasso;12.044956;42.0541888
 Italy;Lombardia;Brescia;10.2200214;45.5398022
-Italy;Lombardia;Casalpusterlengo;9.651248;45.180725
-Italy;Lombardia;Opera;9.212295;45.376856
-Italy;Lombardia;Sesto San Giovanni;9.243808;45.520199
-Italy;Lombardia;Valgreghentino;9.412503;45.776507
-Italy;Marche;Monteciccardo;12.781427;43.856455
+Italy;Lombardia;Casalpusterlengo;9.6483958;45.1793292
+Italy;Lombardia;Opera;9.211149;45.373069
+Italy;Lombardia;Sesto San Giovanni;9.2376549;45.5357218
+Italy;Lombardia;Valgreghentino;9.4121681;45.7698711
+Italy;Marche;Monteciccardo;12.806956;43.818563
 Italy;Puglia;Bari;16.8620293;41.1257843
 Italy;Puglia;Taranto;17.2432278;40.4712427
 Italy;Sicilia;Palermo;13.3524434;38.1112268
-Italy;Toscana;Cascina;10.546769;43.676528
+Italy;Toscana;Cascina;10.5492244;43.6766738
 Italy;Toscana;Florence;11.2555757;43.7698712
-Italy;Toscana;Larderello;10.88777;43.237419
+Italy;Toscana;Larderello;10.8879654;43.2400309
 Italy;Toscana;Pisa;10.4018624;43.7159395
 Italy;Veneto;Fontaniva;11.7521976;45.6376293
 Italy;Veneto;Mestre;12.2418053;45.4943063
-Italy;Veneto;Peschiera Del Garda;10.688056;45.43239
+Italy;Veneto;Peschiera Del Garda;10.6920171;45.4389454
 Italy;Veneto;Verona;10.9924122;45.4384958
 Japan;Aichi;Nagakute;137.049827;35.171577
 Japan;Chiba;Chiba;140.114107;35.612196
@@ -1198,8 +1198,8 @@ Latvia;Liepaja;Liepaja;21.0070903;56.5048435
 Lithuania;Kauno Apskritis;Kaunas;23.9044817;54.8982139
 Lithuania;Klaipedos Apskritis;Klaipeda;21.1350469;55.7127529
 Lithuania;Panevezio Apskritis;Panevezys;24.3578055;55.7344985
-Luxembourg;Luxembourg;Esch-sur-alzette;5.98507633113;49.4939261
-Luxembourg;Luxembourg;Larochette;6.2197136;49.78323
+Luxembourg;Luxembourg;Esch-sur-alzette;5.9850306;49.4959628
+Luxembourg;Luxembourg;Larochette;6.2189134;49.7869673
 Macedonia;;;21.750414;41.605594
 Malaysia;Kelantan;Kubang Kerian;102.2845137;6.0940366
 Malaysia;Kuala Lumpur;Kuala Lumpur;101.6943028;3.1516636
@@ -1207,7 +1207,7 @@ Malaysia;Pulau Pinang;Butterworth;100.3697;5.4083
 Malaysia;Selangor;Klang;101.4492077;3.0471533
 Malaysia;Selangor;Seri Kembangan;101.7055684;3.0340649
 Maldives;Male;Male;73.509769;4.174467
-Malta;;Sliema;14.501647;35.912744
+Malta;;Sliema;14.5020708;35.9127609
 Mauritius;Port Louis;Port Louis;57.5045331;-20.1637281
 Mexico;Chiapas;Tuxtla Gutierrez;-93.115959;16.753801
 Mexico;Guanajuato;Leon;-101.6825081;21.1218598
@@ -1228,11 +1228,11 @@ Netherlands;Noord-Holland;Diemen;4.9609;52.3422
 Netherlands;Overijssel;Dalfsen;6.253945;52.511266
 Netherlands;Overijssel;Hengelo;6.7924049;52.2658726
 Netherlands;Zuid-Holland;;4.467313;51.9862
-Netherlands;Zuid-Holland;'s-gravenzande;4.1605;52.0028
+Netherlands;Zuid-Holland;'s-gravenzande;4.1603759;52.0028294
 Netherlands;Zuid-Holland;Alphen Aan Den Rijn;4.6561357;52.1343369
 Netherlands;Zuid-Holland;Noordwijk;4.4464;52.2404
 Netherlands;Zuid-Holland;Numansdorp;4.437803;51.726557
-Netherlands;Zuid-Holland;Rijswijk;4.318992;52.043995
+Netherlands;Zuid-Holland;Rijswijk;4.3188;52.0446
 Netherlands;Zuid-Holland;Rotterdam;4.4631786;51.9228934
 Netherlands;Zuid-Holland;Spijkenisse;4.3287681;51.8464881
 New Zealand;Northland;Whangarei;174.3206488;-35.7283469
@@ -1619,7 +1619,7 @@ United States;California;Hayward;-122.0807964;37.6688205
 United States;California;Inglewood;-118.353132;33.9562003
 United States;California;Los Altos;-122.112982;37.381197
 United States;California;Newbury Park;-118.9118302;34.183671
-United States;California;Orange;-117.853104;33.787914
+United States;California;Orange;-117.8503088;33.7872568
 United States;California;Orinda;-122.18005;37.880849
 United States;California;Panorama City;-118.4453745;34.2242902
 United States;California;Rancho Cucamonga;-117.5751735;34.1033192
@@ -1770,7 +1770,7 @@ United States;Tennessee;Nashville;-86.7743531;36.1622296
 United States;Tennessee;Oak Ridge;-84.2696449;36.0103562
 United States;Texas;Allen;-96.671588;33.102797
 United States;Texas;Crosby;-95.062185;29.911496
-United States;Texas;El Paso;-106.487287;31.7600372
+United States;Texas;El Paso;-106.464634;31.7754152
 United States;Texas;Irving;-96.9442177;32.8295183
 United States;Texas;Round Rock;-97.678483;30.508298
 United States;Texas;San Antonio;-98.491162;29.425912
@@ -1816,7 +1816,7 @@ Russian Federation;Sverdlovsk;Verkhnyaya Pyshma;60.5738926;56.9724682
 Belarus;Vitsyebskaya Voblasts';Novolukoml;29.141087;54.656933
 United Kingdom;Leicestershire;Hinckley;-1.3729379;52.5410591
 Netherlands;Noord-Holland;Beverwijk;4.6603;52.4876
-Netherlands;Zuid-Holland;Delft;4.3586;52.0112
+Netherlands;Zuid-Holland;Delft;4.3586;52.0114
 Japan;Ibaraki;Tsuchiura;140.2044486;36.0781788
 United States;Arkansas;Conway;-92.4421011;35.0886963
 United States;Washington;Everett;-122.2013998;47.9673056
@@ -1831,8 +1831,8 @@ Australia;Western Australia;Alkimos;115.6874428;-31.6151987
 Belgium;Vlaams-Brabant;Heverlee;4.6937736;50.8645908
 Germany;Baden-Wurttemberg;Goppingen;9.6541116;48.7031377
 Germany;Niedersachsen;Holzminden;9.4466591;51.828835
-Germany;Nordrhein-Westfalen;Paderborn;8.76486977818;51.71895955
-Italy;Campania;Santa Maria Capua Vetere;14.25342;41.08156
+Germany;Nordrhein-Westfalen;Paderborn;8.7528;51.7177
+Italy;Campania;Santa Maria Capua Vetere;14.2563971;41.0799225
 Italy;Veneto;Vicenza;11.5478825;45.5488306
 Mexico;Jalisco;Tlajomulco De Zuniga;-103.4469713;20.4737273
 Netherlands;Noord-Holland;Huizen;5.2578;52.2962
@@ -1981,7 +1981,7 @@ Russian Federation;Nizhegorod;Arzamas;43.8408129;55.3989463
 Russian Federation;Saratov;Krasnoarmeysk;45.69252;51.025776
 United States;New Jersey;Toms River;-74.1979576;39.9537359
 United States;Oregon;Boardman;-119.7005834;45.839855
-United States;Arizona;Tucson;-110.9574232;32.22876425
+United States;Arizona;Tucson;-110.9748477;32.2228765
 United States;Arizona;Sierra Vista;-110.2772249;31.5455709
 United States;California;San Carlos;-122.2618236;37.504936
 United States;California;Burbank;-118.3258554;34.1816482
@@ -1992,7 +1992,7 @@ Australia;New South Wales;North Sydney;151.2083011;-33.8354519
 Japan;Osaka;Suita;135.51735;34.764884
 Korea, Republic of;Kyonggi-do;Seongnam;127.1262092;37.4201556
 United States;New Jersey;;-74.4041622;40.0757384
-Netherlands;Noord-Holland;Lutjebroek;5.20087138914;52.69721715
+Netherlands;Noord-Holland;Lutjebroek;5.2073175;52.6984329
 Russian Federation;Karelia;Kondopoga;34.268185;62.20929
 Spain;Andalucia;Marbella;-4.88562;36.508976
 Russian Federation;Karelia;Pitkyaranta;31.4744211;61.5717807
@@ -2396,3 +2396,9 @@ Ukraine;Donets'ka Oblast';Dibrivka;39.03803;47.90116
 Austria;Oberosterreich;Gmunden;13.8003048;47.9185855
 Ukraine;Odes'ka Oblast';Kiliya;29.2645546;45.4593566
 Russian Federation;Krasnodar;Vyselki;39.6574237;45.5806221
+Germany;Bayern;Kempten;10.3168835;47.7267063
+Netherlands;Noord-Brabant;'s-hertogenbosch;5.3031044;51.6889351
+France;Bretagne;La Motte;-2.733408;48.2349806
+Ukraine;Kharkivs'ka Oblast';Lozova;36.3160254;48.8842428
+United States;California;Glendale;-118.2478471;34.1469416
+Germany;Hessen;Hanau;8.9168179;50.1335542

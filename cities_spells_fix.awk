@@ -362,6 +362,12 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                       suspicious_repl(substr($1, 2), $2, 9, 10,
                                       "Samara", $10);
                   break
+              case "Saint Petersburg":
+                  if ($9 == "Moscow City" && $12 == "Google Proxy")
+                      suspicious_repl2(substr($1, 2), $2, 8, 9, 10,
+                                       "United States", "California",
+                                       "Mountain View", $12 "  >>  ");
+                  break
               case "Kirov":
                   if ($9 == "Stavropol'")
                       suspicious_repl(substr($1, 2), $2, 9, 10,
@@ -817,6 +823,9 @@ $8 == "Vietnam" && $1 ~ "^\"2018" &&
                   break
               case "Dzyarzhynsk":
                   $10 = "Dzerjinsk";
+                  break
+              case "Maladziecna":
+                  $10 = "Molodechno";
                   break
               case "Grodno":
                   if ($9 == "Minskaya Voblasts'")
