@@ -741,7 +741,7 @@ Poland;Kujawsko-Pomorskie;;18.3392939;53.3220016
 Poland;Lodzkie;Lodz;19.4571;51.7685
 Poland;Lubuskie;Zielona Gora;15.5050408;51.9383777
 Poland;Podlaskie;Bialystok;23.1592;53.1324
-Poland;Pomorskie;Gdansk;18.6452324;54.347629
+Poland;Pomorskie;Gdansk;18.6544;54.3483
 Romania;Bucuresti;Bucharest;26.1027202;44.4361414
 Romania;Timis;Timisoara;21.2257474;45.7538355
 Russian Federation;Amur;Belogorsk;128.47287;50.921326
@@ -1238,7 +1238,7 @@ Netherlands;Zuid-Holland;Spijkenisse;4.3287681;51.8464881
 New Zealand;Northland;Whangarei;174.3206488;-35.7283469
 New Zealand;Wellington;Lower Hutt;174.9057;-41.2127
 Nigeria;;;8.043273;9.431514
-Norway;Akershus;Råholt;11.1797344;60.2773449
+Norway;Akershus;Råholt;11.1728733;60.2838578
 Norway;Akershus;Stabekk;10.6015667;59.9083417
 Norway;Buskerud;Kongsberg;9.650466;59.666739
 Norway;Ostfold;Sarpsborg;11.094571;59.281988
@@ -1473,17 +1473,17 @@ Spain;Madrid;Colmenar Viejo;-3.7663207;40.6587901
 Spain;Madrid;Fuenlabrada;-3.794457;40.284375
 Spain;Pais Vasco;Bilbao;-2.938075;43.263659
 Spain;Pais Vasco;Donostia-san Sebastián;-1.9838889;43.3224219
-Sweden;Hallands Lan;Falkenberg;12.4888013;56.9027333
+Sweden;Hallands Lan;Falkenberg;12.4912926;56.904894
 Sweden;Jamtlands Lan;Alsen;13.9286711;63.3864609
 Sweden;Norrbottens Lan;Luleå;22.1460134;65.5831352
 Sweden;Ostergotlands Lan;Linköping;15.6245252;58.4098135
-Sweden;Skane Lan;Södra Sandby;13.342371;55.716798
+Sweden;Skane Lan;Södra Sandby;13.3474337;55.7171687
 Sweden;Stockholms Lan;Bromma;17.9395411;59.339769
 Sweden;Stockholms Lan;Tumba;17.8343123;59.2005555
 Sweden;Stockholms Lan;Vallentuna;18.078011;59.532406
 Sweden;Stockholms Lan;Vällingby;17.8716341;59.3659643
 Sweden;Vasterbottens Lan;Umeå;20.2630745;63.8256568
-Sweden;Vasternorrlands Lan;Sundsvall;17.313662;62.387318
+Sweden;Vasternorrlands Lan;Sundsvall;17.3071024;62.3907552
 Sweden;Vastra Gotaland;Lerum;12.2696;57.7701
 Switzerland;Aargau;Moriken;8.183239;47.415126
 Switzerland;Aargau;Neuenhof;8.3276312;47.4493396
@@ -1908,7 +1908,7 @@ China;Fujian;Fuzhou;119.2918215;26.0774954
 Russian Federation;Tatarstan;Innopolis;48.7445774;55.7522603
 Russian Federation;Sverdlovsk;Serov;60.574043;59.6051905
 Canada;British Columbia;North Vancouver;-123.0737831;49.3207133
-Poland;Wielkopolskie;Pila;16.7390964;53.1493864
+Poland;Wielkopolskie;Pila;16.7380343;53.1511324
 Japan;Aichi;Toyota;137.301478;35.15195
 Brazil;Pernambuco;Ipojuca;-35.0611068;-8.3980773
 Netherlands;Limburg;Weert;5.7085827;51.2531334
@@ -2402,3 +2402,6 @@ France;Bretagne;La Motte;-2.733408;48.2349806
 Ukraine;Kharkivs'ka Oblast';Lozova;36.3160254;48.8842428
 United States;California;Glendale;-118.2478471;34.1469416
 Germany;Hessen;Hanau;8.9168179;50.1335542
+United States;Arizona;Flagstaff;-111.6518229;35.1987522
+Germany;Bayern;Augsburg;10.8986971;48.3668041
+Poland;Kujawsko-Pomorskie;Brodnica;19.3993626;53.258092
